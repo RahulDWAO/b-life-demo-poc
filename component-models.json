@@ -138,8 +138,8 @@
             "value": "highlight"
           },
           {
-            "name": "ban-why-choose",
-            "value": "ban-why-choose"
+            "name": "ban-why-choose-model",
+            "value": "ban-why-choose-model"
           }
         ]
       }
@@ -168,8 +168,8 @@
         "label": "Style",
         "options": [
           {
-            "name": "ban-why-choose-card",
-            "value": "ban-why-choose-card"
+            "name": "ban-why-choose-model-ca",
+            "value": "ban-why-choose-model-ca"
           }
         ]
       }
@@ -227,25 +227,6 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "quote",
-    "fields": [
-      {
-        "component": "richtext",
-        "name": "quote",
-        "value": "",
-        "label": "Quote",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "author",
-        "label": "Author",
-        "value": ""
       }
     ]
   }
