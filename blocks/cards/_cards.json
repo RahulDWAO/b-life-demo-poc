@@ -47,6 +47,10 @@
             {
               "name": "highlighted-section",
               "value": "highlighted-section"
+            },
+            {
+              "name": "Why iTerm Prime?",
+              "value": "bandhan-iterm-prime-cards"
             }
           ]
         }
@@ -81,6 +85,10 @@
             {
               "name": "card-shadow",
               "value": "card-shadow"
+            },
+            {
+              "name": "Why iTerm Prime?",
+              "value": "bandhan-iterm-prime-cards"
             }
           ]
         }
