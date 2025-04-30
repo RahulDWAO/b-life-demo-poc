@@ -1,15 +1,16 @@
-main .section.most-pop{
+main .section.most-pop {
     padding: 1rem 2rem 2rem;
     margin: 0.4% 3.5% 1% 3.5%;
     background-color: #F4FAFF;
     border-radius: 1rem;
 }
 
-main .section.most-pop >.columns-wrapper{
+main .section.most-pop>.columns-wrapper {
 
     max-width: 100%;
 }
-main .section.most-pop >.columns-wrapper>.columns-2-cols>div>div{
+
+main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div {
 
     background-color: aqua;
     position: relative;
@@ -18,12 +19,13 @@ main .section.most-pop >.columns-wrapper>.columns-2-cols>div>div{
     width: calc(50% - 2rem);
 
 }
-main .section.most-pop >.columns-wrapper>.columns-2-cols>div>div::before{
+
+main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div::before {
     top: 50%;
     transform: translateY(-50%);
     margin-top: 32px;
     position: absolute;
-    right: -2.5rem;
+    /* right: -2.5rem; */
     content: "";
     width: 1px;
     height: 150px;
@@ -31,7 +33,7 @@ main .section.most-pop >.columns-wrapper>.columns-2-cols>div>div::before{
     opacity: 0.5;
 }
 
-main .section.most-pop >.columns-wrapper>.columns-2-cols div>div>p{
+main .section.most-pop>.columns-wrapper>.columns-2-cols div>div>p {
     font-size: 1.5rem;
     line-height: 1.5;
     text-align: center;
@@ -40,14 +42,15 @@ main .section.most-pop >.columns-wrapper>.columns-2-cols div>div>p{
     font-family: Manrope-Bold;
     font-weight: 700;
 }
-main .section.most-pop >.columns-wrapper>.columns-2-cols .cards-with-paragraph{
 
-display: flex;
-justify-content: center;
+main .section.most-pop>.columns-wrapper>.columns-2-cols .cards-with-paragraph {
+
+    display: flex;
+    justify-content: center;
 }
 
-main .section.most-pop >.columns-wrapper>.columns-2-cols .cards-with-paragraph>div{
-height: 50%;
+main .section.most-pop>.columns-wrapper>.columns-2-cols .cards-with-paragraph>div {
+    height: 50%;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     padding-top: 1.5rem;
@@ -71,7 +74,8 @@ height: 50%;
     max-width: 100%;
     position: relative;
 }
-main .section.most-pop >.columns-wrapper>.columns-2-cols .cards-with-paragraph>div >div>picture>img {
+
+main .section.most-pop>.columns-wrapper>.columns-2-cols .cards-with-paragraph>div>div>picture>img {
 
     margin: 0 auto;
     margin-bottom: 0.5rem;
@@ -79,7 +83,8 @@ main .section.most-pop >.columns-wrapper>.columns-2-cols .cards-with-paragraph>d
     height: 32px;
 
 }
-main .section.most-pop >.columns-wrapper>.columns-2-cols .cards-with-paragraph> div >div >div{
+
+main .section.most-pop>.columns-wrapper>.columns-2-cols .cards-with-paragraph>div>div>div {
 
     font-size: 1rem;
     color: #094771;
@@ -88,8 +93,8 @@ main .section.most-pop >.columns-wrapper>.columns-2-cols .cards-with-paragraph> 
 
 }
 
-main .section.most-pop >.columns-wrapper>.columns-2-cols .cards-with-paragraph> div >div >div >div{
-    
+main .section.most-pop>.columns-wrapper>.columns-2-cols .cards-with-paragraph>div>div>div>div {
+
     background-color: #E6F0FA;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -99,4 +104,43 @@ main .section.most-pop >.columns-wrapper>.columns-2-cols .cards-with-paragraph> 
     /* font-weight: 600; */
     /* transition: all 0.3s ease-in-out; */
 
+}
+
+
+main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div {
+
+    background-color: aqua;
+    position: relative;
+    margin-right: 0;
+    padding-right: 1rem;
+    width: calc(50% - 2rem);
+
+}
+
+main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div {
+    width: calc(25% - 1.5rem);
+    text-align: center;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+}
+
+main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>div {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 1rem;
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
 }
