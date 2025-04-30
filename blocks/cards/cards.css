@@ -48,6 +48,10 @@
   background: unset;
 }
 
+.section.bandhan-iterm-prime-cards.cards-container .cards-card-image{
+  margin-right: 20px;
+}
+
 .section.bandhan-iterm-prime-cards.cards-container .cards > ul > li img{
   width: 65px;
     height: 65px;
@@ -56,6 +60,10 @@
 }
 
 .section.bandhan-iterm-prime-cards.cards-container .cards > ul > li p{
-width: 80%;
+width: 100%;
 margin: 0;
+}
+
+.section.bandhan-iterm-prime-cards.cards-container .cards-card-body{
+  margin: 2;
 }
