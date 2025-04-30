@@ -116,6 +116,17 @@
             "value": "secondary"
           }
         ]
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "blue-bg",
+            "value": "blue-bg"
+          }
+        ]
       }
     ]
   },
@@ -173,7 +184,7 @@
         "valueType": "string",
         "name": "image",
         "label": "Image",
-        "multi": true
+        "multi": false
       },
       {
         "component": "richtext",
@@ -181,7 +192,7 @@
         "value": "",
         "label": "Text",
         "valueType": "string",
-        "multi": true
+        "multi": false
       },
       {
         "component": "multiselect",
@@ -195,6 +206,67 @@
           {
             "name": "card-shadow",
             "value": "card-shadow"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cards-with-para",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "cards-with-para",
+            "value": "cards-with-para"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "card-with-para",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "rte",
+        "value": "",
+        "label": "Rich Text",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "rte",
+        "value": "",
+        "label": "Rich Text Additional optional",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "Simple Texts",
+        "label": "Enter Simple Texts",
+        "valueType": "string"
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "card-with-para",
+            "value": "card-with-para"
           }
         ]
       }

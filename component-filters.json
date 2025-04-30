@@ -26,6 +26,15 @@
     ]
   },
   {
+    "id": "cards-with-para",
+    "components": [
+      "text",
+      "richtext",
+      "card",
+      "card-with-para"
+    ]
+  },
+  {
     "id": "columns",
     "components": [
       "column"
