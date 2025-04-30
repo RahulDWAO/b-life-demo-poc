@@ -293,7 +293,7 @@ main .section.ban-why-choose-model .cards-wrapper {
 main .section.ban-why-choose-model .cards-wrapper > .cards > ul {
   display: flex;
   justify-content: center;
-  padding: 0 8%;
+  /* padding: 0 8%; */
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -335,3 +335,24 @@ main .section.ban-why-choose-model .cards-card-image {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  main .section.ban-why-choose-model .cards-wrapper > .cards > ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+  }
+
+  main .section.ban-why-choose-model .cards-wrapper > .cards > ul > li {
+    width: 100%;
+    min-width: auto;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  main .section.ban-why-choose-model .cards-card-image {
+    margin-top: 32px;
+  }
+}
+
