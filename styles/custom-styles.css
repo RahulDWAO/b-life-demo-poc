@@ -12,7 +12,7 @@ main .section.most-pop>.columns-wrapper {
 
 main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div {
 
-    background-color: aqua;
+    /* background-color: aqua; */
     position: relative;
     margin-right: 0;
     padding-right: 1rem;
@@ -109,7 +109,7 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols .cards-with-paragraph>di
 
 main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div {
 
-    background-color: aqua;
+    /* background-color: aqua; */
     position: relative;
     margin-right: 0;
     padding-right: 1rem;
@@ -129,7 +129,7 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div {
     -webkit-transition: all 0.4s ease;
 }
 
-main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>div {
+main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>div:first-child {
     width: 76px;
     height: 76px;
     border-radius: 50%;
