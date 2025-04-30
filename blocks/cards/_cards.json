@@ -33,6 +33,26 @@
   ],
   "models": [
     {
+      "id": "cards",
+      "fields": [
+        {
+          "component": "multiselect",
+          "name": "style",
+          "label": "Cards Container Style",
+          "options": [
+            {
+              "name": "ban-why-choose-model-wrapper",
+              "value": "ban-why-choose-model-wrapper"
+            },
+            {
+              "name": "highlighted-section",
+              "value": "highlighted-section"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "card",
       "fields": [
         {
@@ -48,6 +68,21 @@
           "value": "",
           "label": "Text",
           "valueType": "string"
+        },
+        {
+          "component": "multiselect",
+          "name": "style",
+          "label": "Card Style",
+          "options": [
+            {
+              "name": "ban-why-choose-model-ca",
+              "value": "ban-why-choose-model-ca"
+            },
+            {
+              "name": "card-shadow",
+              "value": "card-shadow"
+            }
+          ]
         }
       ]
     }

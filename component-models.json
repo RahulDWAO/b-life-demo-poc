@@ -136,6 +136,30 @@
           {
             "name": "Highlight",
             "value": "highlight"
+          },
+          {
+            "name": "ban-why-choose-model",
+            "value": "ban-why-choose-model"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cards",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Cards Container Style",
+        "options": [
+          {
+            "name": "ban-why-choose-model-wrapper",
+            "value": "ban-why-choose-model-wrapper"
+          },
+          {
+            "name": "highlighted-section",
+            "value": "highlighted-section"
           },  
           {
             "name": "Why iTerm Prime?",
@@ -161,6 +185,21 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Card Style",
+        "options": [
+          {
+            "name": "ban-why-choose-model-ca",
+            "value": "ban-why-choose-model-ca"
+          },
+          {
+            "name": "card-shadow",
+            "value": "card-shadow"
+          }
+        ]
       }
     ]
   },
@@ -216,25 +255,6 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "quote",
-    "fields": [
-      {
-        "component": "richtext",
-        "name": "quote",
-        "value": "",
-        "label": "Quote",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "author",
-        "label": "Author",
-        "value": ""
       }
     ]
   }
