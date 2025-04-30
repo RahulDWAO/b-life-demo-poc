@@ -16,7 +16,8 @@
       "cards",
       "columns",
       "fragment",
-      "quote"
+      "quote",
+      "cards-with-para"
     ]
   },
   {
@@ -48,7 +49,10 @@
       "button",
       "title",
       "cards",
-      "card"
+      "card",
+      "cards-with-para",
+      "card-with-para"
+
     ]
   }
 ]
