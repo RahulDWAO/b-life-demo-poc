@@ -37,6 +37,10 @@
             {
               "name": "ban-why-choose-model",
               "value": "ban-why-choose-model"
+            },
+            {
+              "name": "most-pop",
+              "value": "most-pop"
             }
           ]
         }
