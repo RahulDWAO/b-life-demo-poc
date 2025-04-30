@@ -71,7 +71,7 @@ height: 50%;
     max-width: 100%;
     position: relative;
 }
-main .section.most-pop >.columns-wrapper>.columns-2-cols .cards-with-paragraph>div >div.columns-img-col {
+main .section.most-pop >.columns-wrapper>.columns-2-cols .cards-with-paragraph>div >div>picture>img {
 
     margin: 0 auto;
     margin-bottom: 0.5rem;
