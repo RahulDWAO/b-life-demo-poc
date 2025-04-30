@@ -110,6 +110,7 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols .cards-with-paragraph>di
 main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div {
 
     /* background-color: aqua; */
+    
     position: relative;
     margin-right: 0;
     padding-right: 1rem;
