@@ -60,14 +60,15 @@
           "valueType": "string",
           "name": "image",
           "label": "Image",
-          "multi": false
+          "multi": true
         },
         {
           "component": "richtext",
           "name": "text",
           "value": "",
           "label": "Text",
-          "valueType": "string"
+          "valueType": "string",
+          "multi":true
         },
         {
           "component": "multiselect",
