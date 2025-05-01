@@ -379,6 +379,52 @@
     ]
   },
   {
+    "id": "custom-cards-container",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Container options",
+        "description": "",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Side-by-side",
+            "value": "side-by-side"
+          }
+        ]
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Cards Container Style",
+        "options": [
+          {
+            "name": "ban-why-choose-model-wrapper",
+            "value": "ban-why-choose-model-wrapper"
+          },
+          {
+            "name": "highlighted-section",
+            "value": "highlighted-section"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string",
+        "multi": false
+      }
+    ]
+  },
+  {
     "id": "fragment",
     "fields": [
       {

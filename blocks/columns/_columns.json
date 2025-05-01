@@ -41,7 +41,8 @@
     {
       "id": "columns",
       "components": [
-        "column"
+        "column",
+        "custom-cards-container"
       ]
     },
     {
@@ -54,7 +55,8 @@
         "cards",
          "card",
          "customcards",
-         "customcard"
+         "customcard",
+         "custom-cards-container"
       ]
     }
   ]

@@ -62,7 +62,8 @@
         "quote",
         "teaser",
         "customcards",
-        "customcard"
+        "customcard",
+        "custom-cards-container"
       ]
     }
   ]
