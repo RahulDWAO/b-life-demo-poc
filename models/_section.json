@@ -74,6 +74,8 @@
         "customcard",
         "custom-cards-container",
         "section",
+        "accordianold",
+        "accordion-group",
         "accordian"
       ]
     }

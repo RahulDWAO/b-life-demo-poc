@@ -207,7 +207,7 @@
     ]
   },
   {
-    "id": "accordian",
+    "id": "accordianold",
     "fields": [
       {
         "component": "select",
@@ -249,6 +249,97 @@
         "label": "Accordian Description",
         "valueType": "string",
         "required": true
+      }
+    ]
+  },
+  {
+    "id": "accordion-group",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Accordion classes",
+        "description": "Options that affect block appearance and behavior.",
+        "valueType": "string",
+        "required": true,
+        "maxSize": 1,
+        "options": [
+          {
+            "name": "Left",
+            "value": "acc-grp"
+          },
+          {
+            "name": "Center",
+            "value": "acc-grpr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "accordion",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Accordion classes",
+        "description": "Options that affect block appearance and behavior.",
+        "valueType": "string",
+        "required": true,
+        "maxSize": 1,
+        "options": [
+          {
+            "name": "Left",
+            "value": "acc-child"
+          },
+          {
+            "name": "Center",
+            "value": "acc-child1"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "heading",
+        "value": "",
+        "label": "Heading"
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "headingType",
+        "value": "h3",
+        "label": "Heading Type",
+        "options": [
+          {
+            "name": "H2",
+            "value": "h2"
+          },
+          {
+            "name": "H3",
+            "value": "h3"
+          },
+          {
+            "name": "H4",
+            "value": "h4"
+          },
+          {
+            "name": "H5",
+            "value": "h5"
+          },
+          {
+            "name": "H6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "body",
+        "value": "",
+        "label": "Body"
       }
     ]
   },

@@ -22,7 +22,21 @@
       "customcard",
       "custom-cards-container",
       "section",
+      "accordianold",
+      "accordion-group",
       "accordian"
+    ]
+  },
+  {
+    "id": "accordion-group",
+    "components": [
+      "accordion"
+    ]
+  },
+  {
+    "id": "accordion-group",
+    "components": [
+      "accordion"
     ]
   },
   {

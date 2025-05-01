@@ -1,15 +1,15 @@
 {
     "definitions": [
         {
-            "title": "Accordian",
-            "id": "accordian",
+            "title": "Accordian old",
+            "id": "accordianold",
             "plugins": {
               "xwalk": {
                 "page": {
                   "resourceType": "core/franklin/components/block/v1/block",
                   "template": {
-                    "name": "Accordian",
-                    "model": "accordian"
+                    "name": "Accordianold",
+                    "model": "accordianold"
                   }
                 }
               }
@@ -18,7 +18,7 @@
     ],
     "models": [
         {
-            "id": "accordian",
+            "id": "accordianold",
             "fields": [
                 {
                     "component": "select",
