@@ -89,6 +89,24 @@
           "multi":false
         },
         {
+          "component": "select",
+          "name": "classes",
+          "value": "",
+          "label": "Teaser options",
+          "description": "",
+          "valueType": "string",
+          "options": [
+              {
+                  "name": "Default",
+                  "value": ""
+              },
+              {
+                  "name": "Side-by-side",
+                  "value": "side-by-side"
+              }
+          ]
+      },
+        {
           "component": "multiselect",
           "name": "style",
           "label": "Card Style",
