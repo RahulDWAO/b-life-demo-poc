@@ -259,6 +259,10 @@
           {
             "name": "Side-by-side",
             "value": "side-by-side"
+          },
+          {
+            "name": "Cards Container",
+            "value": "cards-container"
           }
         ]
       },
@@ -294,12 +298,8 @@
             "value": ""
           },
           {
-            "name": "Side-by-side with Image on left",
-            "value": "side-by-side left"
-          },
-          {
-            "name": "Side-by-side with Image on right",
-            "value": "side-by-side right"
+            "name": "Card Container",
+            "value": "card-containe"
           }
         ]
       },
