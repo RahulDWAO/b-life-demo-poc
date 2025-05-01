@@ -153,8 +153,9 @@
                 "template": {
                   "columns": "2",
                   "rows": "1",
-                  "classes": "column-container",
-                  "class": "columncontainernw"
+                  "classes": [
+                    "column-container"
+                  ]
                 }
               }
             }
