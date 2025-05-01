@@ -73,7 +73,8 @@
         "customcards",
         "customcard",
         "custom-cards-container",
-        "section"
+        "section",
+        "accordian"
       ]
     }
   ]

@@ -41,7 +41,7 @@
   "filters": [
     {
       "id": "columns",
-      "components": ["column", "custom-cards-container"]
+      "components": ["column", "custom-cards-container","accordian"]
     },
     {
       "id": "column",
@@ -54,7 +54,8 @@
         "card",
         "customcards",
         "customcard",
-        "custom-cards-container"
+        "custom-cards-container",
+        "accordian"
       ]
     }
   ]

@@ -21,7 +21,8 @@
       "customcards",
       "customcard",
       "custom-cards-container",
-      "section"
+      "section",
+      "accordian"
     ]
   },
   {
@@ -43,7 +44,8 @@
     "id": "columns",
     "components": [
       "column",
-      "custom-cards-container"
+      "custom-cards-container",
+      "accordian"
     ]
   },
   {
@@ -57,7 +59,8 @@
       "card",
       "customcards",
       "customcard",
-      "custom-cards-container"
+      "custom-cards-container",
+      "accordian"
     ]
   }
 ]
