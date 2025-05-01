@@ -60,7 +60,9 @@
         "columns",
         "fragment",
         "quote",
-        "teaser"
+        "teaser",
+        "customcards"
+
       ]
     }
   ]

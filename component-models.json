@@ -320,6 +320,85 @@
     ]
   },
   {
+    "id": "customcards",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Cards options",
+        "description": "",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Side-by-side",
+            "value": "side-by-side"
+          }
+        ]
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Cards Container Style",
+        "options": [
+          {
+            "name": "ban-why-choose-model-wrapper",
+            "value": "ban-why-choose-model-wrapper"
+          },
+          {
+            "name": "highlighted-section",
+            "value": "highlighted-section"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "customcard",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Card options",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Side-by-side with Image on left",
+            "value": "side-by-side left"
+          },
+          {
+            "name": "Side-by-side with Image on right",
+            "value": "side-by-side right"
+          }
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string",
+        "multi": false
+      }
+    ]
+  },
+  {
     "id": "fragment",
     "fields": [
       {

@@ -52,7 +52,9 @@
         "button",
         "title",
         "cards",
-         "card"
+         "card",
+         "customcards",
+         "customcard"
       ]
     }
   ]

@@ -17,7 +17,8 @@
       "columns",
       "fragment",
       "quote",
-      "teaser"
+      "teaser",
+      "customcards"
     ]
   },
   {
@@ -49,7 +50,25 @@
       "button",
       "title",
       "cards",
-      "card"
+      "card",
+      "customcards",
+      "customcard"
+    ]
+  },
+  {
+    "id": "customcards",
+    "components": [
+      "customcard"
+    ]
+  },
+  {
+    "id": "customcard",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "hero"
     ]
   }
 ]
