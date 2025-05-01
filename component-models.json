@@ -32,7 +32,7 @@
         "label": "Style",
         "options": [
           {
-            "name": "cmp-img",
+            "name": "Default",
             "value": "cmp-img"
           }
         ]
@@ -88,6 +88,17 @@
             "value": "h6"
           }
         ]
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "Default",
+            "value": "cmp-title"
+          }
+        ]
       }
     ]
   },
@@ -100,7 +111,7 @@
         "label": "Style",
         "options": [
           {
-            "name": "cmp-text",
+            "name": "Default",
             "value": "cmp-text"
           }
         ]

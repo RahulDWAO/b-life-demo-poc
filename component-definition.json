@@ -11,7 +11,10 @@
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/text/v1/text",
-                "template": {}
+                "template": {
+                  "model": "text",
+                  "classes": "cmp-text"
+                }
               }
             }
           }
@@ -24,7 +27,8 @@
               "page": {
                 "resourceType": "core/franklin/components/title/v1/title",
                 "template": {
-                  "model": "title"
+                  "model": "title",
+                  "classes": "cmp-title"
                 }
               }
             }
@@ -37,7 +41,10 @@
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/image/v1/image",
-                "template": {}
+                "template": {
+                  "model": "image",
+                  "classes": "cmp-img"
+                }
               }
             }
           }
