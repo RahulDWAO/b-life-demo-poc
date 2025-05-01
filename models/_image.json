@@ -18,6 +18,17 @@
       "id": "image",
       "fields": [
         {
+          "component": "multiselect",
+          "name": "style",
+          "label": "Style",
+          "options": [
+            {
+              "name": "cmp-img",
+              "value": "cmp-img"
+            }       
+          ]
+        },
+        {
           "component": "reference",
           "name": "image",
           "label": "Image",

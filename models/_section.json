@@ -41,6 +41,14 @@
             {
               "name": "most-pop",
               "value": "most-pop"
+            },
+            {
+              "name": "quick-link",
+              "value": "quick-link"
+            },
+            {
+              "name": "most-pop-left",
+              "value": "most-pop-left"
             }
           ]
         }

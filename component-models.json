@@ -27,6 +27,17 @@
     "id": "image",
     "fields": [
       {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "cmp-img",
+            "value": "cmp-img"
+          }
+        ]
+      },
+      {
         "component": "reference",
         "name": "image",
         "label": "Image",
@@ -75,6 +86,22 @@
           {
             "name": "h6",
             "value": "h6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "text",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "cmp-text",
+            "value": "cmp-text"
           }
         ]
       }
@@ -155,6 +182,14 @@
           {
             "name": "most-pop",
             "value": "most-pop"
+          },
+          {
+            "name": "quick-link",
+            "value": "quick-link"
+          },
+          {
+            "name": "most-pop-left",
+            "value": "most-pop-left"
           }
         ]
       }
@@ -326,7 +361,7 @@
         "component": "select",
         "name": "classes",
         "value": "",
-        "label": "Teaser options",
+        "label": "Card Style options",
         "valueType": "string",
         "options": [
           {
@@ -334,12 +369,12 @@
             "value": ""
           },
           {
-            "name": "Side-by-side with Image on left",
-            "value": "side-by-side left"
+            "name": "Card Custom Style",
+            "value": "cmp-custom-style"
           },
           {
-            "name": "Side-by-side with Image on right",
-            "value": "side-by-side right"
+            "name": "Card Custom Style 1",
+            "value": "cmp-custom-style-1"
           }
         ]
       },
@@ -394,23 +429,8 @@
             "value": ""
           },
           {
-            "name": "Side-by-side",
-            "value": "side-by-side"
-          }
-        ]
-      },
-      {
-        "component": "multiselect",
-        "name": "style",
-        "label": "Cards Container Style",
-        "options": [
-          {
-            "name": "ban-why-choose-model-wrapper",
-            "value": "ban-why-choose-model-wrapper"
-          },
-          {
-            "name": "highlighted-section",
-            "value": "highlighted-section"
+            "name": "Custom Cards Container Style",
+            "value": "cards-container-1"
           }
         ]
       },

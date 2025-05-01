@@ -33,26 +33,11 @@
                     "value": ""
                 },
                 {
-                    "name": "Side-by-side",
-                    "value": "side-by-side"
+                    "name": "Custom Cards Container Style",
+                    "value": "cards-container-1"
                 }
             ]
         },
-          {
-            "component": "multiselect",
-            "name": "style",
-            "label": "Cards Container Style",
-            "options": [
-              {
-                "name": "ban-why-choose-model-wrapper",
-                "value": "ban-why-choose-model-wrapper"
-              },
-              {
-                "name": "highlighted-section",
-                "value": "highlighted-section"
-              }
-            ]
-          },
           {
             "component": "richtext",
             "name": "text",
