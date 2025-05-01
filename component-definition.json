@@ -108,7 +108,7 @@
                 "template": {
                   "name": "Cards",
                   "filter": "cards",
-                  "classes": "cards-container"
+                  "classes": "cards-container-template"
                 }
               }
             }
@@ -124,9 +124,7 @@
                 "template": {
                   "name": "Card",
                   "model": "card",
-                  "classes": [
-                    "card-container"
-                  ]
+                  "classes": "card-container"
                 }
               }
             }
