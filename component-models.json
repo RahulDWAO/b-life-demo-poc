@@ -226,9 +226,16 @@
         "required": true
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "name": "acc_title",
+        "label": "Accordian Title",
+        "required": true
+      },
+      {
         "component": "richtext",
-        "name": "textContent_text",
-        "label": "Text",
+        "name": "acc_desc",
+        "label": "Accordian Description",
         "valueType": "string",
         "required": true
       }
