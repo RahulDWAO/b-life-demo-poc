@@ -10,8 +10,8 @@
             "template": {
               "columns": "2",
               "rows": "1",
-              "classes":"columncontainer",
-              "class":"columncontainernw"
+              "classes": "column-container",
+              "class": "columncontainernw"
             }
           }
         }
@@ -42,10 +42,7 @@
   "filters": [
     {
       "id": "columns",
-      "components": [
-        "column",
-        "custom-cards-container"
-      ]
+      "components": ["column", "custom-cards-container"]
     },
     {
       "id": "column",
@@ -55,10 +52,10 @@
         "button",
         "title",
         "cards",
-         "card",
-         "customcards",
-         "customcard",
-         "custom-cards-container"
+        "card",
+        "customcards",
+        "customcard",
+        "custom-cards-container"
       ]
     }
   ]
