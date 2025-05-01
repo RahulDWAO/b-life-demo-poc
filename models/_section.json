@@ -9,7 +9,7 @@
             "resourceType": "core/franklin/components/section/v1/section",
             "template": {
               "model": "section",
-              "classes":"section-container"
+              "classes":["section-container"]
             }
           }
         }
@@ -50,6 +50,10 @@
             {
               "name": "most-pop-left",
               "value": "most-pop-left"
+            },
+            {
+              "name": "section-container",
+              "value": "section-container"
             }
           ]
         }

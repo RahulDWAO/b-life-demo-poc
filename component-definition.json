@@ -13,7 +13,9 @@
                 "resourceType": "core/franklin/components/text/v1/text",
                 "template": {
                   "model": "text",
-                  "classes": "cmp-text"
+                  "classes": [
+                    "cmp-text"
+                  ]
                 }
               }
             }
@@ -28,7 +30,9 @@
                 "resourceType": "core/franklin/components/title/v1/title",
                 "template": {
                   "model": "title",
-                  "classes": "cmp-title"
+                  "classes": [
+                    "cmp-title"
+                  ]
                 }
               }
             }
@@ -57,7 +61,10 @@
               "page": {
                 "resourceType": "core/franklin/components/button/v1/button",
                 "template": {
-                  "model": "button"
+                  "model": "button",
+                  "classes": [
+                    "blue-bg"
+                  ]
                 }
               }
             }
@@ -78,7 +85,9 @@
                 "resourceType": "core/franklin/components/section/v1/section",
                 "template": {
                   "model": "section",
-                  "classes": "section-container"
+                  "classes": [
+                    "section-container"
+                  ]
                 }
               }
             }

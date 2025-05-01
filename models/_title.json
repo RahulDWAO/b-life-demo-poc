@@ -9,7 +9,7 @@
             "resourceType": "core/franklin/components/title/v1/title",
             "template": {
               "model": "title",
-              "classes":"cmp-title"
+              "classes":["cmp-title"]
             }
           }
         }
