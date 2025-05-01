@@ -55,21 +55,5 @@
       "customcards",
       "customcard"
     ]
-  },
-  {
-    "id": "customcards",
-    "components": [
-      "customcard"
-    ]
-  },
-  {
-    "id": "customcard",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title",
-      "hero"
-    ]
   }
 ]
