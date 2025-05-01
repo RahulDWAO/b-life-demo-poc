@@ -74,6 +74,27 @@
       "id": "card",
       "fields": [
         {
+          "component": "select",
+          "name": "classes",
+          "value": "",
+          "label": "Teaser options",
+          "valueType": "string",
+          "options": [
+              {
+                  "name": "Default",
+                  "value": ""
+              },
+              {
+                  "name": "Side-by-side with Image on left",
+                  "value": "side-by-side left"
+              },
+              {
+                  "name": "Side-by-side with Image on right",
+                  "value": "side-by-side right"
+              }
+          ]
+      },
+        {
           "component": "reference",
           "valueType": "string",
           "name": "image",
@@ -87,39 +108,6 @@
           "label": "Text",
           "valueType": "string",
           "multi":false
-        },
-        {
-          "component": "select",
-          "name": "classes",
-          "value": "",
-          "label": "Teaser options",
-          "description": "",
-          "valueType": "string",
-          "options": [
-              {
-                  "name": "Default",
-                  "value": ""
-              },
-              {
-                  "name": "Side-by-side",
-                  "value": "side-by-side"
-              }
-          ]
-      },
-        {
-          "component": "multiselect",
-          "name": "style",
-          "label": "Card Style",
-          "options": [
-            {
-              "name": "ban-why-choose-model-ca",
-              "value": "ban-why-choose-model-ca"
-            },
-            {
-              "name": "card-shadow",
-              "value": "card-shadow"
-            }
-          ]
         }
       ]
     }
