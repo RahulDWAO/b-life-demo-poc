@@ -618,25 +618,6 @@
     ]
   },
   {
-    "id": "gender-selection",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "male",
-        "label": "Male",
-        "value": ""
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "male",
-        "label": "Male",
-        "value": ""
-      }
-    ]
-  },
-  {
     "id": "Header",
     "fields": [
       {
@@ -685,26 +666,6 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "innvest-calculator",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string",
-        "multi": false
       }
     ]
   },

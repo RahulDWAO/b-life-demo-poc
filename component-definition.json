@@ -267,21 +267,6 @@
           }
         },
         {
-          "title": "Form Container",
-          "id": "form-container",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "Form Container",
-                  "filter": "form-container"
-                }
-              }
-            }
-          }
-        },
-        {
           "title": "Fragment",
           "id": "fragment",
           "plugins": {
@@ -291,21 +276,6 @@
                 "template": {
                   "name": "Fragment",
                   "model": "fragment"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Gender",
-          "id": "gender-selection",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "Gender",
-                  "model": "gender-selection"
                 }
               }
             }
@@ -336,37 +306,6 @@
                 "template": {
                   "name": "Hero",
                   "model": "hero"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Invest Calculator",
-          "id": "innvest-calculator",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "Invest Calculator",
-                  "model": "innvest-calculator",
-                  "filter": "innvest-calculator"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Gender",
-          "id": "gender-selection",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "Gender",
-                  "filter": "gender-selection"
                 }
               }
             }

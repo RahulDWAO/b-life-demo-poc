@@ -24,10 +24,7 @@
       "section",
       "accordianold",
       "accordion-group",
-      "accordian",
-      "innvest-calculator",
-      "gender-selection",
-      "form-container"
+      "accordian"
     ]
   },
   {
@@ -80,31 +77,6 @@
       "custom-cards-container",
       "accordian",
       "innvest-calculator"
-    ]
-  },
-  {
-    "id": "form-container",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title"
-    ]
-  },
-  {
-    "id": "innvest-calculator",
-    "components": [
-      "gender-selection",
-      "form-container"
-    ]
-  },
-  {
-    "id": "gender-selection",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title"
     ]
   }
 ]
