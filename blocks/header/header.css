@@ -197,11 +197,11 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections .nav-drop {
     position: relative;
-    padding-right: 16px;
+    padding-right: 10px;
     cursor: pointer;
   }
 
-  header nav .nav-sections .nav-drop::after {
+  header nav .nav-sections .nav-drop strong::after {
     content: '';
     display: inline-block;
     position: absolute;
@@ -241,8 +241,13 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections .default-content-wrapper > ul > li {
     flex: 0 1 auto;
-    position: relative;
+    /* position: relative; */
   }
+
+ 
+  header nav .nav-sections .default-content-wrapper > ul > li strong{
+    position: relative;
+  } 
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul {
     display: none;
