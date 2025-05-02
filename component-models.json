@@ -713,99 +713,36 @@
     "id": "innvest-calculator",
     "fields": [
       {
-        "id": "tab",
-        "fields": [
-          {
-            "component": "tab",
-            "label": "Gender tab",
-            "name": "tab1"
-          },
-          {
-            "component": "text-input",
-            "label": "Male",
-            "name": "text",
-            "valueType": "string"
-          },
-          {
-            "component": "text-input",
-            "label": "Female",
-            "name": "text2",
-            "valueType": "string"
-          },
-          {
-            "component": "text-input",
-            "label": "other",
-            "name": "text3",
-            "valueType": "string"
-          },
-          {
-            "component": "tab",
-            "label": "Personal  Details",
-            "name": "tab2"
-          },
-          {
-            "component": "text-input",
-            "label": "Age",
-            "name": "text4",
-            "valueType": "string"
-          },
-          {
-            "component": "number",
-            "name": "number",
-            "label": "Age Number",
-            "valueType": "number",
-            "value": 0
-          },
-          {
-            "component": "text-input",
-            "label": "Mobile Number",
-            "name": "text5",
-            "valueType": "string"
-          },
-          {
-            "component": "number",
-            "name": "mobilenumber",
-            "label": "Mobile Number",
-            "valueType": "number",
-            "value": 0
-          },
-          {
-            "component": "text-input",
-            "label": "other",
-            "name": "text3",
-            "valueType": "string"
-          }
-        ]
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
       },
       {
-        "id": "container",
-        "fields": [
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Card Style",
+        "options": [
           {
-            "component": "container",
-            "label": "Gender",
-            "name": "container",
-            "valueType": "string",
-            "collapsible": true,
-            "fields": [
-              {
-                "component": "text-input",
-                "label": "Male",
-                "name": "text",
-                "valueType": "string"
-              },
-              {
-                "component": "text-input",
-                "label": "Female",
-                "name": "text2",
-                "valueType": "string"
-              },
-              {
-                "component": "text-input",
-                "label": "other",
-                "name": "text3",
-                "valueType": "string"
-              }
-            ]
+            "name": "ban-why-choose-model-ca",
+            "value": "ban-why-choose-model-ca"
+          },
+          {
+            "name": "card-shadow",
+            "value": "card-shadow"
+          },
+          {
+            "name": "Why iTerm Prime?",
+            "value": "bandhan-iterm-prime-cards"
           }
         ]
       }
