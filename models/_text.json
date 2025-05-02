@@ -8,8 +8,8 @@
           "page": {
             "resourceType": "core/franklin/components/text/v1/text",
             "template": {
-              "model": "text",
-              "classes": ["cmp-text"]
+              "model": "text"
+          
             }
           }
         }
@@ -17,21 +17,5 @@
     }
   ],
   "models": [
-    {
-      "id": "text",
-      "fields": [
-        {
-          "component": "multiselect",
-          "name": "style",
-          "label": "Style",
-          "options": [
-            {
-              "name": "Default",
-              "value": "cmp-text"
-            }
-          ]
-        }
-      ]
-    }
   ]
 }

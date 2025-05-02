@@ -103,22 +103,6 @@
     ]
   },
   {
-    "id": "text",
-    "fields": [
-      {
-        "component": "multiselect",
-        "name": "style",
-        "label": "Style",
-        "options": [
-          {
-            "name": "Default",
-            "value": "cmp-text"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "button",
     "fields": [
       {
