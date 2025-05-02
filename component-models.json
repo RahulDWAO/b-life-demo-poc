@@ -733,43 +733,43 @@
         ]
       },
       {
-        "component": "text",
-        "name": "text1",
-        "value": "",
-        "label": "Text",
-        "valueType": "string",
-        "multi": true
-      },
-      {
         "component": "container",
-        "label": "Container",
+        "label": "Label & Inputs",
         "name": "container",
         "valueType": "string",
         "collapsible": true,
         "fields": [
           {
             "component": "text-input",
-            "label": "Simple Text 1",
+            "label": "Labels for Form",
             "name": "text",
             "valueType": "string",
             "multi": true
           },
           {
-            "component": "number",
-            "label": "Number",
-            "name": "num",
-            "valueType": "number",
+            "component": "text-input",
+            "label": "Input Values for form",
+            "name": "text2",
+            "valueType": "string",
             "multi": true
           }
         ]
       },
       {
-        "component": "number",
-        "name": "number",
-        "label": "Number",
-        "valueType": "number",
-        "value": 0,
-        "multi": true
+        "component": "checkbox-group",
+        "label": "Checkbox Group",
+        "name": "checkbox",
+        "valueType": "string[]",
+        "options": [
+          {
+            "name": "Option 1",
+            "value": "option1"
+          },
+          {
+            "name": "Option 2",
+            "value": "option2"
+          }
+        ]
       }
     ]
   },
