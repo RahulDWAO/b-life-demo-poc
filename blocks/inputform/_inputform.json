@@ -21,11 +21,10 @@
       "id": "form-input",
       "fields": [
         {
-          "component": "select",
+          "component": "multiselect",
           "name": "classes",
           "value": "",
-          "label": "Teaser options",
-          "description": "",
+          "label": "Form Style options",
           "valueType": "string",
           "options": [
             {
@@ -33,12 +32,8 @@
               "value": ""
             },
             {
-              "name": "Side-by-side",
-              "value": "side-by-side"
-            },
-            {
-              "name": "Cards Container",
-              "value": "cards-container"
+              "name": "form-container",
+              "value": "input-form"
             }
           ]
         },
@@ -62,13 +57,15 @@
               "component": "text-input",
               "label": "Simple Text 1",
               "name": "text",
-              "valueType": "string"
+              "valueType": "string",
+              "multi":true
             },
             {
-              "component": "text-input",
-              "label": "Simple Text 2",
-              "name": "text2",
-              "valueType": "string"
+              "component": "tnumber",
+              "label": "Number",
+              "name": "num",
+              "valueType": "number",
+              "multi":true
             }
           ]
         },
