@@ -85,7 +85,8 @@
         "accordianold",
         "accordion-group",
         "accordian",
-        "gender"
+        "gender",
+        "form-input"
       ]
     }
   ]

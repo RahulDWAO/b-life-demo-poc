@@ -49,7 +49,7 @@
           "value": "",
           "label": "Text",
           "valueType": "string",
-          "multi": true
+          "multi": false
         },
         {
           "component": "text",
