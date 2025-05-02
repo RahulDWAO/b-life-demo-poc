@@ -26,7 +26,8 @@
       "accordion-group",
       "accordian",
       "innvest-calculator",
-      "gender-selection"
+      "gender-selection",
+      "form-container"
     ]
   },
   {
@@ -82,15 +83,24 @@
     ]
   },
   {
+    "id": "form-container",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
+  },
+  {
     "id": "innvest-calculator",
     "components": [
-      "gender-selection"
+      "gender-selection",
+      "form-container"
     ]
   },
   {
     "id": "gender-selection",
     "components": [
-      "richtext",
       "text",
       "image",
       "button",

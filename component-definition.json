@@ -284,6 +284,21 @@
           }
         },
         {
+          "title": "Form Container",
+          "id": "form-container",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Form Container",
+                  "filter": "form-container"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Fragment",
           "id": "fragment",
           "plugins": {

@@ -57,11 +57,11 @@
   "filters": [
     {
       "id": "innvest-calculator",
-      "components": ["gender-selection"]
+      "components": ["gender-selection","form-container"]
     },
     {
       "id": "gender-selection",
-      "components": ["richtext", "text", "image", "button", "title"]
+      "components": ["text", "image", "button", "title"]
     }
   ]
 }

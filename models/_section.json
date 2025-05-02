@@ -86,7 +86,8 @@
         "accordion-group",
         "accordian",
         "innvest-calculator",
-        "gender-selection"
+        "gender-selection",
+        "form-container"
       ]
     }
   ]
