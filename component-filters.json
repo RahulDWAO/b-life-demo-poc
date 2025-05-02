@@ -91,14 +91,14 @@
       "accordian",
       "innvest-calculator",
       "gender",
-      "form-input",
+      "inputform",
       "text-with-image",
       "cards-with-para",
       "card-with-para"
     ]
   },
   {
-    "id": "form-input",
+    "id": "inputform",
     "components": [
       "image",
       "text",

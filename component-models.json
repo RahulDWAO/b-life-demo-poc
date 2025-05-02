@@ -756,7 +756,7 @@
     ]
   },
   {
-    "id": "form-input",
+    "id": "inputform",
     "fields": [
       {
         "component": "multiselect",
