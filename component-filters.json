@@ -2,8 +2,7 @@
   {
     "id": "main",
     "components": [
-      "section",
-      "header"
+      "section"
     ]
   },
   {
@@ -17,7 +16,8 @@
       "cards",
       "columns",
       "fragment",
-      "quote"
+      "quote",
+      "innvest-calculator"
     ]
   },
   {
@@ -29,7 +29,8 @@
   {
     "id": "columns",
     "components": [
-      "column"
+      "column",
+      "innvest-calculator"
     ]
   },
   {
@@ -38,6 +39,15 @@
       "text",
       "image",
       "button",
+      "title",
+      "innvest-calculator"
+    ]
+  },
+  {
+    "id": "innvest-calculator",
+    "components": [
+      "text",
+      "image",
       "title"
     ]
   }
