@@ -438,7 +438,7 @@
     ]
   },
   {
-    "id": "cards-with-para",
+    "id": "cardsv2",
     "fields": [
       {
         "component": "multiselect",
@@ -446,15 +446,15 @@
         "label": "Style",
         "options": [
           {
-            "name": "cards-with-para",
-            "value": "cards-with-para"
+            "name": "cardsv2",
+            "value": "cardsv2"
           }
         ]
       }
     ]
   },
   {
-    "id": "card-with-para",
+    "id": "cardv2",
     "fields": [
       {
         "component": "reference",
@@ -491,8 +491,8 @@
         "label": "Style",
         "options": [
           {
-            "name": "card-with-para",
-            "value": "card-with-para"
+            "name": "cardv2",
+            "value": "cardv2"
           }
         ]
       }
@@ -618,50 +618,7 @@
     ]
   },
   {
-    "id": "gender",
-    "fields": [
-      {
-        "component": "select",
-        "name": "classes",
-        "value": "",
-        "label": "Teaser options",
-        "description": "",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Default",
-            "value": ""
-          },
-          {
-            "name": "Side-by-side",
-            "value": "side-by-side"
-          },
-          {
-            "name": "Cards Container",
-            "value": "cards-container"
-          }
-        ]
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "name": "text1",
-        "value": "",
-        "label": "Text",
-        "valueType": "string",
-        "multi": true
-      }
-    ]
-  },
-  {
-    "id": "gendernew",
+    "id": "gender-section",
     "fields": [
       {
         "component": "select",
