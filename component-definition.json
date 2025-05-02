@@ -98,6 +98,21 @@
           }
         },
         {
+          "title": "Cards",
+          "id": "cards",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Cards",
+                  "filter": "cards"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Card",
           "id": "card",
           "plugins": {
@@ -143,6 +158,21 @@
           }
         },
         {
+          "title": "Header",
+          "id": "Header",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Header",
+                  "model": "Header"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Hero",
           "id": "hero",
           "plugins": {
@@ -158,15 +188,15 @@
           }
         },
         {
-          "title": "header",
-          "id": "header",
+          "title": "Invest Calculator",
+          "id": "innvest-calculator",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "name": "header",
-                  "model": "header"
+                  "name": "Invest Calculator",
+                  "filter": "innvest-calculator"
                 }
               }
             }

@@ -2,8 +2,7 @@
   {
     "id": "main",
     "components": [
-      "section",
-      "header"
+      "section"
     ]
   },
   {
@@ -38,6 +37,14 @@
       "text",
       "image",
       "button",
+      "title"
+    ]
+  },
+  {
+    "id": "innvest-calculator",
+    "components": [
+      "text",
+      "image",
       "title"
     ]
   }

@@ -164,7 +164,31 @@
           {
             "name": "highlighted-section",
             "value": "highlighted-section"
-          },  
+          },
+          {
+            "name": "Why iTerm Prime?",
+            "value": "bandhan-iterm-prime-cards"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cards",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Cards Container Style",
+        "options": [
+          {
+            "name": "ban-why-choose-model-wrapper",
+            "value": "ban-why-choose-model-wrapper"
+          },
+          {
+            "name": "highlighted-section",
+            "value": "highlighted-section"
+          },
           {
             "name": "Why iTerm Prime?",
             "value": "bandhan-iterm-prime-cards"
@@ -188,6 +212,13 @@
         "name": "text",
         "value": "",
         "label": "Text",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "value": "",
+        "label": "Description",
         "valueType": "string"
       },
       {
@@ -241,6 +272,32 @@
     ]
   },
   {
+    "id": "Header",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "hero",
     "fields": [
       {
@@ -267,28 +324,104 @@
     ]
   },
   {
-    "id": "header",
+    "id": "innvest-calculator",
     "fields": [
       {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
+        "id": "tab",
+        "fields": [
+          {
+            "component": "tab",
+            "label": "Gender tab",
+            "name": "tab1"
+          },
+          {
+            "component": "text-input",
+            "label": "Male",
+            "name": "text",
+            "valueType": "string"
+          },
+          {
+            "component": "text-input",
+            "label": "Female",
+            "name": "text2",
+            "valueType": "string"
+          },
+          {
+            "component": "text-input",
+            "label": "other",
+            "name": "text3",
+            "valueType": "string"
+          },
+          {
+            "component": "tab",
+            "label": "Personal  Details",
+            "name": "tab2"
+          },
+          {
+            "component": "text-input",
+            "label": "Age",
+            "name": "text4",
+            "valueType": "string"
+          },
+          {
+            "component": "number",
+            "name": "number",
+            "label": "Age Number",
+            "valueType": "number",
+            "value": 0
+          },
+          {
+            "component": "text-input",
+            "label": "Mobile Number",
+            "name": "text5",
+            "valueType": "string"
+          },
+          {
+            "component": "number",
+            "name": "mobilenumber",
+            "label": "Mobile Number",
+            "valueType": "number",
+            "value": 0
+          },
+          {
+            "component": "text-input",
+            "label": "other",
+            "name": "text3",
+            "valueType": "string"
+          }
+        ]
       },
       {
-        "component": "text",
-        "valueType": "string",
-        "name": "imageAlt",
-        "label": "Alt",
-        "value": ""
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
+        "id": "container",
+        "fields": [
+          {
+            "component": "container",
+            "label": "Gender",
+            "name": "container",
+            "valueType": "string",
+            "collapsible": true,
+            "fields": [
+              {
+                "component": "text-input",
+                "label": "Male",
+                "name": "text",
+                "valueType": "string"
+              },
+              {
+                "component": "text-input",
+                "label": "Female",
+                "name": "text2",
+                "valueType": "string"
+              },
+              {
+                "component": "text-input",
+                "label": "other",
+                "name": "text3",
+                "valueType": "string"
+              }
+            ]
+          }
+        ]
       }
     ]
   }
