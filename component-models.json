@@ -755,7 +755,7 @@
             "multi": true
           },
           {
-            "component": "tnumber",
+            "component": "number",
             "label": "Number",
             "name": "num",
             "valueType": "number",
