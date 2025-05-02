@@ -86,12 +86,5 @@
       "accordian",
       "innvest-calculator"
     ]
-  },
-  {
-    "id": "gender",
-    "components": [
-      "text",
-      "richtext"
-    ]
   }
 ]
