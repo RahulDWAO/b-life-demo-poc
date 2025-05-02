@@ -25,7 +25,8 @@
       "accordianold",
       "accordion-group",
       "accordian",
-      "innvest-calculator"
+      "innvest-calculator",
+      "gender-selection"
     ]
   },
   {
@@ -78,6 +79,18 @@
       "custom-cards-container",
       "accordian",
       "innvest-calculator"
+    ]
+  },
+  {
+    "id": "innvest-calculator",
+    "components": [
+      "gender-selection"
+    ]
+  },
+  {
+    "id": "gender-selectionr",
+    "components": [
+      "text"
     ]
   }
 ]

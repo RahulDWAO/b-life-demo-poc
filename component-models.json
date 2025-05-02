@@ -658,6 +658,25 @@
     ]
   },
   {
+    "id": "gender-selection",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "male",
+        "label": "Male",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "male",
+        "label": "Male",
+        "value": ""
+      }
+    ]
+  },
+  {
     "id": "Header",
     "fields": [
       {
@@ -745,6 +764,25 @@
             "value": "bandhan-iterm-prime-cards"
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "gender-selection",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "male",
+        "label": "Male",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "male",
+        "label": "Male",
+        "value": ""
       }
     ]
   },
