@@ -29,7 +29,7 @@
       "form-input",
       "text-with-image",
       "custom-rte",
-      "Cardsv2"
+      "cards-with-para"
     ]
   },
   {
@@ -92,7 +92,7 @@
       "gender",
       "form-input",
       "text-with-image",
-      "Cardsv2"
+      "cards-with-para"
     ]
   },
   {
