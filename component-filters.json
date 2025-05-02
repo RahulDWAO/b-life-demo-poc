@@ -86,7 +86,10 @@
       "customcard",
       "custom-cards-container",
       "accordian",
-      "innvest-calculator"
+      "innvest-calculator",
+      "gender",
+      "form-input",
+      "text-with-image"
     ]
   },
   {

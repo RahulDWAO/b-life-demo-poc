@@ -60,7 +60,7 @@
               "multi":true
             }
           ]
-        }
+        },
         {
           "component": "text-with-image",
           "label": "Text  with  Image",
