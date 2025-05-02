@@ -26,7 +26,8 @@
       "accordion-group",
       "accordian",
       "gender",
-      "form-input"
+      "form-input",
+      "text-with-image"
     ]
   },
   {
@@ -86,6 +87,25 @@
       "custom-cards-container",
       "accordian",
       "innvest-calculator"
+    ]
+  },
+  {
+    "id": "form-input",
+    "components": [
+      "image",
+      "text",
+      "title",
+      "text-input",
+      "text-with-image"
+    ]
+  },
+  {
+    "id": "text-with-image",
+    "components": [
+      "image",
+      "text",
+      "title",
+      "text-input"
     ]
   }
 ]

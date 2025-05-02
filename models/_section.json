@@ -86,7 +86,8 @@
         "accordion-group",
         "accordian",
         "gender",
-        "form-input"
+        "form-input",
+        "text-with-image"
       ]
     }
   ]
