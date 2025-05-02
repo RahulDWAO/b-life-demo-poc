@@ -42,10 +42,10 @@ header nav[aria-expanded='true'] {
     padding: 0 32px;
   }
 
-  header nav[aria-expanded='true'] {
+  /* header nav[aria-expanded='true'] {
     min-height: 0;
     overflow: visible;
-  }
+  } */
 }
 
 header nav p {
@@ -133,8 +133,8 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
 
 @media (width >= 900px) {
   header nav .nav-hamburger {
-    display: none;
-    visibility: hidden;
+    /* display: none;
+    visibility: hidden; */
   }
 }
 
@@ -317,7 +317,7 @@ header nav .nav-tools {
   padding: 12px;
 }
 
-.section.nav-tools .default-content-wrapper p:nth-child(2) a{
+.section.nav-tools .default-content-wrapper p:nth-child(3) a{
   color: #ffffff;
   font-size: 1rem;
   box-sizing: border-box;
