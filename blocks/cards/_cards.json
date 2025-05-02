@@ -143,7 +143,14 @@
     {
       "id": "cards",
       "components": [
-        "card"
+        "card",
+        "text"
+      ]
+    },
+    {
+      "id": "card",
+      "components": [
+        "text"
       ]
     }
   ]

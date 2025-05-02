@@ -618,6 +618,67 @@
     ]
   },
   {
+    "id": "gender",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Teaser options",
+        "description": "",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Side-by-side",
+            "value": "side-by-side"
+          },
+          {
+            "name": "Cards Container",
+            "value": "cards-container"
+          }
+        ]
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Cards Container Style",
+        "options": [
+          {
+            "name": "ban-why-choose-model-wrapper",
+            "value": "ban-why-choose-model-wrapper"
+          },
+          {
+            "name": "highlighted-section",
+            "value": "highlighted-section"
+          },
+          {
+            "name": "Why iTerm Prime?",
+            "value": "bandhan-iterm-prime-cards"
+          }
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string",
+        "multi": false
+      }
+    ]
+  },
+  {
     "id": "Header",
     "fields": [
       {

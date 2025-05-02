@@ -24,7 +24,8 @@
       "section",
       "accordianold",
       "accordion-group",
-      "accordian"
+      "accordian",
+      "gender"
     ]
   },
   {
@@ -42,7 +43,14 @@
   {
     "id": "cards",
     "components": [
-      "card"
+      "card",
+      "text"
+    ]
+  },
+  {
+    "id": "card",
+    "components": [
+      "text"
     ]
   },
   {
@@ -77,6 +85,13 @@
       "custom-cards-container",
       "accordian",
       "innvest-calculator"
+    ]
+  },
+  {
+    "id": "gender",
+    "components": [
+      "text",
+      "richtext"
     ]
   }
 ]
