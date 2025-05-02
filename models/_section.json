@@ -87,7 +87,8 @@
         "accordian",
         "gender",
         "form-input",
-        "text-with-image"
+        "text-with-image",
+        "custom-rte"
       ]
     }
   ]
