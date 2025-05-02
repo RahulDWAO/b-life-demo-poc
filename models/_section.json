@@ -54,6 +54,10 @@
             {
               "name": "section-container",
               "value": "section-container"
+           
+            },{
+                 "name": "Why iTerm Prime?",
+              "value": "bandhan-iterm-prime-cards"
             }
           ]
         }
@@ -80,7 +84,8 @@
         "section",
         "accordianold",
         "accordion-group",
-        "accordian"
+        "accordian",
+        "innvest-calculator"
       ]
     }
   ]

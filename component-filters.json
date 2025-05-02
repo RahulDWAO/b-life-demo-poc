@@ -24,7 +24,8 @@
       "section",
       "accordianold",
       "accordion-group",
-      "accordian"
+      "accordian",
+      "innvest-calculator"
     ]
   },
   {
@@ -59,7 +60,8 @@
     "components": [
       "column",
       "custom-cards-container",
-      "accordian"
+      "accordian",
+      "innvest-calculator"
     ]
   },
   {
@@ -74,7 +76,8 @@
       "customcards",
       "customcard",
       "custom-cards-container",
-      "accordian"
+      "accordian",
+      "innvest-calculator"
     ]
   }
 ]
