@@ -90,7 +90,11 @@
   {
     "id": "gender-selection",
     "components": [
-      "text"
+      "richtext",
+      "text",
+      "image",
+      "button",
+      "title"
     ]
   }
 ]
