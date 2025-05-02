@@ -201,7 +201,7 @@
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
                   "name": "Cards with paragraph",
-                  "filter": "cardsv2"
+                  "filter": "cards-with-para"
                 }
               }
             }
@@ -216,7 +216,7 @@
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
                   "name": "Card with paragraph",
-                  "model": "cardv2"
+                  "model": "card-with-para"
                 }
               }
             }

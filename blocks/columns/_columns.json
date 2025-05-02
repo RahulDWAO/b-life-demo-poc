@@ -60,7 +60,9 @@
         "gender",
         "form-input",
         "text-with-image",
-        "cards-with-para"
+        "cards-with-para",
+        "card-with-para"
+
       ]
     }
   ]

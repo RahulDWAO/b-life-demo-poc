@@ -29,7 +29,8 @@
       "form-input",
       "text-with-image",
       "custom-rte",
-      "cards-with-para"
+      "cards-with-para",
+      "card-with-para"
     ]
   },
   {
@@ -92,7 +93,8 @@
       "gender",
       "form-input",
       "text-with-image",
-      "cards-with-para"
+      "cards-with-para",
+      "card-with-para"
     ]
   },
   {
