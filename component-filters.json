@@ -28,7 +28,8 @@
       "gender",
       "form-input",
       "text-with-image",
-      "custom-rte"
+      "custom-rte",
+      "Cardsv2"
     ]
   },
   {
@@ -90,7 +91,8 @@
       "innvest-calculator",
       "gender",
       "form-input",
-      "text-with-image"
+      "text-with-image",
+      "Cardsv2"
     ]
   },
   {
