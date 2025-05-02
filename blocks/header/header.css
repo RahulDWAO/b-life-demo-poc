@@ -205,8 +205,8 @@ header nav .nav-sections ul > li > ul > li {
     content: '';
     display: inline-block;
     position: absolute;
-    top: 0.5em;
-    right: 22px;
+    top: 4px;
+   right: -16px;
     transform: rotate(135deg);
     width: 6px;
     height: 6px;
@@ -315,4 +315,27 @@ header nav .nav-tools {
 
 .section.nav-tools .default-content-wrapper p:nth-child(2) img{
   padding: 12px;
+}
+
+.section.nav-tools .default-content-wrapper .button-container{
+  align-items: center;
+    display: flex;
+    height: 48px;
+    line-height: 1.5rem;
+    padding: 0.75rem 1rem !important;
+}
+
+.section.nav-tools .default-content-wrapper .button-container a{
+  color: #ffffff;
+  font-size: 1rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: none;
+  background-color: #153050;
+  border-radius: 8px;
+  box-shadow: 0 9px 17px 0 rgba(38, 133, 245, 0.28);
+  height: 3rem;
+  padding: 0 1.5rem;
+  position: relative;
+  overflow: hidden;
 }
