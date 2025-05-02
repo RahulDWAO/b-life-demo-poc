@@ -746,43 +746,33 @@
         "multi": true
       },
       {
-        "id": "container",
+        "component": "container",
+        "label": "Container",
+        "name": "container",
+        "valueType": "string",
+        "collapsible": true,
         "fields": [
           {
-            "component": "container",
-            "label": "Container",
-            "name": "container",
-            "valueType": "string",
-            "collapsible": true,
-            "fields": [
-              {
-                "component": "text-input",
-                "label": "Simple Text 1",
-                "name": "text",
-                "valueType": "string"
-              },
-              {
-                "component": "text-input",
-                "label": "Simple Text 2",
-                "name": "text2",
-                "valueType": "string"
-              }
-            ]
+            "component": "text-input",
+            "label": "Simple Text 1",
+            "name": "text",
+            "valueType": "string"
+          },
+          {
+            "component": "text-input",
+            "label": "Simple Text 2",
+            "name": "text2",
+            "valueType": "string"
           }
         ]
       },
       {
-        "id": "number",
-        "fields": [
-          {
-            "component": "number",
-            "name": "number",
-            "label": "Number",
-            "valueType": "number",
-            "value": 0,
-            "multi": true
-          }
-        ]
+        "component": "number",
+        "name": "number",
+        "label": "Number",
+        "valueType": "number",
+        "value": 0,
+        "multi": true
       }
     ]
   },

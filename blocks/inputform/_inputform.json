@@ -1,98 +1,87 @@
 {
-    "definitions": [
-      {
-        "title": "Form Input",
-        "id": "form-input",
-        "plugins": {
-          "xwalk": {
-            "page": {
-              "resourceType": "core/franklin/components/block/v1/block",
-              "template": {
-                "name": "Form Input",
-                "model": "form-input"
-              }
+  "definitions": [
+    {
+      "title": "Form Input",
+      "id": "form-input",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Form Input",
+              "model": "form-input"
             }
           }
         }
       }
-    ],
-    "models": [
-      {
-        "id": "form-input",
-        "fields": [
-          {
-            "component": "select",
-            "name": "classes",
-            "value": "",
-            "label": "Teaser options",
-            "description": "",
-            "valueType": "string",
-            "options": [
-              {
-                "name": "Default",
-                "value": ""
-              },
-              {
-                "name": "Side-by-side",
-                "value": "side-by-side"
-              },
-              {
-                "name": "Cards Container",
-                "value": "cards-container"
-              }
-            ]
-          },
-          {
-            "component": "text",
-            "name": "text1",
-            "value": "",
-            "label": "Text",
-            "valueType": "string",
-            "multi": true
-          },
-          {
-            "id": "container",
-            "fields": [
-              {
-                "component": "container",
-                "label": "Container",
-                "name": "container",
-                "valueType": "string",
-                "collapsible": true,
-                "fields": [
-                  {
-                    "component": "text-input",
-                    "label": "Simple Text 1",
-                    "name": "text",
-                    "valueType": "string"
-                  },
-                  {
-                    "component": "text-input",
-                    "label": "Simple Text 2",
-                    "name": "text2",
-                    "valueType": "string"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "number",
-            "fields": [
-              {
-                "component": "number",
-                "name": "number",
-                "label": "Number",
-                "valueType": "number",
-                "value": 0,
-                "multi":true
-              }
-            ]
-          }
-          
-        ]
-      }
-    ],
-    "filters": []
-  }
-  
+    }
+  ],
+  "models": [
+    {
+      "id": "form-input",
+      "fields": [
+        {
+          "component": "select",
+          "name": "classes",
+          "value": "",
+          "label": "Teaser options",
+          "description": "",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Default",
+              "value": ""
+            },
+            {
+              "name": "Side-by-side",
+              "value": "side-by-side"
+            },
+            {
+              "name": "Cards Container",
+              "value": "cards-container"
+            }
+          ]
+        },
+        {
+          "component": "text",
+          "name": "text1",
+          "value": "",
+          "label": "Text",
+          "valueType": "string",
+          "multi": true
+        },
+
+        {
+          "component": "container",
+          "label": "Container",
+          "name": "container",
+          "valueType": "string",
+          "collapsible": true,
+          "fields": [
+            {
+              "component": "text-input",
+              "label": "Simple Text 1",
+              "name": "text",
+              "valueType": "string"
+            },
+            {
+              "component": "text-input",
+              "label": "Simple Text 2",
+              "name": "text2",
+              "valueType": "string"
+            }
+          ]
+        },
+        {
+          "component": "number",
+          "name": "number",
+          "label": "Number",
+          "valueType": "number",
+          "value": 0,
+          "multi": true
+        }
+      ]
+    }
+  ],
+  "filters": []
+}
