@@ -61,9 +61,6 @@
   {
     "id": "cards-with-para",
     "components": [
-      "text",
-      "richtext",
-      "card",
       "card-with-para"
     ]
   },
@@ -73,7 +70,9 @@
       "column",
       "custom-cards-container",
       "accordian",
-      "innvest-calculator"
+      "innvest-calculator",
+      "cards-with-para",
+      "card-with-para"
     ]
   },
   {

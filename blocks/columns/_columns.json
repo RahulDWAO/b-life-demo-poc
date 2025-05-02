@@ -41,7 +41,7 @@
   "filters": [
     {
       "id": "columns",
-      "components": ["column", "custom-cards-container","accordian","innvest-calculator"]
+      "components": ["column", "custom-cards-container","accordian","innvest-calculator","cards-with-para","card-with-para"]
     },
     {
       "id": "column",
