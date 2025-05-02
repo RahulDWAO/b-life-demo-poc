@@ -1,5 +1,3 @@
-import { createOptimizedPicture } from "../../scripts/aem.js";
-import { moveInstrumentation } from "../../scripts/scripts.js";
 
 export default function decorate(block) {
   console.log("input form", block);
@@ -35,6 +33,7 @@ export default function decorate(block) {
     form.appendChild(document.createElement("br")); // Line break for clarity
   });
 
+  block.textContent = "";
   divwrapper.appendChild(form);
-  document.body.appendChild(divwrapper); // Or append to a specific container
+  block.appendChild(divwrapper);
 }
