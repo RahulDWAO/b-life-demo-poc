@@ -48,7 +48,7 @@ function openOnKeydown(e) {
 }
 
 function focusNavSection() {
-  document.activeElement.addEventListener('keydown', openOnKeydown);
+  document.activeElement.addEventListener('hover', openOnKeydown);
 }
 
 /**
