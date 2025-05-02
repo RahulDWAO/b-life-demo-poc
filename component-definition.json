@@ -11,9 +11,7 @@
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/text/v1/text",
-                "template": {
-                  "model": "text"
-                }
+                "template": {}
               }
             }
           }
@@ -153,21 +151,6 @@
                     "acc-child"
                   ],
                   "body": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Cards",
-          "id": "cards",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "Cards",
-                  "filter": "cards"
                 }
               }
             }

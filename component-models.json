@@ -339,30 +339,6 @@
     "id": "cards",
     "fields": [
       {
-        "component": "multiselect",
-        "name": "style",
-        "label": "Cards Container Style",
-        "options": [
-          {
-            "name": "ban-why-choose-model-wrapper",
-            "value": "ban-why-choose-model-wrapper"
-          },
-          {
-            "name": "highlighted-section",
-            "value": "highlighted-section"
-          },
-          {
-            "name": "Why iTerm Prime?",
-            "value": "bandhan-iterm-prime-cards"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cards",
-    "fields": [
-      {
         "component": "select",
         "name": "classes",
         "value": "",
