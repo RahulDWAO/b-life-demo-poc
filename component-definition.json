@@ -355,7 +355,8 @@
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
                   "name": "Invest Calculator",
-                  "model": "innvest-calculator"
+                  "model": "innvest-calculator",
+                  "filter": "innvest-calculator"
                 }
               }
             }
@@ -370,7 +371,8 @@
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
                   "name": "Gender",
-                  "model": "gender-selection"
+                  "model": "gender-selection",
+                  "filter": "gender-selection"
                 }
               }
             }
