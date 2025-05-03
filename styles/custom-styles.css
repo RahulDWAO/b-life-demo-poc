@@ -207,3 +207,13 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
 .section.most-pop.columns-container > div > div > div > div > div.cards > div:hover{
     transform: translateY(-3px);
 }
+
+.section.lets-go-card .default-content-wrapper{
+    position: relative;
+}
+
+.section.lets-go-card .button-container{
+    position: absolute;
+    top: 18%;
+    right: 8%;
+}
