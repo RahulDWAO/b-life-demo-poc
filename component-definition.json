@@ -102,7 +102,7 @@
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
-                  "name": "Accordion Content Fragment",
+                  "name": "Accordian CF",
                   "model": "accordian-cf"
                 }
               }
