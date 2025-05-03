@@ -25,7 +25,7 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div::before {
     transform: translateY(-50%);
     margin-top: 32px;
     position: absolute;
-    /* right: -2.5rem; */
+    right: -0.5rem;
     content: "";
     width: 1px;
     height: 150px;
@@ -196,4 +196,14 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
   transition: all 0.3s ease-in-out;
   /* font-family: Manrope; */
   font-weight: 300;
+}
+
+.section.most-pop.columns-container .cards-with-paragraph .cards > div > div > div{
+    transition: all 0.3s ease-in-out 0.1s;
+    /* font-family: Manrope-Semibold; */
+    color: #094771;
+}
+
+.section.most-pop.columns-container .cards-with-paragraph .cards > div:hover{
+    transform: translateY(-3px);
 }
