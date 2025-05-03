@@ -375,6 +375,11 @@
         "name": "body",
         "value": "",
         "label": "Body"
+      },
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "label": "Reference"
       }
     ]
   },
