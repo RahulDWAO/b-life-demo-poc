@@ -225,7 +225,7 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     padding: 18px 44px;
 }
 
-.section.columns-container{
+.section.columns-container.section-metadata-container{
     display: flex;
     position: relative;
     padding-top: 2.5rem;
@@ -235,7 +235,7 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     /* max-width: 1230px; */
 }
 
-.section.columns-container .default-content-wrapper{
+.section.columns-container.section-metadata-container .default-content-wrapper{
     display: flex;
     gap: 40px;
 }
