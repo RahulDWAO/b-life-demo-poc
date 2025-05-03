@@ -69,7 +69,7 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols .cards-with-paragraph>di
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
     background-color: #ffffff;
-    border-radius: 0.25rem;
+    /* border-radius: 0.25rem; */
     box-shadow: 0 0.5em 1em -0.125em rgba(0, 0, 0, 0.1), 0 0px 0 1px rgba(0, 0, 0, 0.02);
     color: #002b47;
     max-width: 100%;
@@ -158,6 +158,15 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     padding-bottom: 1rem;
     text-align: center;
     border-radius: 1rem;
+  }
+
+ section.most-pop.columns-container > div > div > div > div:nth-child() > div:nth-child(1) > p{
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+ }
+
+  .section.most-pop.columns-container .cards-with-paragraph > div:hover{
+    transform: translateY(-3px);
   }
 
   .section.most-pop>.columns-wrapper>.columns-2-cols div> div> p:nth-child(1){
