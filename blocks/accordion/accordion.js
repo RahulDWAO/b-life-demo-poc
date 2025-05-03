@@ -1,6 +1,9 @@
+
+import{getContentFragmentData} from '../../scripts/cf-service.js'
 /* this function also gets called by accordion-group */
 export function generateAccordionDOM(block) {
   console.log("acc  blok", block)
+  
   const details = document.createElement('details');
   const summary = document.createElement('summary');
   details.append(summary);
@@ -21,6 +24,8 @@ export function generateAccordionDOM(block) {
 }
 
 export default function decorate(block) {
+
+
   const dom = generateAccordionDOM(block);
   block.textContent = '';
   block.append(dom);
