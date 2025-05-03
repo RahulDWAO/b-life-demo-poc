@@ -15,25 +15,28 @@ export default function decorate(block) {
   labellist.forEach((labelText, index) => {
     const innerdiv = document.createElement("div");
     innerdiv.classList.add("innerform");
+  
     const label = document.createElement("label");
     const input = document.createElement("input");
-
+  
     // Setup input
-    input.type = "text"; // or use 'number' if expected
+    input.type = "text";
     input.placeholder = inputValue[index] || "";
     input.name = `input${index}`;
     input.id = `input${index}`;
-
+  
     // Setup label
     label.htmlFor = input.id;
     label.textContent = labelText.trim();
-
-    // Add to form
+  
+    // Append label and input into the inner div
+    innerdiv.appendChild(label);
+    innerdiv.appendChild(input);
+  
+    // Append inner div to the form
     form.appendChild(innerdiv);
-    form.appendChild(label);
-    form.appendChild(input);
-    form.appendChild(document.createElement("br")); // Line break for clarity
   });
+  
 
   block.textContent = "";
   divwrapper.appendChild(form);
