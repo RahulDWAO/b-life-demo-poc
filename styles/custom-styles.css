@@ -160,7 +160,7 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     border-radius: 1rem;
   }
 
- section.most-pop.columns-container > div > div > div > div:nth-child() > div:nth-child(1) > p{
+ section.most-pop.columns-container .columns.block.columns-2-cols > div > div > div > p{
     margin-bottom: 2rem;
     font-size: 1.5rem;
  }
