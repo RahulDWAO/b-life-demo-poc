@@ -4,6 +4,18 @@ import{getContentFragmentData} from '../../scripts/cf-service.js'
 export function generateAccordionDOM(block) {
   console.log("acc  blok", block)
   
+
+  try {
+    debugger
+    let cfPath=block.children[3].textContent.trim()
+    const block=block.children[3].remove();
+    console.log("blockcfpath",cfPath);
+    getContentFragmentData(cfPath)
+    
+  } catch (error) {
+    
+  }
+ 
   const details = document.createElement('details');
   const summary = document.createElement('summary');
   details.append(summary);

@@ -1,4 +1,7 @@
-export default function getContentFragmentData(url) {
+export function getContentFragmentData(url) {
+  debugger
+  console.log("cfpath",url);
+  
   const myHeaders = new Headers();
   myHeaders.append("accept", "application/json");
   myHeaders.append("accept-language", "en-GB,en-US;q=0.9,en;q=0.8");
