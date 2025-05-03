@@ -1,5 +1,5 @@
 export function getContentFragmentData(url) {
-  debugger
+
   console.log("cfpath",url);
   
   const myHeaders = new Headers();
