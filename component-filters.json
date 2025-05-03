@@ -20,29 +20,61 @@
       "teaser",
       "customcards",
       "customcard",
-      "custom-cards-container"
+      "custom-cards-container",
+      "section",
+      "accordianold",
+      "accordion-group",
+      "accordian",
+      "gender-section",
+      "inputform",
+      "text-with-image",
+      "custom-rte",
+      "cardsv2",
+      "cardv2",
+      "gendernew",
+      "accordian-cf"
+    ]
+  },
+  {
+    "id": "accordion-group",
+    "components": [
+      "accordion"
+    ]
+  },
+  {
+    "id": "accordion-group",
+    "components": [
+      "accordion"
     ]
   },
   {
     "id": "cards",
     "components": [
-      "card"
+      "card",
+      "text"
     ]
   },
   {
-    "id": "cards-with-para",
+    "id": "card",
     "components": [
-      "text",
-      "richtext",
-      "card",
-      "card-with-para"
+      "text"
+    ]
+  },
+  {
+    "id": "cardsv2",
+    "components": [
+      "cardv2"
     ]
   },
   {
     "id": "columns",
     "components": [
       "column",
-      "custom-cards-container"
+      "custom-cards-container",
+      "accordian",
+      "innvest-calculator",
+      "cardsv2",
+      "cardv2"
     ]
   },
   {
@@ -56,7 +88,33 @@
       "card",
       "customcards",
       "customcard",
-      "custom-cards-container"
+      "custom-cards-container",
+      "accordian",
+      "innvest-calculator",
+      "gender-section",
+      "inputform",
+      "text-with-image",
+      "cardsv2",
+      "cardv2"
+    ]
+  },
+  {
+    "id": "inputform",
+    "components": [
+      "image",
+      "text",
+      "title",
+      "text-input",
+      "text-with-image"
+    ]
+  },
+  {
+    "id": "text-with-image",
+    "components": [
+      "image",
+      "text",
+      "title",
+      "text-input"
     ]
   }
 ]

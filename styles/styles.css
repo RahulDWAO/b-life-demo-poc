@@ -38,6 +38,17 @@
 
   /* nav height */
   --nav-height: 64px;
+
+
+  --font-weight-bold: 700;
+  --spectrum-font-size-100: 14px;
+  --non-spectrum-raisin-black: #222;
+  --spectrum-font-size-200: 16px;
+  --spectrum-line-height-m: 25.6px;
+
+
+  --spectrum-gray-100: #f8f8f8;
+
 }
 
 /* fallback fonts */

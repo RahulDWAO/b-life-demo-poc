@@ -24,7 +24,7 @@
                   "component": "select",
                   "name": "classes",
                   "value": "",
-                  "label": "Teaser options",
+                  "label": "Card Style options",
                   "valueType": "string",
                   "options": [
                       {
@@ -32,12 +32,13 @@
                           "value": ""
                       },
                       {
-                          "name": "Side-by-side with Image on left",
-                          "value": "side-by-side left"
+                          "name": "Card Custom Style",
+                          "value": "cmp-custom-style"
                       },
                       {
-                          "name": "Side-by-side with Image on right",
-                          "value": "side-by-side right"
+                          "name": "Card Custom Style 1",
+                          "value": "cmp-custom-style-1"
+
                       }
                   ]
               },

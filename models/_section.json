@@ -8,7 +8,8 @@
           "page": {
             "resourceType": "core/franklin/components/section/v1/section",
             "template": {
-              "model": "section"
+              "model": "section",
+              "classes":["section-container"]
             }
           }
         }
@@ -41,6 +42,22 @@
             {
               "name": "most-pop",
               "value": "most-pop"
+            },
+            {
+              "name": "quick-link",
+              "value": "quick-link"
+            },
+            {
+              "name": "most-pop-left",
+              "value": "most-pop-left"
+            },
+            {
+              "name": "section-container",
+              "value": "section-container"
+           
+            },{
+                 "name": "Why iTerm Prime?",
+              "value": "bandhan-iterm-prime-cards"
             }
           ]
         }
@@ -63,7 +80,19 @@
         "teaser",
         "customcards",
         "customcard",
-        "custom-cards-container"
+        "custom-cards-container",
+        "section",
+        "accordianold",
+        "accordion-group",
+        "accordian",
+        "gender-section",
+        "inputform",
+        "text-with-image",
+        "custom-rte",
+        "cardsv2",
+        "cardv2",
+        "gendernew",
+        "accordian-cf"
       ]
     }
   ]

@@ -27,6 +27,17 @@
     "id": "image",
     "fields": [
       {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "Default",
+            "value": "cmp-img"
+          }
+        ]
+      },
+      {
         "component": "reference",
         "name": "image",
         "label": "Image",
@@ -75,6 +86,17 @@
           {
             "name": "h6",
             "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "Default",
+            "value": "cmp-title"
           }
         ]
       }
@@ -155,8 +177,209 @@
           {
             "name": "most-pop",
             "value": "most-pop"
+          },
+          {
+            "name": "quick-link",
+            "value": "quick-link"
+          },
+          {
+            "name": "most-pop-left",
+            "value": "most-pop-left"
+          },
+          {
+            "name": "section-container",
+            "value": "section-container"
+          },
+          {
+            "name": "Why iTerm Prime?",
+            "value": "bandhan-iterm-prime-cards"
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "accordian-cf",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Accordion classes",
+        "description": "Options that affect block appearance and behavior.",
+        "valueType": "string",
+        "required": true,
+        "maxSize": 1,
+        "options": [
+          {
+            "name": "Left",
+            "value": "acc-child-cf"
+          },
+          {
+            "name": "Center",
+            "value": "acc-child1"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "heading",
+        "value": "",
+        "label": "Heading"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "body",
+        "value": "",
+        "label": "Body"
+      },
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "label": "Reference"
+      }
+    ]
+  },
+  {
+    "id": "accordianold",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Teaser options",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "HomePage Accordian",
+            "value": "accv1"
+          }
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image alt text",
+        "required": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "acc_title",
+        "label": "Accordian Title",
+        "required": true
+      },
+      {
+        "component": "richtext",
+        "name": "acc_desc",
+        "label": "Accordian Description",
+        "valueType": "string",
+        "required": true
+      }
+    ]
+  },
+  {
+    "id": "accordion-group",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Accordion classes",
+        "description": "Options that affect block appearance and behavior.",
+        "valueType": "string",
+        "required": true,
+        "maxSize": 1,
+        "options": [
+          {
+            "name": "Left",
+            "value": "acc-grp"
+          },
+          {
+            "name": "Center",
+            "value": "acc-grpr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "accordion",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Accordion classes",
+        "description": "Options that affect block appearance and behavior.",
+        "valueType": "string",
+        "required": true,
+        "maxSize": 1,
+        "options": [
+          {
+            "name": "Left",
+            "value": "acc-child"
+          },
+          {
+            "name": "Center",
+            "value": "acc-child1"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "heading",
+        "value": "",
+        "label": "Heading"
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "headingType",
+        "value": "h3",
+        "label": "Heading Type",
+        "options": [
+          {
+            "name": "H2",
+            "value": "h2"
+          },
+          {
+            "name": "H3",
+            "value": "h3"
+          },
+          {
+            "name": "H4",
+            "value": "h4"
+          },
+          {
+            "name": "H5",
+            "value": "h5"
+          },
+          {
+            "name": "H6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "body",
+        "value": "",
+        "label": "Body"
+      },
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "label": "Reference"
       }
     ]
   },
@@ -178,6 +401,10 @@
           {
             "name": "Side-by-side",
             "value": "side-by-side"
+          },
+          {
+            "name": "Cards Container",
+            "value": "cards-container"
           }
         ]
       },
@@ -193,6 +420,10 @@
           {
             "name": "highlighted-section",
             "value": "highlighted-section"
+          },
+          {
+            "name": "Why iTerm Prime?",
+            "value": "bandhan-iterm-prime-cards"
           }
         ]
       }
@@ -213,12 +444,8 @@
             "value": ""
           },
           {
-            "name": "Side-by-side with Image on left",
-            "value": "side-by-side left"
-          },
-          {
-            "name": "Side-by-side with Image on right",
-            "value": "side-by-side right"
+            "name": "Card Container",
+            "value": "card-container"
           }
         ]
       },
@@ -236,11 +463,30 @@
         "label": "Text",
         "valueType": "string",
         "multi": false
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Card Style",
+        "options": [
+          {
+            "name": "ban-why-choose-model-ca",
+            "value": "ban-why-choose-model-ca"
+          },
+          {
+            "name": "card-shadow",
+            "value": "card-shadow"
+          },
+          {
+            "name": "Why iTerm Prime?",
+            "value": "bandhan-iterm-prime-cards"
+          }
+        ]
       }
     ]
   },
   {
-    "id": "cards-with-para",
+    "id": "cardsv2",
     "fields": [
       {
         "component": "multiselect",
@@ -248,15 +494,15 @@
         "label": "Style",
         "options": [
           {
-            "name": "cards-with-para",
-            "value": "cards-with-para"
+            "name": "cardsv2",
+            "value": "cardsv2"
           }
         ]
       }
     ]
   },
   {
-    "id": "card-with-para",
+    "id": "cardv2",
     "fields": [
       {
         "component": "reference",
@@ -293,8 +539,8 @@
         "label": "Style",
         "options": [
           {
-            "name": "card-with-para",
-            "value": "card-with-para"
+            "name": "cardv2",
+            "value": "cardv2"
           }
         ]
       }
@@ -326,7 +572,7 @@
         "component": "select",
         "name": "classes",
         "value": "",
-        "label": "Teaser options",
+        "label": "Card Style options",
         "valueType": "string",
         "options": [
           {
@@ -334,12 +580,12 @@
             "value": ""
           },
           {
-            "name": "Side-by-side with Image on left",
-            "value": "side-by-side left"
+            "name": "Card Custom Style",
+            "value": "cmp-custom-style"
           },
           {
-            "name": "Side-by-side with Image on right",
-            "value": "side-by-side right"
+            "name": "Card Custom Style 1",
+            "value": "cmp-custom-style-1"
           }
         ]
       },
@@ -394,23 +640,8 @@
             "value": ""
           },
           {
-            "name": "Side-by-side",
-            "value": "side-by-side"
-          }
-        ]
-      },
-      {
-        "component": "multiselect",
-        "name": "style",
-        "label": "Cards Container Style",
-        "options": [
-          {
-            "name": "ban-why-choose-model-wrapper",
-            "value": "ban-why-choose-model-wrapper"
-          },
-          {
-            "name": "highlighted-section",
-            "value": "highlighted-section"
+            "name": "Custom Cards Container Style",
+            "value": "cards-container-1"
           }
         ]
       },
@@ -431,6 +662,75 @@
         "component": "aem-content",
         "name": "reference",
         "label": "Reference"
+      }
+    ]
+  },
+  {
+    "id": "gender-section",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Teaser options",
+        "description": "",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Side-by-side",
+            "value": "side-by-side"
+          },
+          {
+            "name": "Cards Container",
+            "value": "cards-container"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "text1",
+        "value": "",
+        "label": "Text",
+        "valueType": "string",
+        "multi": true
+      }
+    ]
+  },
+  {
+    "id": "Header",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
       }
     ]
   },
@@ -457,6 +757,56 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "inputform",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "value": "",
+        "label": "Form Style options",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "form-container",
+            "value": "input-form"
+          }
+        ]
+      },
+      {
+        "component": "container",
+        "label": "Label & Inputs",
+        "name": "container",
+        "valueType": "string",
+        "collapsible": true,
+        "fields": [
+          {
+            "component": "text-input",
+            "label": "Labels for Form",
+            "name": "text",
+            "valueType": "string",
+            "multi": true
+          },
+          {
+            "component": "text-input",
+            "label": "Input Values for form",
+            "name": "text2",
+            "valueType": "string",
+            "multi": true
+          }
+        ]
+      },
+      {
+        "component": "text-with-image",
+        "label": "Text  with  Image",
+        "name": "txtimg"
       }
     ]
   },
@@ -516,6 +866,46 @@
         "name": "textContent_ctaText",
         "label": "CTA label",
         "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "text-with-image",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Container option",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": "img-text"
+          }
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image alt text",
+        "required": false
       }
     ]
   }
