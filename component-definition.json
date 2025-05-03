@@ -158,7 +158,7 @@
           }
         },
         {
-          "title": "Banner Form",
+          "title": "BannerForm",
           "id": "bannerform",
           "plugins": {
             "xwalk": {
