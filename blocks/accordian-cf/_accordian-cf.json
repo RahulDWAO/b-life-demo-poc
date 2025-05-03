@@ -2,14 +2,14 @@
   "definitions": [
     {
       "title": "Accordion Content Fragment",
-      "id": "accordion-cf",
+      "id": "accordian-cf",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
               "name": "Accordion Content Fragment",
-              "model": "accordion-cf"
+              "model": "accordian-cf"
             }
           }
         }
@@ -18,7 +18,7 @@
   ],
   "models": [
     {
-      "id": "accordion",
+      "id": "accordian-cf",
       "fields": [
         {
             "component": "multiselect",

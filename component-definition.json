@@ -95,6 +95,21 @@
       "id": "blocks",
       "components": [
         {
+          "title": "Accordion Content Fragment",
+          "id": "accordian-cf",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Accordion Content Fragment",
+                  "model": "accordian-cf"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Accordian old",
           "id": "accordianold",
           "plugins": {
@@ -104,21 +119,6 @@
                 "template": {
                   "name": "Accordianold",
                   "model": "accordianold"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Accordion Content Fragment",
-          "id": "accordion-cf",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Accordion Content Fragment",
-                  "model": "accordion-cf"
                 }
               }
             }

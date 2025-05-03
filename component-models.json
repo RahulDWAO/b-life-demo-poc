@@ -199,6 +199,49 @@
     ]
   },
   {
+    "id": "accordian-cf",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Accordion classes",
+        "description": "Options that affect block appearance and behavior.",
+        "valueType": "string",
+        "required": true,
+        "maxSize": 1,
+        "options": [
+          {
+            "name": "Left",
+            "value": "acc-child-cf"
+          },
+          {
+            "name": "Center",
+            "value": "acc-child1"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "heading",
+        "value": "",
+        "label": "Heading"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "body",
+        "value": "",
+        "label": "Body"
+      },
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "label": "Reference"
+      }
+    ]
+  },
+  {
     "id": "accordianold",
     "fields": [
       {
@@ -241,49 +284,6 @@
         "label": "Accordian Description",
         "valueType": "string",
         "required": true
-      }
-    ]
-  },
-  {
-    "id": "accordion",
-    "fields": [
-      {
-        "component": "multiselect",
-        "name": "classes",
-        "label": "Accordion classes",
-        "description": "Options that affect block appearance and behavior.",
-        "valueType": "string",
-        "required": true,
-        "maxSize": 1,
-        "options": [
-          {
-            "name": "Left",
-            "value": "acc-child-cf"
-          },
-          {
-            "name": "Center",
-            "value": "acc-child1"
-          }
-        ]
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "heading",
-        "value": "",
-        "label": "Heading"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "body",
-        "value": "",
-        "label": "Body"
-      },
-      {
-        "component": "aem-content",
-        "name": "reference",
-        "label": "Reference"
       }
     ]
   },
