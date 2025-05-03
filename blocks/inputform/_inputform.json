@@ -9,8 +9,9 @@
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
               "name": "Inputform",
-              "model": "inputform",
+              "model":"inputform",
               "filter":"inputform"
+            
             }
           }
         }
