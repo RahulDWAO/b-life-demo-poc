@@ -1,7 +1,7 @@
 {
   "definitions": [
     {
-      "title": "Accordion Content Fragment",
+      "title": "Accordian CF",
       "id": "accordian-cf",
       "plugins": {
         "xwalk": {

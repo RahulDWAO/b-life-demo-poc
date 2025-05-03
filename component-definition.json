@@ -95,7 +95,7 @@
       "id": "blocks",
       "components": [
         {
-          "title": "Accordion Content Fragment",
+          "title": "Accordian CF",
           "id": "accordian-cf",
           "plugins": {
             "xwalk": {
