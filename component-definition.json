@@ -11,7 +11,9 @@
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/text/v1/text",
-                "template": {}
+                "template": {
+                  "model": "text"
+                }
               }
             }
           }
@@ -24,10 +26,7 @@
               "page": {
                 "resourceType": "core/franklin/components/title/v1/title",
                 "template": {
-                  "model": "title",
-                  "classes": [
-                    "cmp-title"
-                  ]
+                  "model": "title"
                 }
               }
             }
@@ -41,8 +40,7 @@
               "page": {
                 "resourceType": "core/franklin/components/image/v1/image",
                 "template": {
-                  "model": "image",
-                  "classes": "cmp-img"
+                  "model": "image"
                 }
               }
             }
@@ -56,10 +54,7 @@
               "page": {
                 "resourceType": "core/franklin/components/button/v1/button",
                 "template": {
-                  "model": "button",
-                  "classes": [
-                    "blue-bg"
-                  ]
+                  "model": "button"
                 }
               }
             }
@@ -79,10 +74,7 @@
               "page": {
                 "resourceType": "core/franklin/components/section/v1/section",
                 "template": {
-                  "model": "section",
-                  "classes": [
-                    "section-container"
-                  ]
+                  "model": "section"
                 }
               }
             }

@@ -33,6 +33,10 @@
         "options": [
           {
             "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "image",
             "value": "cmp-img"
           }
         ]
@@ -95,8 +99,24 @@
         "label": "Style",
         "options": [
           {
-            "name": "Default",
+            "name": "title",
             "value": "cmp-title"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "text",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "text",
+            "value": "cmp-text"
           }
         ]
       }
@@ -145,8 +165,8 @@
         "label": "Style",
         "options": [
           {
-            "name": "blue-bg",
-            "value": "blue-bg"
+            "name": "button",
+            "value": "cmp-btn"
           }
         ]
       }

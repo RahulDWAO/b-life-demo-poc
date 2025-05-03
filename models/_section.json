@@ -8,8 +8,7 @@
           "page": {
             "resourceType": "core/franklin/components/section/v1/section",
             "template": {
-              "model": "section",
-              "classes":["section-container"]
+              "model": "section"
             }
           }
         }
