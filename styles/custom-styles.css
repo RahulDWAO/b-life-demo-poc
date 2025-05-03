@@ -233,9 +233,17 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     /* color: #002b47; */
     border-radius: 1.5rem;
     /* max-width: 1230px; */
+    background-color: #F4FAFF;
+    margin: 20px;
 }
 
-.section.columns-container.section-metadata-container .default-content-wrapper{
+/* .section.columns-container.section-metadata-container .default-content-wrapper{
     display: flex;
     gap: 40px;
+} */
+
+.section.columns-container.section-metadata-container .default-content-wrapper p:nth-child(2){
+    top: -70px;
+    position: absolute;
+    right: 46%;
 }
