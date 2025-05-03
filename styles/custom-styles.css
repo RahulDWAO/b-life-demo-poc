@@ -177,7 +177,7 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     transition: all 0.3s ease-in-out;
   }
 
-.section.most-pop.columns-container .cards-with-paragraph > div:nth-child(1) > div:nth-child(3){
+.section.most-pop.columns-container .cards-with-paragraph > div > div:nth-child(3){
   background-color: #E6F0FA;
   padding-left: 1rem;
   padding-right: 1rem;
