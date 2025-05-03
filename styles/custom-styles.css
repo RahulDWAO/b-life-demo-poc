@@ -217,3 +217,10 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     top: 18%;
     right: 8%;
 }
+
+.section.lets-go-card .button-container a{
+    border: none;
+    background-color: #153050;
+    border-radius: 8px;
+    padding: 18px 44px;
+}
