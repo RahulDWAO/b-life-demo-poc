@@ -76,7 +76,12 @@
             {
               "name": "Why iTerm Prime?",
               "value": "bandhan-iterm-prime-cards"
-            }
+            },
+            {
+              "name": "lets go card",
+           "value": "lets-go-card"
+         }
+
           ]
         }
       ]
