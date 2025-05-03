@@ -959,5 +959,31 @@
         "required": false
       }
     ]
+  },
+  {
+    "id": "topsearches",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "body",
+        "value": "",
+        "label": "Body"
+      },
+      {
+        "component": "aem-tag",
+        "label": "AEM Tag Picker",
+        "name": "cq:tags",
+        "valueType": "string",
+        "rootPath": "/content/cq:tags"
+      }
+    ]
   }
 ]

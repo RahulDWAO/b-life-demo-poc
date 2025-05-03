@@ -34,7 +34,8 @@
       "gendernew",
       "accordian-cf",
       "customtitle",
-      "bannerform"
+      "bannerform",
+      "topsearches"
     ]
   },
   {
@@ -130,6 +131,12 @@
       "text",
       "title",
       "text-input"
+    ]
+  },
+  {
+    "id": "topsearches-group",
+    "components": [
+      "topsearches"
     ]
   }
 ]
