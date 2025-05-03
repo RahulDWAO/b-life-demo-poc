@@ -9,9 +9,8 @@
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
               "name": "Gender Section",
-              "model":"gender-section"
-
-        
+              "model": "gender-section",
+              "filter": "gender-section"
             }
           }
         }
