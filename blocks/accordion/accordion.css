@@ -1,6 +1,6 @@
 .accordion details {
   display: block;
-  background-color: var(--spectrum-gray-100);
+  background-color: #F2F8FF;
   color: var(--non-spectrum-grey);
   padding: 0 16px;
   padding: 24px 32px 40px;
@@ -132,9 +132,9 @@ ol .accordion summary {
 
 
 main .section.accordion-group-container .accordion-group-wrapper{
-  margin: 1rem 0 2rem;
+  /* margin: 1rem 0 2rem; */
   width: 100%;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 
 }
 main .section.accordion-group-container .accordion-group-wrapper .accordion-group.acc-grp{
@@ -146,7 +146,7 @@ main .section.accordion-group-container .accordion-group-wrapper .accordion-grou
   margin: 0 auto;
   width: 100%;
   width: 840px;
-  background-color: #F2F8FF;
+  /* background-color: #F2F8FF; */
   border-radius: 1rem;
   /* border: 3px solid #ffffff; */
   display: flex;

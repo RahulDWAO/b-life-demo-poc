@@ -16,7 +16,4 @@ export default function decorate(block) {
     accordion.classList.add('accordion', 'block');
     accordion.append(accordionDOM);
   });
-
-  // use same styling as shade-box from /docs
-  block.classList.add('shade-box');
 }
