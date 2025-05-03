@@ -335,25 +335,6 @@
     "id": "accordion",
     "fields": [
       {
-        "component": "multiselect",
-        "name": "classes",
-        "label": "Accordion classes",
-        "description": "Options that affect block appearance and behavior.",
-        "valueType": "string",
-        "required": true,
-        "maxSize": 1,
-        "options": [
-          {
-            "name": "Left",
-            "value": "acc-child"
-          },
-          {
-            "name": "Center",
-            "value": "acc-child1"
-          }
-        ]
-      },
-      {
         "component": "text",
         "valueType": "string",
         "name": "heading",
@@ -395,11 +376,6 @@
         "name": "body",
         "value": "",
         "label": "Body"
-      },
-      {
-        "component": "aem-content",
-        "name": "reference",
-        "label": "Reference"
       }
     ]
   },
