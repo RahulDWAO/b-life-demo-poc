@@ -5,7 +5,15 @@ export function generateAccordionDOM(block) {
   console.log("acc  blok", block)
   
 
-  
+  try {
+
+    const cfPath=block.children[3].textContent.trim()
+    const block=block.children[3].remove();
+    
+  } catch (error) {
+    
+  }
+ 
   const details = document.createElement('details');
   const summary = document.createElement('summary');
   details.append(summary);
