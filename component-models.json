@@ -981,8 +981,7 @@
         "component": "aem-tag",
         "label": "AEM Tag Picker",
         "name": "cq:tags",
-        "valueType": "string",
-        "rootPath": "/content/cq:tags"
+        "valueType": "string"
       }
     ]
   }
