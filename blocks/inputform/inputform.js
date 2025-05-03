@@ -37,3 +37,8 @@
 //   divwrapper.appendChild(form);
 //   block.appendChild(divwrapper);
 // }
+
+export default function decorate(block) {
+
+    console.log("input",block)
+}

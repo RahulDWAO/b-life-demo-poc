@@ -112,3 +112,7 @@
 //   block.appendChild(wrapperDiv);
   
 // }
+export default function decorate(block) {
+
+    console.log("gennder",block)
+}
