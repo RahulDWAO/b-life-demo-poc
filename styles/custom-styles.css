@@ -225,7 +225,7 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     padding: 18px 44px;
 }
 
-.section.columns-container.section-metadata-container{
+.section.columns-container{
     display: flex;
     position: relative;
     padding-top: 2.5rem;
@@ -242,7 +242,7 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     gap: 40px;
 } */
 
-.section.columns-container.section-metadata-container .default-content-wrapper p:nth-child(2){
+.section.columns-container .default-content-wrapper p:nth-child(2){
     top: -70px;
     position: absolute;
     right: 46%;
