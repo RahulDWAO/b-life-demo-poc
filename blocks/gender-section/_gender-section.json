@@ -8,7 +8,9 @@
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "Gender Section"
+              "name": "Gender Section",
+              "model":"gender-section"
+
         
             }
           }

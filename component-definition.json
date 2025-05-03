@@ -374,7 +374,8 @@
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
-                  "name": "Gender Section"
+                  "name": "Gender Section",
+                  "model": "gender-section"
                 }
               }
             }
@@ -418,7 +419,8 @@
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
-                  "name": "Inputform"
+                  "name": "Inputform",
+                  "model": "inputform"
                 }
               }
             }
