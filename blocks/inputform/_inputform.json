@@ -8,9 +8,8 @@
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "Inputform",
-              "model": "inputform",
-              "filter":"inputform"
+              "name": "Inputform"
+            
             }
           }
         }
