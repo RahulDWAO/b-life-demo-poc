@@ -70,7 +70,6 @@
 // }
 export default function decorate(block) {
   console.log("gender", block);
-  debugger;
   const blocklist = [...block.children];
   const wrapperDiv = document.createElement("div");
   

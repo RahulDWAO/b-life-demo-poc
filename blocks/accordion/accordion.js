@@ -7,10 +7,9 @@ export function generateAccordionDOM(block) {
 
   try {
     debugger
-    let cfPath=block.children[3].textContent.trim()
+
+    const cfPath=block.children[3].textContent.trim()
     const block=block.children[3].remove();
-    console.log("blockcfpath",cfPath);
-    getContentFragmentData(cfPath)
     
   } catch (error) {
     
