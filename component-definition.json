@@ -127,9 +127,6 @@
                   "name": "Accordion Group",
                   "model": "accordion-group",
                   "filter": "accordion",
-                  "classes": [
-                    "acc-grp"
-                  ],
                   "item": {
                     "sling:resourceType": "core/franklin/components/block/v1/block/item",
                     "name": "Accordion",
@@ -154,9 +151,6 @@
                   "name": "Accordion",
                   "model": "accordion",
                   "heading": "Lorem ipsum",
-                  "classes": [
-                    "acc-child"
-                  ],
                   "body": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
                 }
               }
@@ -316,6 +310,20 @@
           }
         },
         {
+          "title": "Custom Title",
+          "id": "customtitle",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/title/v1/title",
+                "template": {
+                  "model": "customtitle"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Fragment",
           "id": "fragment",
           "plugins": {
@@ -339,7 +347,12 @@
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
                   "name": "Gender Section",
-                  "model": "gender-section"
+                  "model": "gender-section",
+                  "item": {
+                    "sling:resourceType": "core/franklin/components/block/v1/block/item",
+                    "name": "Inputform",
+                    "model": "inputform"
+                  }
                 }
               }
             }
@@ -381,7 +394,7 @@
           "plugins": {
             "xwalk": {
               "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
+                "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
                   "name": "Inputform",
                   "model": "inputform",
