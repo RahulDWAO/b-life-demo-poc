@@ -1,10 +1,12 @@
 {
   "mappings": [
-    "/content/aem-boilerplate/:/",
-    "/content/aem-boilerplate/configuration:/.helix/config.json",
-    "/content/aem-boilerplate/metadata:/metadata.json"
+    "/content/bandhan-life-ue-demo/:/",
+    "/content/bandhan-life-ue-demo/demo-ue/:/demo-ue",
+    "/content/bandhan-life-ue-demo/demo-with-cards/:/demo-with-cards",
+    "/content/bandhan-life-ue-demo/configuration:/.helix/config.json",
+    "/content/bandhan-life-ue-demo/metadata:/metadata.json"
   ],
   "includes": [
-    "/content/aem-boilerplate/"
+    "/content/bandhan-life-ue-demo/"
   ]
 }
