@@ -1,4 +1,3 @@
-
 export default function decorate(block) {
   console.log("input form", block);
   /* change to ul, li */
@@ -14,6 +13,8 @@ export default function decorate(block) {
 
   // Create inputs and labels together
   labellist.forEach((labelText, index) => {
+    const innerdiv = document.createElement("div");
+    innerdiv.classList.add("innerform");
     const label = document.createElement("label");
     const input = document.createElement("input");
 
@@ -28,6 +29,7 @@ export default function decorate(block) {
     label.textContent = labelText.trim();
 
     // Add to form
+    form.appendChild(innerdiv);
     form.appendChild(label);
     form.appendChild(input);
     form.appendChild(document.createElement("br")); // Line break for clarity
