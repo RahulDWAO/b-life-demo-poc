@@ -8,8 +8,7 @@
           "page": {
             "resourceType": "core/franklin/components/image/v1/image",
             "template": {
-              "model":"image",
-              "classes":"cmp-img"
+              "model":"image"
             }
           }
         }
@@ -27,8 +26,12 @@
           "options": [
             {
               "name": "Default",
+              "value": ""
+            },
+            {
+              "name": "image",
               "value": "cmp-img"
-            }       
+            }      
           ]
         },
         {

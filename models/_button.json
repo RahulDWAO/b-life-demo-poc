@@ -8,8 +8,7 @@
           "page": {
             "resourceType": "core/franklin/components/button/v1/button",
             "template": {
-              "model": "button",
-              "classes":["blue-bg"]
+              "model": "button"
             }
           }
         }
@@ -60,8 +59,8 @@
           "label": "Style",
           "options": [
             {
-              "name": "blue-bg",
-              "value": "blue-bg"
+              "name": "button",
+              "value": "cmp-btn"
             }
           
           ]

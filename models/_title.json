@@ -8,8 +8,7 @@
           "page": {
             "resourceType": "core/franklin/components/title/v1/title",
             "template": {
-              "model": "title",
-              "classes":["cmp-title"]
+              "model": "title"         
             }
           }
         }
@@ -62,10 +61,9 @@
           "label": "Style",
           "options": [
             {
-              "name": "Default",
+              "name": "title",
               "value": "cmp-title"
             }
-           
           ]
         }
       ]
