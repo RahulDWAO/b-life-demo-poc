@@ -35,6 +35,13 @@
           "label": "Body"
         },
         {
+          "component": "text-input",
+          "label": "Labels for Tags",
+          "name": "text",
+          "valueType": "string",
+          "multi":true
+        },
+        {
           "component": "aem-tag",
           "label": "AEM Tag Picker",
           "name": "toptags",
