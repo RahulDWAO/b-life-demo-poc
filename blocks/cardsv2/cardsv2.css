@@ -25,8 +25,9 @@
     aspect-ratio: 4 / 3;
     object-fit: cover;
   }
+  section most-pop columns-container
   
-  .section.most-pop.columns-container .cards-with-paragraph div{
+  .section.most-pop.columns-container .cards-with-paragraph > div{
     box-shadow: 0 0.5em 1em -0.125em rgba(0, 0, 0, 0.1), 0 0px 0 1px rgba(0, 0, 0, 0.02);
     color: #002b47;
     max-width: 100%;
