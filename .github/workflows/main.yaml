@@ -1,6 +1,10 @@
 name: Build
-on: [push]
-
+on:
+  push:
+    branches-ignore:
+      - feature/demo-development,
+      - main,
+      - develop
 jobs:
   build:
     runs-on: ubuntu-latest
