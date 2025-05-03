@@ -33,7 +33,8 @@
       "cardv2",
       "gendernew",
       "accordian-cf",
-      "customtitle"
+      "customtitle",
+      "bannerform"
     ]
   },
   {
@@ -46,6 +47,13 @@
     "id": "accordion-group",
     "components": [
       "accordion"
+    ]
+  },
+  {
+    "id": "bannerform",
+    "components": [
+      "gender-section",
+      "inputform"
     ]
   },
   {
