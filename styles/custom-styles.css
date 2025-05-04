@@ -223,6 +223,7 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     background-color: #153050;
     border-radius: 8px;
     padding: 18px 44px;
+    box-shadow: 0 9px 17px 0 rgba(38, 133, 245, 0.28);
 }
 
 .section.columns-container{
@@ -248,15 +249,27 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     right: 46%;
 }
 
+.section.columns-container .columns-wrapper {
+    text-align: center;
+}
+
+
 .section.columns-container .columns-wrapper p {
     font-size: 1.75rem;
     color: #094771;
 }
 
+.section.columns-container .columns-wrapper h1 {
+    color: #E52D12;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    font-size: 2.813rem;
+}
 
 .section.columns-container .columns-wrapper .button-container a{
     border: none;
     background-color: #153050;
     border-radius: 8px;
-    padding: 22px 55px;
+    padding: 16px 42px;
+    box-shadow: 0 9px 17px 0 rgba(38, 133, 245, 0.28);
 }
