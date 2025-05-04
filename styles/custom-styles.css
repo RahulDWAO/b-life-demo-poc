@@ -377,11 +377,11 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
 
   }
 
-  section.people-search-buttons.columns-container > div > div > div > div:nth-child(1) > p{
+  .section.people-search-buttons.columns-container > div > div > div > div:nth-child(1) > p{
     width: 30px;
   }
 
-section.people-search-buttons.columns-container > div > div > div > div:nth-child(2){
+.section.people-search-buttons.columns-container > div > div > div > div:nth-child(2){
     display: flex;
         flex-wrap: wrap;
         gap: 10px;

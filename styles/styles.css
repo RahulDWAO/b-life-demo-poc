@@ -209,11 +209,11 @@ button {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  border: none;
+  /* border: none;
     background-color: #153050;
     border-radius: 8px;
     padding: 18px 44px;
-    box-shadow: 0 9px 17px 0 rgba(38, 133, 245, 0.28);
+    box-shadow: 0 9px 17px 0 rgba(38, 133, 245, 0.28); */
 }
 
 a.button:hover,
