@@ -331,3 +331,7 @@ header nav .nav-tools {
   margin: 0;
   padding: 12px 20px;
 }
+
+.section.nav-sections > div > ul > li > p > a{
+  color: #153050;
+}
