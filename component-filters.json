@@ -145,6 +145,19 @@
     ]
   },
   {
+    "id": "cards",
+    "components": [
+      "card",
+      "text"
+    ]
+  },
+  {
+    "id": "card",
+    "components": [
+      "text"
+    ]
+  },
+  {
     "id": "inputform",
     "components": [
       "image",

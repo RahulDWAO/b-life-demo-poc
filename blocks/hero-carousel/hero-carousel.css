@@ -1,0 +1,407 @@
+.section.hero-carousel-container {
+  padding: 0;
+}
+
+.section > .hero-carousel-wrapper {
+  max-width: 100%;
+}
+
+.hero-carousel .carousel-slides-container {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-carousel .carousel-slides,
+.hero-carousel .carousel-slide-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-carousel .carousel-slides {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  overflow: auto;
+  align-items: stretch;
+  scrollbar-width: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.hero-carousel .carousel-slide {
+  display: block;
+  position: relative;
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  height: 440px;
+  overflow: hidden;
+}
+
+.hero-carousel .carousel-slide .carousel-slide-background {
+  display: block;
+  position: relative;
+  transform: translateX(100%);
+  transition: transform 1s ease;
+}
+
+.hero-carousel .carousel-slide[aria-hidden="false"] .carousel-slide-background {
+  transform: translateX(0);
+}
+
+.hero-carousel .carousel-slides::-webkit-scrollbar {
+  display: none;
+}
+
+.hero-carousel .carousel-slide.background-light-green {
+  background-color: var(--swansdown);
+}
+
+.hero-carousel .carousel-slide.background-light-green .carousel-slide-background {
+  background-image: url('/images/WhatsappBannerMobile.png');
+  background-size: cover;
+}
+
+.hero-carousel .carousel-slide.background-light-blue {
+  background-color: var(--skyblue);
+}
+
+.hero-carousel .carousel-slide.background-blue {
+  background-color: var(--piramal-blue-20);
+}
+
+.hero-carousel .carousel-slide.background-blue .carousel-slide-background {
+  background-image: url('/images/bgiPhone15Mobile.svg');
+  background-size: cover;
+}
+
+.hero-carousel .carousel-slide.background-violet {
+  background-color: var(--violet);
+}
+
+.hero-carousel .carousel-slide.background-violet .carousel-slide-background {
+  background-image: url('/images/AwardsBannerDesktop.webp');
+  background-size: cover;
+}
+
+.hero-carousel .carousel-slide.background-light-yellow {
+  background-color: var(--lilen);
+}
+
+.hero-carousel .carousel-slide.background-light-pink {
+  background-color: var(--rosewhite);
+}
+
+.hero-carousel .carousel-slide.background-gradient {
+  background: linear-gradient(320.12deg, var(--purple) -0.41%, var(--orange) 101.64%);
+}
+
+.hero-carousel .carousel-slides.single-slide .carousel-slide .carousel-slide-background {
+  transform: none;
+  transition: none;
+}
+
+.hero-carousel .carousel-slide-content {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.hero-carousel .carousel-slide-content .carousel-slide-description {
+  display: block;
+  min-height: 400px;
+  padding: 2.5rem 1rem 0;
+  line-height: 1;
+}
+
+.hero-carousel .features-slide h1 {
+  color: var(--darkcharcoal);
+  font-size: 1.5rem;
+}
+
+.hero-carousel .carousel-slide-content .carousel-slide-description h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 800;
+}
+
+.hero-carousel .carousel-slide-content .carousel-slide-description em {
+  color: var(--main-cta-background);
+  font-style: unset;
+}
+
+.hero-carousel .carousel-slide-content .carousel-slide-description strong {
+  font-weight: unset;
+  text-decoration: line-through;
+}
+
+.hero-carousel .carousel-slide-content .carousel-slide-description .features {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.hero-carousel .carousel-slide-content .carousel-slide-description .features .feature {
+  width: 5rem;
+  margin: 0;
+}
+
+.hero-carousel .carousel-slide-content .carousel-slide-description a > img {
+  display: block;
+  height: 1.875rem;
+}
+
+.hero-carousel .carousel-slide-content .carousel-slide-image picture > img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.hero-carousel .carousel-slide-content .carousel-slide-description .features .feature img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.hero-carousel .carousel-slide-content .carousel-slide-description p {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: var(--piramal-neutral-60);
+}
+
+.hero-carousel .carousel-slide.font-white h1,
+.hero-carousel .carousel-slide.font-white p {
+  color: var(--white);
+}
+
+.hero-carousel .carousel-slide-content .link-container p {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin: 0;
+}
+
+.hero-carousel .carousel-slide-content .carousel-slide-description .buttons-container p {
+  margin: 0;
+}
+
+.hero-carousel .carousel-slide-content .link-container p:first-child {
+  padding: 0 5px;
+}
+
+.hero-carousel .carousel-slide-content .carousel-slide-description .features .feature p {
+  margin: 0;
+}
+
+.hero-carousel .carousel-slide-content .carousel-slide-description a:has(img) {
+  padding: 0;
+}
+
+.hero-carousel .carousel-slide-content .carousel-slide-description .link-container a {
+  background-color: unset;
+  border: unset;
+  color: var(--piramal-blue-100);
+  text-decoration: underline;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0 5px;
+}
+
+.hero-carousel .carousel-slide-content .carousel-slide-description .buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.hero-carousel .carousel-slide-content .link-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.hero-carousel .carousel-slide-content .carousel-slide-description .buttons-container .link-container {
+  flex-basis: 100%;
+}
+
+.hero-carousel .carousel-slide-content .carousel-slide-description .button-container a {
+  background-color: var(--main-cta-background);
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 700;
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  margin: 0;
+  border: unset;
+}
+
+.hero-carousel .carousel-slide-content .carousel-slide-description .button-container a:not(:has(img)) {
+  padding: 0.875rem 1rem;
+}
+
+.hero-carousel .carousel-slide-content .carousel-slide-image {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 240px;
+  height: 200px;
+  padding-right: 1rem;
+}
+
+.hero-carousel .carousel-slide.features-slide em {
+  color: var(--darkgreen);
+  font-style: unset;
+}
+
+.hero-carousel .carousel-slides-container nav {
+  display: block;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.hero-carousel .carousel-slide-indicators {
+  display: flex;
+  padding: 0 1rem;
+  gap: 0.25rem;
+}
+
+.hero-carousel .carousel-slide-indicator button {
+  border-radius: 4px;
+  mix-blend-mode: normal;
+  height: 5px;
+  width: 5px;
+  background: var(--darkcharcoal);
+  border: none;
+  opacity: 0.3;
+  cursor: pointer;
+  margin: 1.25rem 0 0 0.25rem;
+  padding: 0;
+}
+
+.hero-carousel .carousel-slide-indicator button[active="true"] {
+  opacity: 1;
+  width: 1rem;
+}
+
+.hero-carousel .carousel-slide-indicator.font-white button[active="true"] {
+  background: var(--white);
+}
+
+@media (width >=900px) {
+  .hero-carousel .carousel-slide {
+    height: 529px;
+  }
+
+  .hero-carousel .carousel-slide.background-light-green .carousel-slide-background {
+    background-image: url('/images/WhatsAppBannerDesktop.png');
+  }
+
+  .hero-carousel .carousel-slide.background-blue .carousel-slide-background {
+    background-image: url('/images/bgiPhone15.svg');
+  }
+
+  .hero-carousel .carousel-slide-content {
+    max-width: var(--max-width);
+    height: 100%;
+    margin: auto;
+  }
+
+  .hero-carousel .carousel-slide-content .carousel-slide-description {
+    min-height: 489px;
+    padding-top: 6rem;
+    margin: 0;
+  }
+
+  .hero-carousel .carousel-slide-content .carousel-slide-description h1 {
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+
+  .hero-carousel .carousel-slide-content .carousel-slide-description p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--piramal-neutral-60);
+  }
+
+  .hero-carousel .carousel-slide.font-white h1,
+  .hero-carousel .carousel-slide.font-white p {
+    color: var(--white)
+  }
+
+  .hero-carousel .carousel-slide-content .carousel-slide-description .features .feature {
+    width: 7.5rem;
+  }
+
+  .hero-carousel .carousel-slide-content .carousel-slide-description a > img {
+    height: 3.625rem;
+  }
+
+  .hero-carousel .carousel-slide-content .carousel-slide-description .features .feature img {
+    width: 72px;
+    height: 72px;
+  }
+
+  .hero-carousel .carousel-slide-content .link-container p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+
+  .hero-carousel .carousel-slide-content .carousel-slide-description .features .feature p {
+    font-size: 1.125rem;
+    line-height: 26px;
+  }
+
+  .hero-carousel .carousel-slide-content .carousel-slide-description .button-container a {
+    font-weight: 700;
+    line-height: 1.75rem;
+    font-size: 1.125rem;
+  }
+
+  .hero-carousel .carousel-slide-content .carousel-slide-description .link-container a {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .hero-carousel .carousel-slide-content .carousel-slide-description .button-container a:not(:has(img)) {
+    padding: 1rem 2.16rem;
+  }
+
+  .hero-carousel .carousel-slide-content .carousel-slide-description .buttons-container .link-container {
+    flex-basis: 50%;
+  }
+
+  .hero-carousel .carousel-slide-content .carousel-slide-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .hero-carousel .carousel-slide-indicator button {
+    border-radius: 2.25rem;
+    height: 0.5rem;
+    width: 0.5rem;
+    margin: 1.25rem 0 0 0.5rem;
+  }
+
+  .hero-carousel .carousel-slides-container nav {
+    bottom: 2rem;
+    left: calc((100% - var(--max-width)) / 2);
+  }
+
+  .hero-carousel .carousel-slide-indicator button[active="true"] {
+    width: 1.5rem;
+  }
+}
+
+@media (width >=1200px) {
+  .hero-carousel .carousel-slide-content .carousel-slide-image {
+    width: 440px;
+    height: 400px;
+  }
+}
