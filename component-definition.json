@@ -225,12 +225,12 @@
                   "filter": "bannerform",
                   "item": [
                     {
-                      "sling:resourceType": "core/franklin/components/block/v1/block",
+                      "sling:resourceType": "core/franklin/components/block/v1/block/item",
                       "name": "CommonInput",
                       "model": "commoninput"
                     },
                     {
-                      "sling:resourceType": "core/franklin/components/block/v1/block",
+                      "sling:resourceType": "core/franklin/components/block/v1/block/item",
                       "name": "Dropdown",
                       "model": "dropdown"
                     }
