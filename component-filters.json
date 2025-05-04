@@ -37,7 +37,7 @@
       "bannerform",
       "topsearches",
       "authorable-card",
-      "form-with-banner"
+      "dropdown"
     ]
   },
   {
@@ -130,6 +130,12 @@
         "removeformat"
       ]
     }
+  },
+  {
+    "id": "form-with-banner",
+    "components": [
+      "inputform"
+    ]
   },
   {
     "id": "gender-section",
