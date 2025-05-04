@@ -331,7 +331,7 @@
           "plugins": {
             "xwalk": {
               "page": {
-                "resourceType": "core/wcm/components/text/v2/text",
+                "resourceType": "core/franklin/components/text/v2/text",
                 "template": {
                   "name": "Custom RTE"
                 }
