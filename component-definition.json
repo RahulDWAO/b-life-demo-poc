@@ -241,6 +241,29 @@
           }
         },
         {
+          "title": "Form with Banner",
+          "id": "form-with-banner",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "form-with-banner",
+                  "model": "form-with-banner",
+                  "filter": "form-with-banner",
+                  "item": [
+                    {
+                      "sling:resourceType": "core/franklin/components/block/v1/block/item",
+                      "name": "Inputform",
+                      "model": "inputform"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Cards",
           "id": "cards",
           "plugins": {
