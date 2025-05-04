@@ -226,7 +226,7 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     box-shadow: 0 9px 17px 0 rgba(38, 133, 245, 0.28);
 }
 
-.section.columns-container{
+.section.settlement-card.columns-container{
     display: flex;
     position: relative;
     padding-top: 2.5rem;
@@ -238,35 +238,35 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     margin: 20px;
 }
 
-/* .section.columns-container.section-metadata-container .default-content-wrapper{
+/* .section.settlement-card.columns-container.section-metadata-container .default-content-wrapper{
     display: flex;
     gap: 40px;
 } */
 
-.section.columns-container .default-content-wrapper p:nth-child(2){
+.section.settlement-card.columns-container .default-content-wrapper p:nth-child(2){
     top: -70px;
     position: absolute;
     right: 46%;
 }
 
-.section.columns-container .columns-wrapper {
+.section.settlement-card.columns-container .columns-wrapper {
     text-align: center;
 }
 
 
-.section.columns-container .columns-wrapper p {
+.section.settlement-card.columns-container .columns-wrapper p {
     font-size: 1.75rem;
     color: #094771;
 }
 
-.section.columns-container .columns-wrapper h1 {
+.section.settlement-card.columns-container .columns-wrapper h1 {
     color: #E52D12;
     font-weight: 800;
     margin-bottom: 1.5rem;
     font-size: 2.813rem;
 }
 
-.section.columns-container .columns-wrapper .button-container a{
+.section.settlement-card.columns-container .columns-wrapper .button-container a{
     border: none;
     background-color: #153050;
     border-radius: 8px;
@@ -274,4 +274,13 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     box-shadow: 0 9px 17px 0 rgba(38, 133, 245, 0.28);
     letter-spacing: 0.22px;
         font-size: 22px;
+}
+
+.section.certified-card.columns-container{
+    padding: 2rem 2.25rem;
+    border-radius: 1rem;
+    background-color: #f4faff;
+    box-shadow: 0 0.5em 1em -0.125em rgba(0, 0, 0, 0.1), 0 0px 0 1px rgba(0, 0, 0, 0.02);
+    /* color: #002b47; */
+    max-width: 100%;
 }
