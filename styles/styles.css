@@ -305,6 +305,11 @@ main .section.ban-why-choose-model .cards-wrapper {
     margin: auto;
     overflow: hidden;
     position: relative; */
+  overflow: hidden;
+}
+
+main .section.ban-why-choose-model .cards-wrapper button.carousel-button {
+  color: black;
 }
 
 main .section.ban-why-choose-model .cards-wrapper>.cards>ul {
