@@ -43,6 +43,6 @@ export default function decorate(block) {
   block.textContent = "";
   divwrapper.appendChild(form);
   block.appendChild(divwrapper);
-  genderdiv.appendChild(block);
+  genderdiv.appendChild(block.parentElement);
 
 }
