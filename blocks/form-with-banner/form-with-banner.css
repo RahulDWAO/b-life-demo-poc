@@ -1,0 +1,34 @@
+.agn-home-banner-slider agn-home-banner-form-iinvest-advantage .agn-home-banner-homepage__container {
+    align-items: flex-end
+}
+
+[v-cloak] {
+    display: none
+}
+
+agn-homepage {
+    min-height: 100vh;
+    display: block
+}
+
+agn-homepage:not([v-cloak])~.loading {
+    display: none
+}
+
+agn-homepage .agn-pos-grip-key-features .agn-pos-grip-key-cards {
+    margin: 2rem 0 20px
+}
+
+@media screen and (min-width: 1024px) {
+    agn-homepage .agn-home-about-us {
+        margin-top:60px
+    }
+}
+
+.game-of-life-banner-home {
+    margin-top: 80px
+}
+
+#migration-popup {
+    z-index: 9999
+}
