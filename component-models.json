@@ -515,6 +515,67 @@
     ]
   },
   {
+    "id": "cards-with-paragraph",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "cards-with-paragraph",
+            "value": "cards-with-paragraph"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "card-with-paragraph",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "rte",
+        "value": "",
+        "label": "Rich Text",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "rte",
+        "value": "",
+        "label": "Rich Text Additional optional",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "Simple Texts",
+        "label": "Enter Simple Texts",
+        "valueType": "string"
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "card-with-paragraph",
+            "value": "card-with-paragraph"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "cards",
     "fields": [
       {
@@ -615,67 +676,6 @@
           {
             "name": "Why iTerm Prime?",
             "value": "bandhan-iterm-prime-cards"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cardsv2",
-    "fields": [
-      {
-        "component": "multiselect",
-        "name": "style",
-        "label": "Style",
-        "options": [
-          {
-            "name": "cardsv2",
-            "value": "cardsv2"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cardv2",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "richtext",
-        "name": "rte",
-        "value": "",
-        "label": "Rich Text",
-        "valueType": "string",
-        "multi": false
-      },
-      {
-        "component": "richtext",
-        "name": "rte",
-        "value": "",
-        "label": "Rich Text Additional optional",
-        "valueType": "string",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "name": "Simple Texts",
-        "label": "Enter Simple Texts",
-        "valueType": "string"
-      },
-      {
-        "component": "multiselect",
-        "name": "style",
-        "label": "Style",
-        "options": [
-          {
-            "name": "cardv2",
-            "value": "cardv2"
           }
         ]
       }
