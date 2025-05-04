@@ -410,7 +410,17 @@ main .section.smart-cal>.cards-with-paragraph-wrapper .cards-with-paragraph>div>
 
 .section.people-search-buttons.columns-container>div>div>div>div:nth-child(2) .button-container a {
     color: #153050;
+    display: inline-block;
     margin: 0;
+    border: 2px solid #D9D9D9;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 18px 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 .section.people-search-buttons.columns-container>div>div>div>div:nth-child(2) .button-container a:hover {
