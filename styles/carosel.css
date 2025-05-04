@@ -36,15 +36,3 @@
   .carousel-button.next {
     right: 10px;
   }
-  .ban-why-choose-model .cards-wrapper ul {
-    display: flex;
-    transition: transform 0.3s ease;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .ban-why-choose-model .cards-wrapper ul > li {
-    flex: 0 0 50%;
-    box-sizing: border-box;
-  }
-  

@@ -3,6 +3,7 @@
     align-content: center;
     flex-wrap: nowrap;
     align-items: end;
+    gap: 20px;
     /* Form Container Styles */
     /* Form Header Styles */
     /* Multi-step Form Styles */
@@ -22,7 +23,6 @@
 .cmp-form-banner-container .investment-form-container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 40px 20px;
     background-color: #f9fafc;
     border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -117,9 +117,7 @@
 }
 
 .cmp-form-banner-container .step-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
+   display: none;
 }
 
 .cmp-form-banner-container .back-button {
@@ -378,9 +376,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .cmp-form-banner-container .investment-form-container {
-        padding: 20px 15px;
-    }
+   
 
     .cmp-form-banner-container .form-header h1 {
         font-size: 24px;

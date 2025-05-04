@@ -34,17 +34,14 @@ function getCarouselCreated() {
 
   const slides = Array.from(track.children);
   let currentIndex = 0;
-  const slidesPerView = 2;
-  const maxIndex = Math.ceil(slides.length / slidesPerView) - 1;
 
   function updateSlidePosition() {
     const slideWidth = slides[0].getBoundingClientRect().width;
-    const offset = slideWidth * slidesPerView * currentIndex;
-    track.style.transform = `translateX(-${offset}px)`;
+    track.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
   }
 
   nextButtoncreate.addEventListener("click", () => {
-    if (currentIndex < maxIndex) {
+    if (currentIndex < slides.length - 1) {
       currentIndex++;
       updateSlidePosition();
     }
