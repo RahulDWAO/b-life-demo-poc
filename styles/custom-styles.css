@@ -187,7 +187,7 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     transition: all 0.3s ease-in-out;
   }
 
-.section.most-pop.columns-container .cards-with-paragraph > div > div:nth-child(3){
+.section.most-pop.columns-container .cards-with-paragraph > div > div:nth-child(3), main .section.smart-cal > .cards-with-paragraph-wrapper .cards-with-paragraph > div > div:nth-child(3){
   background-color: #E6F0FA;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -226,7 +226,13 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     padding: 18px 44px;
     box-shadow: 0 9px 17px 0 rgba(38, 133, 245, 0.28);
 }
-
+.section.lets-go-card .default-content-wrapper p:nth-child(3){
+    top: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
 .section.settlement-card.columns-container{
     display: flex;
     position: relative;
