@@ -34,7 +34,9 @@
       "gendernew",
       "accordian-cf",
       "customtitle",
-      "bannerform"
+      "bannerform",
+      "topsearches",
+      "authorable-card"
     ]
   },
   {
@@ -47,6 +49,12 @@
     "id": "accordion-group",
     "components": [
       "accordion"
+    ]
+  },
+  {
+    "id": "authorable-card",
+    "components": [
+      "authored-card"
     ]
   },
   {
@@ -108,6 +116,21 @@
     ]
   },
   {
+    "id": "custom-rte",
+    "rte": {
+      "format": [
+        "bold",
+        "italic"
+      ],
+      "insert": [
+        "link"
+      ],
+      "editor": [
+        "removeformat"
+      ]
+    }
+  },
+  {
     "id": "gender-section",
     "components": [
       "inputform"
@@ -130,6 +153,12 @@
       "text",
       "title",
       "text-input"
+    ]
+  },
+  {
+    "id": "topsearches-group",
+    "components": [
+      "topsearches"
     ]
   }
 ]

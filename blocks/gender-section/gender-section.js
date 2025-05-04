@@ -110,5 +110,6 @@ export default function decorate(block) {
   // Clear original content and append new structure
   block.textContent = "";
   block.appendChild(wrapperDiv);
+  block.appendChild(block.parentElement.nextElementSibling.nextElementSibling)
   
 }
