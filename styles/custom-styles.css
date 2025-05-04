@@ -249,7 +249,7 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     position: absolute;
     top: 50%;
     transform: skewY(-5deg) translateY(-50%);
-    width: 1260px;
+    width: 1225px;
     z-index: -1;
 }
 
