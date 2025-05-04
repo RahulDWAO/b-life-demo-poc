@@ -388,6 +388,11 @@ main .section.smart-cal>.cards-with-paragraph-wrapper .cards-with-paragraph>div>
 
 }
 
+.section.people-search-buttons.columns-container > div > div > div > div:nth-child(1){
+    display: flex;
+    gap: 15px;
+}
+
 .section.people-search-buttons.columns-container>div>div>div>div:nth-child(1)>p {
     width: 30px;
 }
