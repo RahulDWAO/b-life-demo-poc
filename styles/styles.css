@@ -211,11 +211,12 @@ button {
   white-space: nowrap;
   color: #fff;
   border: none;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 18px 44px;
-    /* box-shadow: 0 9px 17px 0 rgba(38, 133, 245, 0.28); */
-    border: 2px solid #D9D9D9;;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 18px 44px;
+  /* box-shadow: 0 9px 17px 0 rgba(38, 133, 245, 0.28); */
+  border: 2px solid #D9D9D9;
+  ;
 }
 
 a.button:hover,
@@ -224,6 +225,7 @@ button:hover,
 button:focus {
   background-color: #153050;
   cursor: pointer;
+  color: #fff;
 }
 
 button:disabled,
@@ -302,7 +304,7 @@ main .section.ban-why-choose-model .cards-wrapper {
   width: auto;
 }
 
-main .section.ban-why-choose-model .cards-wrapper > .cards > ul {
+main .section.ban-why-choose-model .cards-wrapper>.cards>ul {
   display: flex;
   justify-content: center;
   /* padding: 0 8%; */
@@ -314,7 +316,7 @@ main .section.ban-why-choose-model .cards-wrapper > .cards > ul {
   transition: transform 0.6s ease;
 }
 
-main .section.ban-why-choose-model .cards-wrapper > .cards > ul > li {
+main .section.ban-why-choose-model .cards-wrapper>.cards>ul>li {
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-end;
@@ -335,7 +337,7 @@ main .section.ban-why-choose-model .cards-card-body {
   margin: 0;
 }
 
-main .section.ban-why-choose-model .cards-card-body > p {
+main .section.ban-why-choose-model .cards-card-body>p {
   font-size: 1.375rem;
   font-weight: 700;
   color: #062A43;
@@ -347,15 +349,16 @@ main .section.ban-why-choose-model .cards-card-image {
   display: flex;
   justify-content: center;
 }
+
 @media screen and (max-width: 768px) {
-  main .section.ban-why-choose-model .cards-wrapper > .cards > ul {
+  main .section.ban-why-choose-model .cards-wrapper>.cards>ul {
     flex-direction: column;
     align-items: center;
     padding: 0 1rem;
     width: 100%;
   }
 
-  main .section.ban-why-choose-model .cards-wrapper > .cards > ul > li {
+  main .section.ban-why-choose-model .cards-wrapper>.cards>ul>li {
     width: 100%;
     min-width: auto;
     max-width: 100%;
@@ -367,4 +370,3 @@ main .section.ban-why-choose-model .cards-card-image {
     margin-top: 32px;
   }
 }
-
