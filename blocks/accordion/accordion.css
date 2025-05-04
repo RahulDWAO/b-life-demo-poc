@@ -2,7 +2,8 @@
   display: block;
   background-color: #F2F8FF;
   color: var(--non-spectrum-grey);
-  padding: 0 16px;
+  /* padding: 0 16px; */
+  border: 3px solid transparent;
   padding: 24px 32px 40px;
   align-items: flex-start !important;
   cursor: pointer;
