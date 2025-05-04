@@ -696,6 +696,23 @@
     "id": "commoninput",
     "fields": [
       {
+        "component": "multiselect",
+        "name": "classes",
+        "value": "",
+        "label": "Form Style options",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "input-form",
+            "value": "input-form"
+          }
+        ]
+      },
+      {
         "component": "container",
         "label": "Label & Inputs",
         "name": "container",
