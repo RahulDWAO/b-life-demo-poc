@@ -893,6 +893,49 @@
     ]
   },
   {
+    "id": "form-with-banner",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Teaser options",
+        "description": "",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Side-by-side",
+            "value": "side-by-side"
+          },
+          {
+            "name": "Cards Container",
+            "value": "cards-container"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "text1",
+        "value": "",
+        "label": "Text",
+        "valueType": "string",
+        "multi": true
+      }
+    ]
+  },
+  {
     "id": "Header",
     "fields": [
       {
