@@ -235,10 +235,10 @@ export default function decorate(block) {
   divEl3.append(divEl4);
 
   const h1El = document.createElement('h1');
-
+  h1El.textContent = "Bandhan Life iInvest Advantage";
   const spanEl = document.createElement('span');
   spanEl.setAttribute('class', 'new-tag');
-  spanEl.textContent = "'Bandhan Life iInvest Advantage', New";
+  spanEl.textContent = 'New';
   h1El.append(spanEl);
   divEl3.append(h1El);
 
