@@ -291,3 +291,18 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     flex-direction: row-reverse;
     justify-content: space-between;
 }
+
+.section.certified-card.columns-container > .columns-wrapper > div > div:nth-child(1) > div{
+    text-align: center;
+    padding-left: 13rem;
+    font-size: 1.25rem;
+}
+.section.certified-card.columns-container > .columns-wrapper > div > div:nth-child(1) > div p{
+    color: #E52D12;
+    font-family: Manrope-Bold;
+    font-weight: 700;
+}
+
+.section.certified-card.columns-container .cq-placeholder{
+    display: none;
+}
