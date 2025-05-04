@@ -83,26 +83,6 @@
       ]
     },
     {
-      "title": "Banner Form",
-      "id": "bannerform",
-      "components": [
-        {
-          "title": "Banner Form",
-          "id": "bannerform",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/section/v1/section",
-                "template": {
-                  "model": "bannerform"
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
       "title": "Blocks",
       "id": "blocks",
       "components": [

@@ -40,40 +40,6 @@
     ]
   },
   {
-    "id": "bannerform",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title",
-      "hero",
-      "cards",
-      "columns",
-      "fragment",
-      "quote",
-      "teaser",
-      "customcards",
-      "customcard",
-      "custom-cards-container",
-      "section",
-      "accordianold",
-      "accordion-group",
-      "accordian",
-      "gender-section",
-      "inputform",
-      "text-with-image",
-      "custom-rte",
-      "cardsv2",
-      "cardv2",
-      "gendernew",
-      "accordian-cf",
-      "customtitle",
-      "bannerform",
-      "topsearches",
-      "authorable-card"
-    ]
-  },
-  {
     "id": "accordion-group",
     "components": [
       "accordion"

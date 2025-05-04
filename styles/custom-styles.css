@@ -42,7 +42,7 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols div>div>p {
     /* font-family: Manrope-Bold; */
 }
 
-main .section.most-pop>.columns-wrapper>.columns-2-cols .cards-with-paragraph {
+main .section.most-pop>.columns-wrapper>.columns-2-cols .cards-with-paragraph , main .section.smart-cal > .cards-with-paragraph-wrapper .cards-with-paragraph  {
 
     display: flex;
     justify-content: center;
@@ -50,7 +50,7 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols .cards-with-paragraph {
 
 
 
-main .section.most-pop>.columns-wrapper>.columns-2-cols .cards-with-paragraph>div {
+main .section.most-pop>.columns-wrapper>.columns-2-cols .cards-with-paragraph>div , main .section.smart-cal > .cards-with-paragraph-wrapper .cards-with-paragraph>div  {
     height: 50%;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -76,7 +76,8 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols .cards-with-paragraph>di
     position: relative;
 }
 
-main .section.most-pop>.columns-wrapper>.columns-2-cols .cards-with-paragraph>div>div>picture>img {
+main .section.most-pop>.columns-wrapper>.columns-2-cols .cards-with-paragraph>div>div>picture>img, main .section.smart-cal > .cards-with-paragraph-wrapper .cards-with-paragraph>div>div>picture>img 
+    {
 
     margin: 0 auto;
     margin-bottom: 0.5rem;
@@ -85,7 +86,7 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols .cards-with-paragraph>di
 
 }
 
-main .section.most-pop>.columns-wrapper>.columns-2-cols .cards-with-paragraph>div>div>div {
+main .section.most-pop>.columns-wrapper>.columns-2-cols .cards-with-paragraph>div>div>div , main .section.smart-cal > .cards-with-paragraph-wrapper .cards-with-paragraph>div>div>div{
 
     font-size: 1rem;
     color: #094771;
@@ -94,7 +95,7 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols .cards-with-paragraph>di
 
 }
 
-main .section.most-pop>.columns-wrapper>.columns-2-cols .cards-with-paragraph>div>div>div>div {
+main .section.most-pop>.columns-wrapper>.columns-2-cols .cards-with-paragraph>div>div>div>div, main .section.smart-cal > .cards-with-paragraph-wrapper .cards-with-paragraph>div>div>div>div  {
 
     background-color: #E6F0FA;
     padding-left: 1rem;
@@ -148,7 +149,7 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
 }
 
 
-.section.most-pop.columns-container .cards-with-paragraph > div{
+.section.most-pop.columns-container .cards-with-paragraph > div, main .section.smart-cal > .cards-with-paragraph-wrapper .cards-with-paragraph > div{
     box-shadow: 0 0.5em 1em -0.125em rgba(0, 0, 0, 0.1), 0 0px 0 1px rgba(0, 0, 0, 0.02);
     color: #002b47;
     max-width: 100%;
@@ -165,7 +166,7 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     font-size: 1.5rem;
  }
 
-  .section.most-pop.columns-container .cards-with-paragraph > div:hover{
+  .section.most-pop.columns-container .cards-with-paragraph > div:hover, main .section.smart-cal > .cards-with-paragraph-wrapper .cards-with-paragraph > div:hover{
     transform: translateY(-3px);
   }
 
