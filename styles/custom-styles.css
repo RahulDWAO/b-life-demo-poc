@@ -406,3 +406,9 @@ main .section.smart-cal>.cards-with-paragraph-wrapper .cards-with-paragraph>div>
     color: #153050;
     margin: 0;
 }
+
+.section.people-search-buttons.columns-container>div>div>div>div:nth-child(2) .button-container a:hover {
+    color: #fff;
+    background-color: #153050;
+   
+}

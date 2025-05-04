@@ -223,9 +223,8 @@ a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: #153050;
+  /* background-color: #153050; */
   cursor: pointer;
-  color: #fff;
 }
 
 button:disabled,
