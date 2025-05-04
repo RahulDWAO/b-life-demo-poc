@@ -316,6 +316,7 @@ main .section.smart-cal>.cards-with-paragraph-wrapper .cards-with-paragraph>div>
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
 }
 
 .section.certified-card.columns-container>.columns-wrapper>div>div:nth-child(1)>div {
