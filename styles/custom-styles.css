@@ -235,13 +235,22 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     border-radius: 1.5rem;
     /* max-width: 1230px; */
     /* background-color: #F4FAFF; */
-    margin: 20px 32px;
+    margin: 70px 32px;
 }
 
-/* .section.settlement-card.columns-container.section-metadata-container .default-content-wrapper{
-    display: flex;
-    gap: 40px;
-} */
+.section.settlement-card.columns-container::after{
+    background-color: #F4FAFF;
+    border-bottom-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: skewY(-5deg) translateY(-50%);
+    width: 100%;
+    z-index: -1;
+}
 
 .section.settlement-card.columns-container .default-content-wrapper p:nth-child(2){
     top: -70px;
@@ -299,8 +308,9 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
 }
 .section.certified-card.columns-container > .columns-wrapper > div > div:nth-child(1) > div p{
     color: #E52D12;
-    font-family: Manrope-Bold;
+    /* font-family: Manrope-Bold; */
     font-weight: 700;
+    margin: 0;
 }
 
 .section.certified-card.columns-container .cq-placeholder{
