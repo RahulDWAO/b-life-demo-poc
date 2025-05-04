@@ -1,5 +1,5 @@
 import { generateAccordionDOM } from '../accordion/accordion.js';
-import{getContentFragmentData} from '../../scripts/cf-service.js'
+// import{getContentFragmentData} from '../../scripts/cf-service.js'
 
 export default function decorate(block) {
   // each row is an accordion entry
