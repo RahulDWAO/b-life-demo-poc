@@ -1,19 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const observer = new MutationObserver((mutations, obs) => {
-    const targetEl = document.querySelector(".ban-why-choose-model > .cards-wrapper ul");
-
-    if (targetEl) {
-      getCarouselCreated();    
-      obs.disconnect();
-    }
-  });
-
-  observer.observe(document.body, {
-    childList: true,
-    subtree: true
-  });
-});
-
 function getCarouselCreated() {
   const track = document.querySelector(".ban-why-choose-model > .cards-wrapper ul");
   const parentdiv = document.querySelector(".ban-why-choose-model > .cards-wrapper");
@@ -41,7 +25,11 @@ function getCarouselCreated() {
   }
 
   nextButtoncreate.addEventListener("click", () => {
-    if (currentIndex < slides.length - 1) {
+    const slideWidth = slides[0].getBoundingClientRect().width;
+    const visibleSlides = 2;
+    const maxIndex = slides.length - visibleSlides;
+
+    if (currentIndex < maxIndex) {
       currentIndex++;
       updateSlidePosition();
     }

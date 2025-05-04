@@ -301,6 +301,10 @@ main .section.ban-why-choose-model .default-content-wrapper h2 {
 main .section.ban-why-choose-model .cards-wrapper {
   margin-top: 2rem;
   width: auto;
+  /* width: 61%;
+    margin: auto;
+    overflow: hidden;
+    position: relative; */
 }
 
 main .section.ban-why-choose-model .cards-wrapper>.cards>ul {
