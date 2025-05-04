@@ -285,7 +285,7 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     max-width: 100%;
 }
 
-.section.certified-card.columns-container .columns-wrapper div > div{
+.section.certified-card.columns-container .columns-wrapper div > div:nth-child(1){
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
