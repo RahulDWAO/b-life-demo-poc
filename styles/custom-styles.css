@@ -248,7 +248,15 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     right: 46%;
 }
 
-.section.columns-container .columns-wrapper p:nth-child(1) {
+.section.columns-container .columns-wrapper p {
     font-size: 1.75rem;
     color: #094771;
+}
+
+
+.section.columns-container .columns-wrapper .button-container a{
+    border: none;
+    background-color: #153050;
+    border-radius: 8px;
+    padding: 22px 55px;
 }
