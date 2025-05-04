@@ -272,4 +272,6 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     border-radius: 8px;
     padding: 16px 42px;
     box-shadow: 0 9px 17px 0 rgba(38, 133, 245, 0.28);
+    letter-spacing: 0.22px;
+        font-size: 22px;
 }
