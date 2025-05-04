@@ -59,21 +59,8 @@
               "multi": true
             }
           ]
-        },
-        {
-          "component": "text-input",
-          "label": "Error Mesage",
-          "name": "errormsg",
-          "valueType": "string",
-          "multi": false
-        },
-        {
-          "component": "reference",
-          "valueType": "string",
-          "name": "image",
-          "label": "Image",
-          "multi": false
         }
+       
       ]
     }
   ],

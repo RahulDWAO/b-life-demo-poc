@@ -6,10 +6,11 @@ export default function decorate(block) {
   const classes = block.className; // Get block's class
   const divwrapper = document.createElement("div");
 
+
   divwrapper.classList.add(...classes.split(" ")); // Add classes to the wrapper
 
-  const labellist = block.children[1].textContent.trim().split(","); // First child = labels
-  const inputValue = block.children[2].textContent.trim().split(","); // Second child = placeholders
+  const labellist = block.children[0].textContent.trim().split(","); // First child = labels
+  const inputValue = block.children[1].textContent.trim().split(","); // Second child = placeholders
 
 
   // Create inputs and labels together
@@ -38,6 +39,7 @@ export default function decorate(block) {
     // Append inner div to the form
   });
   
+
 
   block.textContent = "";
   block.appendChild(divwrapper);
