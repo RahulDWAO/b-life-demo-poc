@@ -47,6 +47,10 @@
     ]
   },
   {
+    "id": "form-with-banner",
+    "components": []
+  },
+  {
     "id": "accordion-group",
     "components": [
       "accordion"
