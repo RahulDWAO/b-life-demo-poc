@@ -53,28 +53,27 @@
             {
               "name": "section-container",
               "value": "section-container"
-           
             },
             {
-                 "name": "Why iTerm Prime?",
+              "name": "Why iTerm Prime?",
               "value": "bandhan-iterm-prime-cards"
             },
             {
               "name": "lets go card",
-           "value": "lets-go-card"
-         },
-         {
-          "name": "lets go card11",
-       "value": "lets-go-card1"
-     },
-     {
-      "name": " Certified Card",
-   "value": "certified-card"
- },
- {
-  "name": "Settlement Card",
-"value": "settlement-card"
-}
+              "value": "lets-go-card"
+            },
+            {
+              "name": "lets go card11",
+              "value": "lets-go-card1"
+            },
+            {
+              "name": " Certified Card",
+              "value": "certified-card"
+            },
+            {
+              "name": "Settlement Card",
+              "value": "settlement-card"
+            }
           ]
         }
       ]
