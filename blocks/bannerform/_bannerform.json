@@ -13,14 +13,14 @@
               "filter": "bannerform",
               "item": [
                 {
-                  "sling:resourceType": "core/franklin/components/block/v1/block/item",
-                  "name": "Gender Section",
-                  "model": "gender-section"
+                  "sling:resourceType": "core/franklin/components/block/v1/block",
+                  "name": "CommonInput",
+                  "model": "commoninput"
                 },
                 {
-                  "sling:resourceType": "core/franklin/components/block/v1/block/item",
-                  "name": "Inputform",
-                  "model": "inputform"
+                  "sling:resourceType": "core/franklin/components/block/v1/block",
+                  "name": "Dropdown",
+                  "model": "dropdown"
                 }
               ]
             }
@@ -29,11 +29,61 @@
       }
     }
   ],
-  "models": [],
+  "models": [
+    {
+      "id": "bannerform",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "heading",
+          "value": "",
+          "label": "Heading"
+        },
+        {
+          "component": "select",
+          "valueType": "string",
+          "name": "headingType",
+          "value": "h3",
+          "label": "Heading Type",
+          "options": [
+            {
+              "name": "H2",
+              "value": "h2"
+            },
+            {
+              "name": "H3",
+              "value": "h3"
+            },
+            {
+              "name": "H4",
+              "value": "h4"
+            },
+            {
+              "name": "H5",
+              "value": "h5"
+            },
+            {
+              "name": "H6",
+              "value": "h6"
+            }
+          ]
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "body",
+          "value": "",
+          "label": "Body"
+        }
+  
+      ]
+    }
+  ],
   "filters": [
     {
       "id": "bannerform",
-      "components": ["gender-section","commoninput","dropdown"]
+      "components": ["commoninput","dropdown"]
     }
   ]
 }
