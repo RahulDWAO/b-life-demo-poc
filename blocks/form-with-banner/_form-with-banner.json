@@ -59,6 +59,14 @@
           "label": "Text",
           "valueType": "string",
           "multi": true
+        },
+        {
+          "component": "text",
+          "name": "text1",
+          "value": "",
+          "label": "My Text",
+          "valueType": "string",
+          "multi": true
         }
       ]
     }
