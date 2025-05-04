@@ -121,83 +121,24 @@
       "format": [
         "bold",
         "italic",
-        "underline",
-        "strikethrough",
-        "font",
-        "fontsize",
-        "color",
-        "background",
-        "uppercase",
-        "lowercase",
-        "capitalize"
+        "underline"
       ],
       "alignment": [
         "left",
         "center",
-        "right",
-        "justify"
-      ],
-      "indentation": [
-        "indent",
-        "outdent",
-        "lineHeight",
-        "letterSpacing"
-      ],
-      "sr_script": [
-        "subscript",
-        "superscript"
+        "right"
       ],
       "list": [
         "unordered",
-        "ordered",
-        "checklist"
+        "ordered"
       ],
       "insert": [
-        "link",
-        "unlink",
-        "anchor",
-        "image",
-        "video",
-        "audio",
-        "table",
-        "hr",
-        "datetime",
-        "specialChar",
-        "emoji",
-        "math",
-        "equation",
-        "toc",
-        "footnote"
+        "link"
       ],
       "editor": [
-        "undo",
-        "redo",
         "removeformat",
-        "selectall",
-        "sourcecode",
-        "preview",
-        "fullscreen",
-        "spellcheck",
-        "wordcount",
-        "findreplace"
-      ],
-      "advanced": [
-        "comments",
-        "mentions",
-        "revisionHistory",
-        "accessibilityChecker",
-        "complianceChecker",
-        "mergeTags",
-        "aiAssistant",
-        "imageEditor",
-        "powerPaste",
-        "imageOptimizer"
-      ],
-      "extensions": [
-        "customCSS",
-        "customTags",
-        "downloadableFiles",
-        "pluginSupport"
+        "undo",
+        "redo"
       ],
       "ui": {
         "language": "en",

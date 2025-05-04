@@ -325,12 +325,12 @@
           }
         },
         {
-          "title": "Custom  RTE",
+          "title": "Custom RTE",
           "id": "custom-rte",
           "plugins": {
             "xwalk": {
               "page": {
-                "resourceType": "core/franklin/components/text/v1/text",
+                "resourceType": "core/wcm/components/text/v2/text",
                 "template": {
                   "name": "Custom RTE"
                 }
