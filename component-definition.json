@@ -11,7 +11,9 @@
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/text/v1/text",
-                "template": {}
+                "template": {
+                  "model": "text"
+                }
               }
             }
           }
@@ -37,7 +39,9 @@
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/image/v1/image",
-                "template": {}
+                "template": {
+                  "model": "image"
+                }
               }
             }
           }
@@ -83,15 +87,177 @@
       "id": "blocks",
       "components": [
         {
-          "title": "Cards",
-          "id": "cards",
+          "title": "Accordian CF",
+          "id": "accordian-cf",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Accordian CF",
+                  "model": "accordian-cf"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Accordian old",
+          "id": "accordianold",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "name": "Cards",
-                  "filter": "cards"
+                  "name": "Accordianold",
+                  "model": "accordianold"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Accordion Group",
+          "id": "accordion-group",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Accordion Group",
+                  "model": "accordion-group",
+                  "filter": "accordion",
+                  "item": {
+                    "sling:resourceType": "core/franklin/components/block/v1/block/item",
+                    "name": "Accordion",
+                    "model": "accordion",
+                    "heading": "Lorem ipsum",
+                    "headingType": "h3",
+                    "body": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Accordion",
+          "id": "accordion",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Accordion",
+                  "model": "accordion",
+                  "heading": "Lorem ipsum",
+                  "body": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Authorable Card",
+          "id": "authorable-card",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "filter": "authorable-card",
+                  "name": "Authorable Card",
+                  "model": "authorable-card",
+                  "classes": [
+                    "header-left"
+                  ],
+                  "headingType": "h2",
+                  "item1": {
+                    "sling:resourceType": "core/franklin/components/block/v1/block/item",
+                    "name": "Authored Card",
+                    "model": "authored-card"
+                  },
+                  "item2": {
+                    "sling:resourceType": "core/franklin/components/block/v1/block/item",
+                    "name": "Authored Card",
+                    "model": "authored-card"
+                  },
+                  "item3": {
+                    "sling:resourceType": "core/franklin/components/block/v1/block/item",
+                    "name": "Authored Card",
+                    "model": "authored-card"
+                  },
+                  "item4": {
+                    "sling:resourceType": "core/franklin/components/block/v1/block/item",
+                    "name": "Authored Card",
+                    "model": "authored-card"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Authored Card",
+          "id": "authored-card",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Authored Card",
+                  "model": "authored-card"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "BannerForm",
+          "id": "bannerform",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "BannerForm",
+                  "model": "bannerform",
+                  "filter": "bannerform",
+                  "item": [
+                    {
+                      "sling:resourceType": "core/franklin/components/block/v1/block/item",
+                      "name": "Gender Section",
+                      "model": "gender-section"
+                    },
+                    {
+                      "sling:resourceType": "core/franklin/components/block/v1/block/item",
+                      "name": "Inputform",
+                      "model": "inputform"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Form with Banner",
+          "id": "form-with-banner",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "form-with-banner",
+                  "model": "form-with-banner",
+                  "filter": "form-with-banner",
+                  "item": [
+                    {
+                      "sling:resourceType": "core/franklin/components/block/v1/block/item",
+                      "name": "Inputform",
+                      "model": "inputform"
+                    }
+                  ]
                 }
               }
             }
@@ -106,7 +272,10 @@
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
                   "name": "Cards",
-                  "filter": "cards"
+                  "filter": "cards",
+                  "classes": [
+                    "cards-container"
+                  ]
                 }
               }
             }
@@ -121,7 +290,40 @@
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
                   "name": "Card",
-                  "model": "card"
+                  "model": "card",
+                  "classes": [
+                    "card-container"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Cardsv2",
+          "id": "cardsv2",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Cardsv2",
+                  "filter": "cardsv2"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Cardv2",
+          "id": "cardv2",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Cardv2",
+                  "model": "cardv2"
                 }
               }
             }
@@ -136,7 +338,69 @@
                 "resourceType": "core/franklin/components/columns/v1/columns",
                 "template": {
                   "columns": "2",
-                  "rows": "1"
+                  "rows": "1",
+                  "classes": [
+                    "column-container"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Custom RTE",
+          "id": "custom-rte",
+          "modelId": "text-model",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/text/v1/text",
+                "template": {
+                  "name": "Custom RTE"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Custom Card",
+          "id": "customcard",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Custom Card",
+                  "model": "customcard"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Custom Cards Container",
+          "id": "custom-cards-container",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Custom Cards Container",
+                  "filter": "custom-cards-container"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Custom Title",
+          "id": "customtitle",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/title/v1/title",
+                "template": {
+                  "model": "customtitle"
                 }
               }
             }
@@ -152,6 +416,22 @@
                 "template": {
                   "name": "Fragment",
                   "model": "fragment"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Gender Section",
+          "id": "gender-section",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Gender Section",
+                  "model": "gender-section",
+                  "filter": "gender-section"
                 }
               }
             }
@@ -188,16 +468,71 @@
           }
         },
         {
-          "title": "Invest Calculator",
-          "id": "innvest-calculator",
+          "title": "Inputform",
+          "id": "inputform",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "name": "Invest Calculator",
-                  "filter": "innvest-calculator",
-                  "model": "innvest-calculator"
+                  "name": "Inputform",
+                  "model": "inputform",
+                  "filter": "inputform"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Teaser",
+          "id": "teaser",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Teaser",
+                  "model": "teaser",
+                  "classes": [
+                    "teaser-demo"
+                  ],
+                  "textContent_text": "<h2>Enter a title</h2><p>...and body text here!</p>",
+                  "textContent_cta": "/",
+                  "textContent_ctaText": "Click me!"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Text With Image",
+          "id": "text-with-image",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Text With Image",
+                  "model": "text-with-image",
+                  "filter": "text-with-image",
+                  "classes": [
+                    "img-text"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Topsearches",
+          "id": "topsearches",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Topsearches",
+                  "model": "topsearches"
                 }
               }
             }

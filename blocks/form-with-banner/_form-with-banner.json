@@ -1,0 +1,72 @@
+{
+  "definitions": [
+    {
+      "title": "Form with Banner",
+      "id": "form-with-banner",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Form with Banner",
+              "model": "form-with-banner",
+              "filter": "form-with-banner"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "form-with-banner",
+      "fields": [
+        {
+          "component": "select",
+          "name": "classes",
+          "value": "",
+          "label": "Form Options",
+          "description": "",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Default",
+              "value": ""
+            }
+          ]
+        },
+
+        {
+          "component": "richtext",
+          "name": "text",
+          "value": "",
+          "label": "Text",
+          "valueType": "string",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "name": "text1",
+          "value": "",
+          "label": "Text",
+          "valueType": "string",
+          "multi": true
+        },
+        {
+          "component": "text",
+          "name": "text2",
+          "value": "",
+          "label": "My Text",
+          "valueType": "string",
+          "multi": true
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "form-with-banner",
+      "components": ["inputform"]
+    }
+  ]
+}

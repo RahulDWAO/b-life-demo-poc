@@ -1,0 +1,39 @@
+{
+  "definitions": [
+    {
+      "title": "BannerForm",
+      "id": "bannerform",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "BannerForm",
+              "model": "bannerform",
+              "filter": "bannerform",
+              "item": [
+                {
+                  "sling:resourceType": "core/franklin/components/block/v1/block/item",
+                  "name": "Gender Section",
+                  "model": "gender-section"
+                },
+                {
+                  "sling:resourceType": "core/franklin/components/block/v1/block/item",
+                  "name": "Inputform",
+                  "model": "inputform"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [],
+  "filters": [
+    {
+      "id": "bannerform",
+      "components": ["gender-section","inputform"]
+    }
+  ]
+}

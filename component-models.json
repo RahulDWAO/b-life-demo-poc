@@ -27,6 +27,21 @@
     "id": "image",
     "fields": [
       {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "image",
+            "value": "cmp-img"
+          }
+        ]
+      },
+      {
         "component": "reference",
         "name": "image",
         "label": "Image",
@@ -77,6 +92,33 @@
             "value": "h6"
           }
         ]
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "title",
+            "value": "cmp-title"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "text",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "text",
+            "value": "cmp-text"
+          }
+        ]
       }
     ]
   },
@@ -116,6 +158,17 @@
             "value": "secondary"
           }
         ]
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "button",
+            "value": "cmp-btn"
+          }
+        ]
       }
     ]
   },
@@ -142,16 +195,346 @@
             "value": "ban-why-choose-model"
           },
           {
+            "name": "most-pop",
+            "value": "most-pop"
+          },
+          {
+            "name": "quick-link",
+            "value": "quick-link"
+          },
+          {
+            "name": "Smart Calculator",
+            "value": "smart-cal"
+          },
+          {
+            "name": "most-pop-left",
+            "value": "most-pop-left"
+          },
+          {
+            "name": "section-container",
+            "value": "section-container"
+          },
+          {
             "name": "Why iTerm Prime?",
             "value": "bandhan-iterm-prime-cards"
+          },
+          {
+            "name": "lets go card",
+            "value": "lets-go-card"
+          },
+          {
+            "name": "lets go card11",
+            "value": "lets-go-card1"
+          },
+          {
+            "name": "people-search-buttons",
+            "value": "people-search-buttons"
+          },
+          {
+            "name": " Certified Card",
+            "value": "certified-card"
+          },
+          {
+            "name": "Settlement Card",
+            "value": "settlement-card"
           }
         ]
       }
     ]
   },
   {
+    "id": "accordian-cf",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Accordion classes",
+        "description": "Options that affect block appearance and behavior.",
+        "valueType": "string",
+        "required": true,
+        "maxSize": 1,
+        "options": [
+          {
+            "name": "Left",
+            "value": "acc-child-cf"
+          },
+          {
+            "name": "Center",
+            "value": "acc-child1"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "heading",
+        "value": "",
+        "label": "Heading"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "body",
+        "value": "",
+        "label": "Body"
+      },
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "label": "Reference"
+      }
+    ]
+  },
+  {
+    "id": "accordianold",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Teaser options",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "HomePage Accordian",
+            "value": "accv1"
+          }
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image alt text",
+        "required": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "acc_title",
+        "label": "Accordian Title",
+        "required": true
+      },
+      {
+        "component": "richtext",
+        "name": "acc_desc",
+        "label": "Accordian Description",
+        "valueType": "string",
+        "required": true
+      }
+    ]
+  },
+  {
+    "id": "accordion-group",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Accordion classes",
+        "description": "Options that affect block appearance and behavior.",
+        "valueType": "string",
+        "required": true,
+        "maxSize": 1,
+        "options": [
+          {
+            "name": "Left",
+            "value": "acc-grp"
+          },
+          {
+            "name": "Center",
+            "value": "acc-grpr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "accordion",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "heading",
+        "value": "",
+        "label": "Heading"
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "headingType",
+        "value": "h3",
+        "label": "Heading Type",
+        "options": [
+          {
+            "name": "H2",
+            "value": "h2"
+          },
+          {
+            "name": "H3",
+            "value": "h3"
+          },
+          {
+            "name": "H4",
+            "value": "h4"
+          },
+          {
+            "name": "H5",
+            "value": "h5"
+          },
+          {
+            "name": "H6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "body",
+        "value": "",
+        "label": "Body"
+      }
+    ]
+  },
+  {
+    "id": "authorable-card",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Block Options",
+        "description": "Options that affect block appearance and behavior.",
+        "valueType": "string",
+        "required": true,
+        "maxSize": 1,
+        "options": [
+          {
+            "name": "Header Alignment",
+            "children": [
+              {
+                "name": "Left",
+                "value": "header-left"
+              },
+              {
+                "name": "Center",
+                "value": "header-center"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "heading",
+        "value": "",
+        "label": "Heading",
+        "description": "Sets the heading."
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "headingType",
+        "value": "h2",
+        "label": "Heading Type",
+        "options": [
+          {
+            "name": "H1",
+            "value": "h1"
+          },
+          {
+            "name": "H2",
+            "value": "h2"
+          },
+          {
+            "name": "H3",
+            "value": "h3"
+          },
+          {
+            "name": "H4",
+            "value": "h4"
+          },
+          {
+            "name": "H5",
+            "value": "h5"
+          },
+          {
+            "name": "H6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "tooltip",
+        "value": "",
+        "label": "Tooltip",
+        "description": "Sets the tooltip."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "linkText",
+        "value": "",
+        "label": "Link text",
+        "description": "Sets the text for link."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "link",
+        "value": "",
+        "label": "Link URL",
+        "description": "Sets the text url."
+      }
+    ]
+  },
+  {
+    "id": "authored-card",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "contentURL",
+        "value": "",
+        "label": "Content URL",
+        "description": "Provide a link to one of the following content types: Playlist, Tutorial, Documentation, Troubleshooting, On-Demand Event, Certification or Perspective"
+      }
+    ]
+  },
+  {
     "id": "cards",
     "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Teaser options",
+        "description": "",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Side-by-side",
+            "value": "side-by-side"
+          },
+          {
+            "name": "Cards Container",
+            "value": "cards-container"
+          }
+        ]
+      },
       {
         "component": "multiselect",
         "name": "style",
@@ -168,30 +551,10 @@
           {
             "name": "Why iTerm Prime?",
             "value": "bandhan-iterm-prime-cards"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "cards",
-    "fields": [
-      {
-        "component": "multiselect",
-        "name": "style",
-        "label": "Cards Container Style",
-        "options": [
-          {
-            "name": "ban-why-choose-model-wrapper",
-            "value": "ban-why-choose-model-wrapper"
           },
           {
-            "name": "highlighted-section",
-            "value": "highlighted-section"
-          },
-          {
-            "name": "Why iTerm Prime?",
-            "value": "bandhan-iterm-prime-cards"
+            "name": "lets go card",
+            "value": "lets-go-card"
           }
         ]
       }
@@ -200,6 +563,23 @@
   {
     "id": "card",
     "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Teaser options",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Card Container",
+            "value": "card-container"
+          }
+        ]
+      },
       {
         "component": "reference",
         "valueType": "string",
@@ -212,14 +592,8 @@
         "name": "text",
         "value": "",
         "label": "Text",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "description",
-        "value": "",
-        "label": "Description",
-        "valueType": "string"
+        "valueType": "string",
+        "multi": false
       },
       {
         "component": "multiselect",
@@ -237,6 +611,67 @@
           {
             "name": "Why iTerm Prime?",
             "value": "bandhan-iterm-prime-cards"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cardsv2",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "cardsv2",
+            "value": "cardsv2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cardv2",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "rte",
+        "value": "",
+        "label": "Rich Text",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "rte",
+        "value": "",
+        "label": "Rich Text Additional optional",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "Simple Texts",
+        "label": "Enter Simple Texts",
+        "valueType": "string"
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "cardv2",
+            "value": "cardv2"
           }
         ]
       }
@@ -262,12 +697,245 @@
     ]
   },
   {
+    "id": "text-model",
+    "fields": [
+      {
+        "id": "text",
+        "type": "richtext",
+        "label": "Body Text"
+      }
+    ]
+  },
+  {
+    "id": "customcard",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Card Style options",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Card Custom Style",
+            "value": "cmp-custom-style"
+          },
+          {
+            "name": "Card Custom Style 1",
+            "value": "cmp-custom-style-1"
+          }
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image alt text",
+        "required": true
+      },
+      {
+        "component": "richtext",
+        "name": "textContent_text",
+        "label": "Text",
+        "valueType": "string",
+        "required": true
+      },
+      {
+        "component": "aem-content",
+        "name": "textContent_cta",
+        "label": "CTA",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "textContent_ctaText",
+        "label": "CTA label",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "custom-cards-container",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Container options",
+        "description": "",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Custom Cards Container Style",
+            "value": "cards-container-1"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string",
+        "multi": false
+      }
+    ]
+  },
+  {
+    "id": "customtitle",
+    "fields": [
+      {
+        "component": "select",
+        "name": "titleType",
+        "label": "Title Type",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "title",
+            "value": "cmp-customtitle"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "fragment",
     "fields": [
       {
         "component": "aem-content",
         "name": "reference",
         "label": "Reference"
+      }
+    ]
+  },
+  {
+    "id": "gender-section",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Teaser options",
+        "description": "",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Side-by-side",
+            "value": "side-by-side"
+          },
+          {
+            "name": "Cards Container",
+            "value": "cards-container"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "text1",
+        "value": "",
+        "label": "Text",
+        "valueType": "string",
+        "multi": true
+      }
+    ]
+  },
+  {
+    "id": "form-with-banner",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Form Options",
+        "description": "",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "text1",
+        "value": "",
+        "label": "Text",
+        "valueType": "string",
+        "multi": true
+      },
+      {
+        "component": "text",
+        "name": "text2",
+        "value": "",
+        "label": "My Text",
+        "valueType": "string",
+        "multi": true
       }
     ]
   },
@@ -324,104 +992,184 @@
     ]
   },
   {
-    "id": "innvest-calculator",
+    "id": "inputform",
     "fields": [
       {
-        "id": "tab",
-        "fields": [
+        "component": "multiselect",
+        "name": "classes",
+        "value": "",
+        "label": "Form Style options",
+        "valueType": "string",
+        "options": [
           {
-            "component": "tab",
-            "label": "Gender tab",
-            "name": "tab1"
+            "name": "Default",
+            "value": ""
           },
           {
-            "component": "text-input",
-            "label": "Male",
-            "name": "text",
-            "valueType": "string"
-          },
-          {
-            "component": "text-input",
-            "label": "Female",
-            "name": "text2",
-            "valueType": "string"
-          },
-          {
-            "component": "text-input",
-            "label": "other",
-            "name": "text3",
-            "valueType": "string"
-          },
-          {
-            "component": "tab",
-            "label": "Personal  Details",
-            "name": "tab2"
-          },
-          {
-            "component": "text-input",
-            "label": "Age",
-            "name": "text4",
-            "valueType": "string"
-          },
-          {
-            "component": "number",
-            "name": "number",
-            "label": "Age Number",
-            "valueType": "number",
-            "value": 0
-          },
-          {
-            "component": "text-input",
-            "label": "Mobile Number",
-            "name": "text5",
-            "valueType": "string"
-          },
-          {
-            "component": "number",
-            "name": "mobilenumber",
-            "label": "Mobile Number",
-            "valueType": "number",
-            "value": 0
-          },
-          {
-            "component": "text-input",
-            "label": "other",
-            "name": "text3",
-            "valueType": "string"
+            "name": "form-container",
+            "value": "input-form"
           }
         ]
       },
       {
-        "id": "container",
+        "component": "container",
+        "label": "Label & Inputs",
+        "name": "container",
+        "valueType": "string",
+        "collapsible": true,
         "fields": [
           {
-            "component": "container",
-            "label": "Gender",
-            "name": "container",
+            "component": "text-input",
+            "label": "Labels for Form",
+            "name": "text",
             "valueType": "string",
-            "collapsible": true,
-            "fields": [
-              {
-                "component": "text-input",
-                "label": "Male",
-                "name": "text",
-                "valueType": "string"
-              },
-              {
-                "component": "text-input",
-                "label": "Female",
-                "name": "text2",
-                "valueType": "string"
-              },
-              {
-                "component": "text-input",
-                "label": "other",
-                "name": "text3",
-                "valueType": "string"
-              }
-            ]
+            "multi": true
+          },
+          {
+            "component": "text-input",
+            "label": "Input Values for form",
+            "name": "text2",
+            "valueType": "string",
+            "multi": true
           }
         ]
+      },
+      {
+        "component": "text-with-image",
+        "label": "Text  with  Image",
+        "name": "txtimg"
+      }
+    ]
+  },
+  {
+    "id": "teaser",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Teaser options",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "Side-by-side with Image on left",
+            "value": "side-by-side left"
+          },
+          {
+            "name": "Side-by-side with Image on right",
+            "value": "side-by-side right"
+          }
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image alt text",
+        "required": true
+      },
+      {
+        "component": "richtext",
+        "name": "textContent_text",
+        "label": "Text",
+        "valueType": "string",
+        "required": true
+      },
+      {
+        "component": "aem-content",
+        "name": "textContent_cta",
+        "label": "CTA",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "textContent_ctaText",
+        "label": "CTA label",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "text-with-image",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Container option",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": "img-text"
+          }
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image alt text",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "topsearches",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "body",
+        "value": "",
+        "label": "Body"
+      },
+      {
+        "component": "text-input",
+        "label": "Labels for Tags",
+        "name": "text",
+        "valueType": "string",
+        "multi": true
+      },
+      {
+        "component": "aem-tag",
+        "label": "AEM Tag Picker",
+        "name": "toptags",
+        "valueType": "string",
+        "rootPath": "content/cq:tags/bandhan-life"
       }
     ]
   }

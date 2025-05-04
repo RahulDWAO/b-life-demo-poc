@@ -7,7 +7,9 @@
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/image/v1/image",
-            "template": {}
+            "template": {
+              "model":"image"
+            }
           }
         }
       }
@@ -17,6 +19,21 @@
     {
       "id": "image",
       "fields": [
+        {
+          "component": "multiselect",
+          "name": "style",
+          "label": "Style",
+          "options": [
+            {
+              "name": "Default",
+              "value": ""
+            },
+            {
+              "name": "image",
+              "value": "cmp-img"
+            }      
+          ]
+        },
         {
           "component": "reference",
           "name": "image",

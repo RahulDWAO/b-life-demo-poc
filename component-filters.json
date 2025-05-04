@@ -17,20 +17,86 @@
       "columns",
       "fragment",
       "quote",
-      "innvest-calculator"
+      "teaser",
+      "customcards",
+      "customcard",
+      "custom-cards-container",
+      "section",
+      "accordianold",
+      "accordion-group",
+      "accordian",
+      "gender-section",
+      "inputform",
+      "text-with-image",
+      "custom-rte",
+      "cardsv2",
+      "cardv2",
+      "gendernew",
+      "accordian-cf",
+      "customtitle",
+      "bannerform",
+      "topsearches",
+      "authorable-card",
+      "form-with-banner"
+    ]
+  },
+  {
+    "id": "accordion-group",
+    "components": [
+      "accordion"
+    ]
+  },
+  {
+    "id": "form-with-banner",
+    "components": []
+  },
+  {
+    "id": "accordion-group",
+    "components": [
+      "accordion"
+    ]
+  },
+  {
+    "id": "authorable-card",
+    "components": [
+      "authored-card"
+    ]
+  },
+  {
+    "id": "bannerform",
+    "components": [
+      "gender-section",
+      "inputform"
     ]
   },
   {
     "id": "cards",
     "components": [
-      "card"
+      "card",
+      "text"
+    ]
+  },
+  {
+    "id": "card",
+    "components": [
+      "text"
+    ]
+  },
+  {
+    "id": "cardsv2",
+    "components": [
+      "cardv2"
     ]
   },
   {
     "id": "columns",
     "components": [
       "column",
-      "innvest-calculator"
+      "custom-cards-container",
+      "accordian",
+      "innvest-calculator",
+      "cardsv2",
+      "cardv2"
     ]
   },
   {
@@ -40,15 +106,64 @@
       "image",
       "button",
       "title",
-      "innvest-calculator"
+      "cards",
+      "card",
+      "customcards",
+      "customcard",
+      "custom-cards-container",
+      "accordian",
+      "innvest-calculator",
+      "gender-section",
+      "inputform",
+      "text-with-image",
+      "cardsv2",
+      "cardv2"
     ]
   },
   {
-    "id": "innvest-calculator",
+    "id": "custom-rte",
+    "rte": {
+      "format": [
+        "bold",
+        "italic"
+      ],
+      "insert": [
+        "link"
+      ],
+      "editor": [
+        "removeformat"
+      ]
+    }
+  },
+  {
+    "id": "gender-section",
     "components": [
-      "text",
+      "inputform"
+    ]
+  },
+  {
+    "id": "inputform",
+    "components": [
       "image",
-      "title"
+      "text",
+      "title",
+      "text-input",
+      "text-with-image"
+    ]
+  },
+  {
+    "id": "text-with-image",
+    "components": [
+      "image",
+      "text",
+      "title",
+      "text-input"
+    ]
+  },
+  {
+    "id": "topsearches-group",
+    "components": [
+      "topsearches"
     ]
   }
 ]

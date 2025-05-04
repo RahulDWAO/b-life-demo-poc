@@ -39,8 +39,48 @@
               "value": "ban-why-choose-model"
             },
             {
+              "name": "most-pop",
+              "value": "most-pop"
+            },
+            {
+              "name": "quick-link",
+              "value": "quick-link"
+            },
+            {
+              "name": "Smart Calculator",
+              "value": "smart-cal"
+            },
+            {
+              "name": "most-pop-left",
+              "value": "most-pop-left"
+            },
+            {
+              "name": "section-container",
+              "value": "section-container"
+            },
+            {
               "name": "Why iTerm Prime?",
               "value": "bandhan-iterm-prime-cards"
+            },
+            {
+              "name": "lets go card",
+              "value": "lets-go-card"
+            },
+            {
+              "name": "lets go card11",
+              "value": "lets-go-card1"
+            },
+            {
+              "name": "people-search-buttons",
+              "value": "people-search-buttons"
+            },
+            {
+              "name": " Certified Card",
+              "value": "certified-card"
+            },
+            {
+              "name": "Settlement Card",
+              "value": "settlement-card"
             }
           ]
         }
@@ -60,7 +100,26 @@
         "columns",
         "fragment",
         "quote",
-        "innvest-calculator"
+        "teaser",
+        "customcards",
+        "customcard",
+        "custom-cards-container",
+        "section",
+        "accordianold",
+        "accordion-group",
+        "accordian",
+        "gender-section",
+        "inputform",
+        "text-with-image",
+        "custom-rte",
+        "cardsv2",
+        "cardv2",
+        "gendernew",
+        "accordian-cf",
+        "customtitle",
+        "bannerform",
+        "topsearches",
+        "authorable-card"
       ]
     }
   ]

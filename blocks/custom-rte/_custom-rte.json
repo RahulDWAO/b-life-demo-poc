@@ -1,0 +1,41 @@
+{
+  "definitions": [
+    {
+      "title": "Custom RTE",
+      "id": "custom-rte",
+      "modelId": "text-model",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/text/v1/text",
+            "template": {
+              "name": "Custom RTE"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "text-model",
+      "fields": [
+        {
+          "id": "text",
+          "type": "richtext",
+          "label": "Body Text"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "custom-rte",
+      "rte": {
+        "format": ["bold", "italic"],
+        "insert": ["link"],
+        "editor": ["removeformat"]
+      }
+    }
+  ]
+}
