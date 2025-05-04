@@ -1,10 +1,24 @@
-document.addEventListener("DOMContentLoaded", (event) => {
-  const track = document.querySelector(
-    ".ban-why-choose-model > .cards-wrapper ul"
-  );
-  const parentdiv = document.querySelector(
-    ".ban-why-choose-model > .cards-wrapper"
-  );
+document.addEventListener("DOMContentLoaded", () => {
+  const observer = new MutationObserver((mutations, obs) => {
+    const targetEl = document.querySelector(".ban-why-choose-model > .cards-wrapper ul");
+
+    if (targetEl) {
+      getCarouselCreated();    
+      obs.disconnect();
+    }
+  });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+});
+
+function getCarouselCreated() {
+  const track = document.querySelector(".ban-why-choose-model > .cards-wrapper ul");
+  const parentdiv = document.querySelector(".ban-why-choose-model > .cards-wrapper");
+
+  if (!track || !parentdiv) return;
 
   // Create buttons
   const nextButtoncreate = document.createElement("button");
@@ -39,4 +53,4 @@ document.addEventListener("DOMContentLoaded", (event) => {
       updateSlidePosition();
     }
   });
-});
+}
