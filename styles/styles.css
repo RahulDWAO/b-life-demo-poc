@@ -196,7 +196,7 @@ a:hover {
 /* buttons */
 a.button:any-link,
 button {
-  /* box-sizing: border-box;
+  box-sizing: border-box;
   display: inline-block;
   max-width: 100%;
   margin: 12px 0;
@@ -211,7 +211,7 @@ button {
   white-space: nowrap;
   color: #fff;
   border: none;
-  background-color: #fff;
+  /* background-color: #fff;
   border-radius: 8px;
   padding: 18px 44px;
   box-shadow: 0 9px 17px 0 rgba(38, 133, 245, 0.28);
