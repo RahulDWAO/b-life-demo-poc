@@ -63,7 +63,8 @@
     "id": "bannerform",
     "components": [
       "gender-section",
-      "inputform"
+      "commoninput",
+      "dropdown"
     ]
   },
   {
