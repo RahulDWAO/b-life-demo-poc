@@ -7,8 +7,8 @@
   line-height: var(--exlm-line-height-h4);
   margin-left: 14px;
   margin-top: 14px;
-  margin: -13px;
-    padding-bottom: 40px;
+  margin: 0px;
+    padding-bottom: 20px;
 }
 
 /* override /docs font size */

@@ -169,4 +169,6 @@ main .section.accordion-group-container .accordion-group-wrapper .accordion-grou
 }
 
 
-/* section accordion-group-container */
+.section.accordion-group-container .default-content-wrapper h1{
+  margin-bottom: 20px;
+}
