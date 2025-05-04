@@ -1,15 +1,19 @@
 .accordion details {
-  display: block;
-  background-color: #F2F8FF;
   color: var(--non-spectrum-grey);
-  /* padding: 0 16px; */
-  /* border: 3px solid transparent; */
   padding: 24px 32px 40px;
   align-items: flex-start !important;
   cursor: pointer;
   width: 100%;
-  margin-top: -25px; 
+  margin-top: -25px;
   border-radius: 20px;
+  background-color: #F2F8FF;
+  border-radius: 1rem;
+  border: 3px solid #ffffff;
+  display: flex;
+  flex-flow: column wrap;
+  margin: -1rem auto 0 !important;
+  z-index: 1;
+  position: relative;
 }
 
 .accordion details summary {
