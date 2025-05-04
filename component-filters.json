@@ -120,20 +120,91 @@
     "rte": {
       "format": [
         "bold",
-        "italic"
+        "italic",
+        "underline",
+        "strikethrough",
+        "font",
+        "fontsize",
+        "color",
+        "background",
+        "uppercase",
+        "lowercase",
+        "capitalize"
       ],
-      "alignment": [],
-      "indentation": [],
-      "sr_script": [],
-      "list": [],
+      "alignment": [
+        "left",
+        "center",
+        "right",
+        "justify"
+      ],
+      "indentation": [
+        "indent",
+        "outdent",
+        "lineHeight",
+        "letterSpacing"
+      ],
+      "sr_script": [
+        "subscript",
+        "superscript"
+      ],
+      "list": [
+        "unordered",
+        "ordered",
+        "checklist"
+      ],
       "insert": [
-        "link"
+        "link",
+        "unlink",
+        "anchor",
+        "image",
+        "video",
+        "audio",
+        "table",
+        "hr",
+        "datetime",
+        "specialChar",
+        "emoji",
+        "math",
+        "equation",
+        "toc",
+        "footnote"
       ],
-      "advanced": [],
-      "extensions": [],
       "editor": [
-        "removeformat"
-      ]
+        "undo",
+        "redo",
+        "removeformat",
+        "selectall",
+        "sourcecode",
+        "preview",
+        "fullscreen",
+        "spellcheck",
+        "wordcount",
+        "findreplace"
+      ],
+      "advanced": [
+        "comments",
+        "mentions",
+        "revisionHistory",
+        "accessibilityChecker",
+        "complianceChecker",
+        "mergeTags",
+        "aiAssistant",
+        "imageEditor",
+        "powerPaste",
+        "imageOptimizer"
+      ],
+      "extensions": [
+        "customCSS",
+        "customTags",
+        "downloadableFiles",
+        "pluginSupport"
+      ],
+      "ui": {
+        "language": "en",
+        "theme": "light",
+        "toolbarLayout": "top",
+        "showStatusbar": true
+      }
     }
   },
   {

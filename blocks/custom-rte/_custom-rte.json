@@ -9,7 +9,6 @@
             "resourceType": "core/franklin/components/text/v1/text",
             "template": {
               "name": "Custom RTE"
-            
             }
           }
         }
@@ -20,16 +19,78 @@
   "filters": [
     {
       "id": "custom-rte",
+
       "rte": {
-        "format": ["bold", "italic"],
-        "alignment": [],
-        "indentation": [],
-        "sr_script": [],
-        "list": [],
-        "insert": ["link"],
-        "advanced": [],
-        "extensions": [],
-        "editor": ["removeformat"]
+        "format": [
+          "bold",
+          "italic",
+          "underline",
+          "strikethrough",
+          "font",
+          "fontsize",
+          "color",
+          "background",
+          "uppercase",
+          "lowercase",
+          "capitalize"
+        ],
+        "alignment": ["left", "center", "right", "justify"],
+        "indentation": ["indent", "outdent", "lineHeight", "letterSpacing"],
+        "sr_script": ["subscript", "superscript"],
+        "list": ["unordered", "ordered", "checklist"],
+        "insert": [
+          "link",
+          "unlink",
+          "anchor",
+          "image",
+          "video",
+          "audio",
+          "table",
+          "hr",
+          "datetime",
+          "specialChar",
+          "emoji",
+          "math",
+          "equation",
+          "toc",
+          "footnote"
+        ],
+        "editor": [
+          "undo",
+          "redo",
+          "removeformat",
+          "selectall",
+          "sourcecode",
+          "preview",
+          "fullscreen",
+          "spellcheck",
+          "wordcount",
+          "findreplace"
+        ],
+        "advanced": [
+          "comments",
+          "mentions",
+          "revisionHistory",
+          "accessibilityChecker",
+          "complianceChecker",
+          "mergeTags",
+          "aiAssistant",
+          "imageEditor",
+          "powerPaste",
+          "imageOptimizer"
+        ],
+        "extensions": [
+          "customCSS",
+          "customTags",
+          "downloadableFiles",
+          "pluginSupport"
+        ],
+        "ui": {
+          "language": "en",
+          "theme": "light",
+          "toolbarLayout": "top",
+          "showStatusbar": true
+        }
       }
     }
   ]
