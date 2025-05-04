@@ -438,3 +438,7 @@ main .section.smart-cal>.cards-with-paragraph-wrapper .cards-with-paragraph>div>
     font-size: 1.5rem;
     line-height: 1.5;
 }
+
+.section.ban-why-choose-model.ban-why-choose-model-section.cards-container button{
+    display: none;
+}
