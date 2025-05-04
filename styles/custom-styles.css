@@ -337,13 +337,14 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     width: 56%
 }
 
-.section.smart-cal.cards-with-paragraph-container .cards-with-paragraph-wrapper img{ 
+.section.smart-cal.cards-with-paragraph-container .cards-with-paragraph-wrapper .cards-with-paragraph>div>div>picture>img{ 
     width: 52px;
     height: 52px;
 }
 
-.section.smart-cal.cards-with-paragraph-container > div.cards-with-paragraph-wrapper > div > div:nth-child() > div:nth-child(2) > div{
+.section.smart-cal.cards-with-paragraph-container .cards-with-paragraph-wrapper .cards-with-paragraph>div>div>div{
     width: 50%;
     margin: auto;
     margin-bottom: 20px;
 }
+
