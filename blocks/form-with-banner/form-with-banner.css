@@ -418,3 +418,7 @@
 .cmp-form-banner-container .cmp-form-banner-image {
     flex: 0.5;
 }
+
+.cmp-form-banner-container .step-indicators {
+    display: none;
+}
