@@ -221,7 +221,15 @@
           {
             "name": "lets go card11",
             "value": "lets-go-card1"
-          }
+          },
+          {
+            "name": " Certified Card",
+         "value": "certified-card"
+       },
+       {
+        "name": "Settlement Card",
+      "value": "settlement-card"
+      }
         ]
       }
     ]
