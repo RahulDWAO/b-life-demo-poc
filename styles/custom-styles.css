@@ -284,3 +284,9 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     /* color: #002b47; */
     max-width: 100%;
 }
+
+.section.certified-card.columns-container .columns-wrapper div > div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
