@@ -693,6 +693,65 @@
     ]
   },
   {
+    "id": "commoninput",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "value": "",
+        "label": "Form Style options",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "input-form",
+            "value": "input-form"
+          }
+        ]
+      },
+      {
+        "component": "container",
+        "label": "Label & Inputs",
+        "name": "container",
+        "valueType": "string",
+        "collapsible": true,
+        "fields": [
+          {
+            "component": "text-input",
+            "label": "Labels for Form",
+            "name": "text",
+            "valueType": "string",
+            "multi": true
+          },
+          {
+            "component": "text-input",
+            "label": "Input Values for form",
+            "name": "text2",
+            "valueType": "string",
+            "multi": true
+          }
+        ]
+      },
+      {
+        "component": "text-input",
+        "label": "Error Mesage",
+        "name": "errormsg",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      }
+    ]
+  },
+  {
     "id": "text-model",
     "fields": [
       {
