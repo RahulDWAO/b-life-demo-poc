@@ -36,8 +36,7 @@
       "customtitle",
       "bannerform",
       "topsearches",
-      "authorable-card",
-      "form-with-banner"
+      "authorable-card"
     ]
   },
   {
@@ -45,10 +44,6 @@
     "components": [
       "accordion"
     ]
-  },
-  {
-    "id": "form-with-banner",
-    "components": []
   },
   {
     "id": "accordion-group",
@@ -134,6 +129,12 @@
         "removeformat"
       ]
     }
+  },
+  {
+    "id": "form-with-banner",
+    "components": [
+      "inputform"
+    ]
   },
   {
     "id": "gender-section",
