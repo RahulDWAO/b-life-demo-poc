@@ -386,3 +386,7 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
         flex-wrap: wrap;
         gap: 10px;
 }
+
+.section.people-search-buttons.columns-container > div > div > div > div:nth-child(2) .button-container a{
+color: #fff;
+}
