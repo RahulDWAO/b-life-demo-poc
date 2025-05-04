@@ -1,574 +1,651 @@
+function initFormHandler() {
+  // Current step tracking
+  let currentStep = 1;
+  const totalSteps = 3;
+  
+  // Form data object to store selections
+  let formData = {
+      gender: '',
+      age: '',
+      mobile: '',
+      amount: '',
+      frequency: '',
+      occupation: '',
+      hazardous: '',
+      bypassConsent: true,
+      contactConsent: true
+  };
+
+  // Update progress bar based on current step
+  function updateProgressBar() {
+      const progressPercentage = ((currentStep - 1) / (totalSteps - 1)) * 100;
+      document.querySelector('.progress-bar').style.width = progressPercentage + '%';
+  }
+
+  // Function to show a specific step
+  function showStep(stepNumber) {
+      // Hide all form steps
+      document.querySelectorAll('.form-step').forEach(step => {
+          step.style.display = 'none';
+      });
+      
+      // Show the current step with fade-in effect
+      const currentStepElement = document.getElementById('step' + stepNumber);
+      currentStepElement.style.display = 'block';
+      currentStepElement.style.opacity = '0';
+      
+      // Simple fade in animation
+      let opacity = 0;
+      const fadeIn = setInterval(() => {
+          if (opacity >= 1) {
+              clearInterval(fadeIn);
+          }
+          currentStepElement.style.opacity = opacity.toString();
+          opacity += 0.1;
+      }, 30);
+      
+      // Update active step indicators
+      document.querySelectorAll('.step').forEach((step, index) => {
+          step.classList.remove('active');
+          if (index + 1 < stepNumber) {
+              step.classList.add('completed');
+          } else if (index + 1 === stepNumber) {
+              step.classList.add('active');
+          }
+      });
+      
+      // Update the progress bar
+      updateProgressBar();
+      
+      // Show/hide back button on first step
+      const backButtons = document.querySelectorAll('.back-button');
+      backButtons.forEach(button => {
+          button.style.visibility = stepNumber === 1 ? 'hidden' : 'visible';
+      });
+      
+      // Update current step 
+      currentStep = stepNumber;
+  }
+
+  // Set up event handlers for gender selection
+  document.querySelectorAll('.gender-options .gender-option').forEach(option => {
+      option.addEventListener('click', function() {
+          // Remove selection from all options
+          document.querySelectorAll('.gender-options .gender-option').forEach(opt => {
+              opt.classList.remove('selected');
+          });
+          // Add selection to clicked option
+          this.classList.add('selected');
+          formData.gender = this.textContent.trim();
+      });
+  });
+
+  // Set up event handlers for occupation selection
+  document.querySelectorAll('.occupation-options .option-button').forEach(option => {
+      option.addEventListener('click', function() {
+          // Remove selection from all options
+          document.querySelectorAll('.occupation-options .option-button').forEach(opt => {
+              opt.classList.remove('selected');
+          });
+          // Add selection to clicked option
+          this.classList.add('selected');
+          formData.occupation = this.textContent.trim();
+      });
+  });
+
+  // Set up event handlers for hazard selection
+  document.querySelectorAll('.hazard-options .option-button').forEach(option => {
+      option.addEventListener('click', function() {
+          // Remove selection from all options
+          document.querySelectorAll('.hazard-options .option-button').forEach(opt => {
+              opt.classList.remove('selected');
+          });
+          // Add selection to clicked option
+          this.classList.add('selected');
+          formData.hazardous = this.getAttribute('data-hazard');
+          window.location.href = "https://www.bandhanlife.com/online-plans/imaximize2";
+      });
+  });
+
+  // Set up event handler for next button on step 1
+  const step1Next = document.getElementById('step1Next');
+  if (step1Next) {
+      step1Next.addEventListener('click', function() {
+          // Validate if gender is selected and fields are filled
+          if (!formData.gender) {
+              alert('Please select your gender before proceeding.');
+              return;
+          }
+          
+          const ageInput = document.getElementById('age');
+          if (!ageInput.value) {
+              alert('Please enter your age.');
+              return;
+          }
+          
+          const mobileInput = document.getElementById('mobile');
+          if (!mobileInput.value) {
+              alert('Please enter your mobile number.');
+              return;
+          }
+          
+          // Proceed to step 2
+          showStep(2);
+      });
+  }
+
+  // Set up event handlers for back buttons
+  document.querySelectorAll('.back-button').forEach(button => {
+      button.addEventListener('click', function() {
+          if (currentStep > 1) {
+              showStep(currentStep - 1);
+          }
+      });
+  });
+
+  // Set up event handlers for input fields
+  const ageInput = document.getElementById('age');
+  if (ageInput) {
+      ageInput.addEventListener('change', function() {
+          formData.age = this.value;
+      });
+  }
+
+  const mobileInput = document.getElementById('mobile');
+  if (mobileInput) {
+      mobileInput.addEventListener('change', function() {
+          formData.mobile = this.value;
+      });
+  }
+
+  const amountInput = document.getElementById('amount');
+  if (amountInput) {
+      amountInput.addEventListener('change', function() {
+          formData.amount = this.value;
+      });
+  }
+
+  const frequencyInput = document.getElementById('frequency');
+  if (frequencyInput) {
+      frequencyInput.addEventListener('change', function() {
+          formData.frequency = this.value;
+      });
+  }
+
+  // Set up event handlers for consent checkboxes
+  const bypassConsent = document.getElementById('bypass-consent');
+  if (bypassConsent) {
+      bypassConsent.addEventListener('change', function() {
+          formData.bypassConsent = this.checked;
+      });
+  }
+
+  const contactConsent = document.getElementById('contact-consent');
+  if (contactConsent) {
+      contactConsent.addEventListener('change', function() {
+          formData.contactConsent = this.checked;
+      });
+  }
+
+  // Set up submit button event handler
+  document.querySelectorAll('.submit-button').forEach(button => {
+      button.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const bypassConsent = document.getElementById('bypass-consent');
+          const contactConsent = document.getElementById('contact-consent');
+          
+          // Check if both consents are checked
+          if (!bypassConsent.checked || !contactConsent.checked) {
+              alert('Please accept all the consent options to proceed.');
+              return;
+          }
+          
+          // Form submission logic
+          console.log('Form submitted with data:', formData);
+
+          setTimeout(() => {
+              showStep(3);
+          }, 300);
+          
+          // Here you would typically make an AJAX call to submit the data
+      });
+  });
+
+  // Initialize the form
+  showStep(1);
+}
+
 export default function decorate(block) {
   const container = document.createElement('div');
   container.setAttribute('class', 'container');
 
   const divEl = document.createElement('div');
-  divEl.setAttribute('class', 'agn-home-banner-homepage__container flex-row py-0');
+  divEl.setAttribute('class', 'cmp-form-banner-container');
 
-    const divEl2 = document.createElement('div');
-    divEl2.setAttribute('class', 'flex-column col-lg-6 order-lg-2');
+  const divEl2 = document.createElement('div');
+  divEl2.setAttribute('class', 'investment-form-container');
 
-      const agn_pictureEl = document.createElement('agn-picture');
-      agn_pictureEl.setAttribute('class', 'd-lg-block d-none hydrated');
+  const divEl3 = document.createElement('div');
+  divEl3.setAttribute('class', 'form-header');
 
-        const pictureEl = document.createElement('picture');
-        pictureEl.setAttribute('class', 'banner-image style2');
+  const divEl4 = document.createElement('div');
+  divEl4.setAttribute('class', 'disclaimer');
+  divEl4.textContent = 'IN ULIPS, THE INVESTMENT RISK IN INVESTMENT PORTFOLIO IS BORNE BY THE POLICYHOLDER';
+  divEl3.append(divEl4);
 
-          const sourceEl = document.createElement('source');
-          sourceEl.setAttribute('media', '(max-width:768px)');
-          sourceEl.setAttribute('srcset', 'https://www.bandhanlife.com/staticassets/styles/homepage_mobile_banner/public/2025-01/iinvest-advantage-Banner-2025-new.webp?itok=HxDWqqI4');
-        pictureEl.append(sourceEl);
+  const h1El = document.createElement('h1');
 
-          const sourceEl2 = document.createElement('source');
-          sourceEl2.setAttribute('media', '(min-width:768px)');
-          sourceEl2.setAttribute('srcset', 'https://www.bandhanlife.com/staticassets/styles/homepage_desktop_banner/public/2025-01/iinvest-advantage-Banner-2025-new.webp?itok=e1HY6uAT');
-        pictureEl.append(sourceEl2);
+  const spanEl = document.createElement('span');
+  spanEl.setAttribute('class', 'new-tag');
+  spanEl.textContent = 'New';
+  h1El.append(spanEl);
+  divEl3.append(h1El);
 
-          const imgEl = document.createElement('img');
-          imgEl.setAttribute('src', 'https://www.bandhanlife.com/staticassets/styles/homepage_desktop_banner/public/2025-01/iinvest-advantage-Banner-2025-new.webp?itok=e1HY6uAT');
-          imgEl.setAttribute('alt', 'img');
-          imgEl.setAttribute('height', '650');
-          imgEl.setAttribute('width', '1069');
-          imgEl.setAttribute('loading', 'lazy');
-        pictureEl.append(imgEl);
-      agn_pictureEl.append(pictureEl);
-    divEl2.append(agn_pictureEl);
+  const h2El = document.createElement('h2');
+  h2El.textContent = 'Fuel Your Wealth, Protect Your Future';
+  divEl3.append(h2El);
+  divEl2.append(divEl3);
+
+  const divEl5 = document.createElement('div');
+  divEl5.setAttribute('class', 'multi-step-form');
+
+  const divEl6 = document.createElement('div');
+  divEl6.setAttribute('class', 'step-indicators');
+
+  const divEl7 = document.createElement('div');
+  divEl7.setAttribute('class', 'progress-bar');
+  divEl6.append(divEl7);
+
+  const divEl8 = document.createElement('div');
+  divEl8.setAttribute('class', 'step active');
+  divEl8.setAttribute('data-step', '1');
+  divEl6.append(divEl8);
+
+  const divEl9 = document.createElement('div');
+  divEl9.setAttribute('class', 'step');
+  divEl9.setAttribute('data-step', '2');
+  divEl6.append(divEl9);
+
+  const divEl10 = document.createElement('div');
+  divEl10.setAttribute('class', 'step');
+  divEl10.setAttribute('data-step', '3');
+  divEl6.append(divEl10);
+  divEl5.append(divEl6);
+
+  const divEl11 = document.createElement('div');
+  divEl11.setAttribute('class', 'form-step');
+  divEl11.setAttribute('id', 'step1');
+
+  const divEl12 = document.createElement('div');
+  divEl12.setAttribute('class', 'step-header');
+
+  const buttonEl = document.createElement('button');
+  buttonEl.setAttribute('class', 'back-button');
+  buttonEl.setAttribute('style', 'visibility: hidden;');
+
+  const spanEl2 = document.createElement('span');
+  spanEl2.setAttribute('class', 'arrow-icon');
+  spanEl2.textContent = '←';
+  buttonEl.append(spanEl2);
+  divEl12.append(buttonEl);
+
+  const h3El = document.createElement('h3');
+  h3El.textContent = 'Enter your personal details';
+  divEl12.append(h3El);
+  divEl11.append(divEl12);
+
+  const h3El2 = document.createElement('h3');
+  h3El2.textContent = 'Gender';
+  divEl11.append(h3El2);
+
+  const divEl13 = document.createElement('div');
+  divEl13.setAttribute('class', 'gender-options');
+
+  const buttonEl2 = document.createElement('button');
+  buttonEl2.setAttribute('class', 'gender-option selected');
+  buttonEl2.textContent = 'Male';
+  divEl13.append(buttonEl2);
+
+  const buttonEl3 = document.createElement('button');
+  buttonEl3.setAttribute('class', 'gender-option');
+  buttonEl3.textContent = 'Female';
+  divEl13.append(buttonEl3);
+
+  const buttonEl4 = document.createElement('button');
+  buttonEl4.setAttribute('class', 'gender-option ');
+  buttonEl4.textContent = 'Others';
+  divEl13.append(buttonEl4);
+  divEl11.append(divEl13);
+
+  const divEl14 = document.createElement('div');
+  divEl14.setAttribute('class', 'form-row');
+
+  const divEl15 = document.createElement('div');
+  divEl15.setAttribute('class', 'form-group');
+
+  const labelEl = document.createElement('label');
+  labelEl.setAttribute('for', 'age');
+  labelEl.textContent = 'Age (As per PAN)';
+  divEl15.append(labelEl);
+
+  const inputEl = document.createElement('input');
+  inputEl.setAttribute('type', 'text');
+  inputEl.setAttribute('id', 'age');
+  inputEl.setAttribute('placeholder', '21Yrs (04-03-2004)');
+  inputEl.setAttribute('value', '21Yrs (04-03-2004)');
+  divEl15.append(inputEl);
+  divEl14.append(divEl15);
+
+  const divEl16 = document.createElement('div');
+  divEl16.setAttribute('class', 'form-group');
+
+  const labelEl2 = document.createElement('label');
+  labelEl2.setAttribute('for', 'mobile');
+  labelEl2.textContent = 'Mobile Number (We Don\'t Spam)';
+  divEl16.append(labelEl2);
+
+  const divEl17 = document.createElement('div');
+  divEl17.setAttribute('class', 'mobile-input');
+
+  const spanEl3 = document.createElement('span');
+  spanEl3.setAttribute('class', 'country-code');
+  spanEl3.textContent = '+91';
+  divEl17.append(spanEl3);
+
+  const inputEl2 = document.createElement('input');
+  inputEl2.setAttribute('type', 'tel');
+  inputEl2.setAttribute('id', 'mobile');
+  inputEl2.setAttribute('placeholder', '7788556699');
+  inputEl2.setAttribute('value', '7788556699');
+  divEl17.append(inputEl2);
+  divEl16.append(divEl17);
+  divEl14.append(divEl16);
+  divEl11.append(divEl14);
+
+  const divEl18 = document.createElement('div');
+  divEl18.setAttribute('class', 'form-row');
+
+  const divEl19 = document.createElement('div');
+  divEl19.setAttribute('class', 'form-group');
+
+  const labelEl3 = document.createElement('label');
+  labelEl3.setAttribute('for', 'amount');
+  labelEl3.textContent = 'Amount';
+  divEl19.append(labelEl3);
+
+  const inputEl3 = document.createElement('input');
+  inputEl3.setAttribute('type', 'text');
+  inputEl3.setAttribute('id', 'amount');
+  inputEl3.setAttribute('value', '₹9,87,656');
+  divEl19.append(inputEl3);
+  divEl18.append(divEl19);
+
+  const divEl20 = document.createElement('div');
+  divEl20.setAttribute('class', 'form-group');
+
+  const labelEl4 = document.createElement('label');
+  labelEl4.setAttribute('for', 'frequency');
+  labelEl4.textContent = 'Frequency';
+  divEl20.append(labelEl4);
+
+  const divEl21 = document.createElement('div');
+  divEl21.setAttribute('class', 'select-wrapper');
+
+  const selectEl = document.createElement('select');
+  selectEl.setAttribute('id', 'frequency');
+
+  const optionEl = document.createElement('option');
+  optionEl.setAttribute('value', 'yearly');
+  optionEl.textContent = 'Yearly';
+  selectEl.append(optionEl);
+
+  const optionEl2 = document.createElement('option');
+  optionEl2.setAttribute('value', 'half-yearly');
+  optionEl2.textContent = 'Half-Yearly';
+  selectEl.append(optionEl2);
+
+  const optionEl3 = document.createElement('option');
+  optionEl3.setAttribute('value', 'quarterly');
+  optionEl3.textContent = 'Quarterly';
+  selectEl.append(optionEl3);
+
+  const optionEl4 = document.createElement('option');
+  optionEl4.setAttribute('value', 'monthly');
+  optionEl4.textContent = 'Monthly';
+  selectEl.append(optionEl4);
+  divEl21.append(selectEl);
+
+  const divEl22 = document.createElement('div');
+  divEl22.setAttribute('class', 'select-arrow');
+  divEl22.textContent = '▼';
+  divEl21.append(divEl22);
+  divEl20.append(divEl21);
+  divEl18.append(divEl20);
+  divEl11.append(divEl18);
+
+  const divEl23 = document.createElement('div');
+  divEl23.setAttribute('class', 'consent-section');
+
+  const divEl24 = document.createElement('div');
+  divEl24.setAttribute('class', 'checkbox-group');
+
+  const inputEl4 = document.createElement('input');
+  inputEl4.setAttribute('type', 'checkbox');
+  inputEl4.setAttribute('id', 'bypass-consent');
+  inputEl4.setAttribute('checked', '');
+  divEl24.append(inputEl4);
+
+  const labelEl5 = document.createElement('label');
+  labelEl5.setAttribute('for', 'bypass-consent');
+
+  const aEl = document.createElement('a');
+  aEl.setAttribute('href', '#');
+  aEl.setAttribute('class', 'link');
+  aEl.textContent = 'suitability analysis';
+  labelEl5.append(aEl);
+  divEl24.append(labelEl5);
+  divEl23.append(divEl24);
+
+  const divEl25 = document.createElement('div');
+  divEl25.setAttribute('class', 'checkbox-group');
+
+  const inputEl5 = document.createElement('input');
+  inputEl5.setAttribute('type', 'checkbox');
+  inputEl5.setAttribute('id', 'contact-consent');
+  inputEl5.setAttribute('checked', '');
+  divEl25.append(inputEl5);
+
+  const labelEl6 = document.createElement('label');
+  labelEl6.setAttribute('for', 'contact-consent');
+  labelEl6.textContent = 'I explicitly consent to Bandhan Life contacting me via Call, SMS, Email, or WhatsApp for assistance.';
+  divEl25.append(labelEl6);
+  divEl23.append(divEl25);
+  divEl11.append(divEl23);
+
+  const divEl26 = document.createElement('div');
+  divEl26.setAttribute('class', 'button-container');
+
+  const buttonEl5 = document.createElement('button');
+  buttonEl5.setAttribute('class', 'next-button');
+  buttonEl5.setAttribute('id', 'step1Next');
+  buttonEl5.textContent = 'Next';
+  divEl26.append(buttonEl5);
+  divEl11.append(divEl26);
+  divEl5.append(divEl11);
+
+  const divEl27 = document.createElement('div');
+  divEl27.setAttribute('class', 'form-step');
+  divEl27.setAttribute('id', 'step3');
+  divEl27.setAttribute('style', 'display: none;');
+
+  const divEl28 = document.createElement('div');
+  divEl28.setAttribute('class', 'step-header');
+
+  const buttonEl6 = document.createElement('button');
+  buttonEl6.setAttribute('class', 'back-button');
+
+  const spanEl4 = document.createElement('span');
+  spanEl4.setAttribute('class', 'arrow-icon');
+  spanEl4.textContent = '←';
+  buttonEl6.append(spanEl4);
+  divEl28.append(buttonEl6);
+
+  const h3El3 = document.createElement('h3');
+  h3El3.textContent = 'Tell us about your occupation';
+  divEl28.append(h3El3);
+  divEl27.append(divEl28);
+
+  const divEl29 = document.createElement('div');
+  divEl29.setAttribute('class', 'hazard-question');
+
+  const h4El = document.createElement('h4');
+  h4El.textContent = 'Is your occupation associated with any specific hazard or do you take part in activities that could be dangerous in any way?';
+  divEl29.append(h4El);
+
+  const pEl = document.createElement('p');
+  pEl.setAttribute('class', 'examples');
+  pEl.textContent = '(e.g. Heavy machines, chemical factory, mines explosives, radiation, etc.)';
+  divEl29.append(pEl);
+
+  const divEl30 = document.createElement('div');
+  divEl30.setAttribute('class', 'hazard-options');
+
+  const buttonEl7 = document.createElement('button');
+  buttonEl7.setAttribute('class', 'option-button');
+  buttonEl7.setAttribute('data-hazard', 'yes');
+  buttonEl7.textContent = 'Yes';
+  divEl30.append(buttonEl7);
+
+  const buttonEl8 = document.createElement('button');
+  buttonEl8.setAttribute('class', 'option-button');
+  buttonEl8.setAttribute('data-hazard', 'no');
+  buttonEl8.textContent = 'No';
+  divEl30.append(buttonEl8);
+  divEl29.append(divEl30);
+  divEl27.append(divEl29);
+  divEl5.append(divEl27);
+
+  const divEl31 = document.createElement('div');
+  divEl31.setAttribute('class', 'form-step');
+  divEl31.setAttribute('id', 'step2');
+  divEl31.setAttribute('style', 'display: none;');
+
+  const divEl32 = document.createElement('div');
+  divEl32.setAttribute('class', 'step-header');
+
+  const buttonEl9 = document.createElement('button');
+  buttonEl9.setAttribute('class', 'back-button');
+
+  const spanEl5 = document.createElement('span');
+  spanEl5.setAttribute('class', 'arrow-icon');
+  spanEl5.textContent = '←';
+  buttonEl9.append(spanEl5);
+  divEl32.append(buttonEl9);
+
+  const h3El4 = document.createElement('h3');
+  h3El4.textContent = 'Tell us about your occupation (Choose One)';
+  divEl32.append(h3El4);
+  divEl31.append(divEl32);
+
+  const divEl33 = document.createElement('div');
+  divEl33.setAttribute('class', 'occupation-options');
+
+  const divEl34 = document.createElement('div');
+  divEl34.setAttribute('class', 'option-row');
+
+  const buttonEl10 = document.createElement('button');
+  buttonEl10.setAttribute('class', 'option-button');
+  buttonEl10.textContent = 'Salaried';
+  divEl34.append(buttonEl10);
+
+  const buttonEl11 = document.createElement('button');
+  buttonEl11.setAttribute('class', 'option-button');
+  buttonEl11.textContent = 'Armed forces / Police';
+  divEl34.append(buttonEl11);
+
+  const buttonEl12 = document.createElement('button');
+  buttonEl12.setAttribute('class', 'option-button');
+  buttonEl12.textContent = 'Agriculturist';
+  divEl34.append(buttonEl12);
+  divEl33.append(divEl34);
+
+  const divEl35 = document.createElement('div');
+  divEl35.setAttribute('class', 'option-row');
+
+  const buttonEl13 = document.createElement('button');
+  buttonEl13.setAttribute('class', 'option-button');
+  buttonEl13.textContent = 'Student';
+  divEl35.append(buttonEl13);
+
+  const buttonEl14 = document.createElement('button');
+  buttonEl14.setAttribute('class', 'option-button selected');
+  buttonEl14.textContent = 'Worker/labour';
+  divEl35.append(buttonEl14);
+
+  const buttonEl15 = document.createElement('button');
+  buttonEl15.setAttribute('class', 'option-button');
+  buttonEl15.textContent = 'Retired /Pensioners';
+  divEl35.append(buttonEl15);
+  divEl33.append(divEl35);
+
+  const divEl36 = document.createElement('div');
+  divEl36.setAttribute('class', 'option-row');
+
+  const buttonEl16 = document.createElement('button');
+  buttonEl16.setAttribute('class', 'option-button');
+  buttonEl16.textContent = 'Self-employed (Professional)';
+  divEl36.append(buttonEl16);
+
+  const buttonEl17 = document.createElement('button');
+  buttonEl17.setAttribute('class', 'option-button');
+  buttonEl17.textContent = 'Self-employed (Business)';
+  divEl36.append(buttonEl17);
+  divEl33.append(divEl36);
+  divEl31.append(divEl33);
+
+  const divEl37 = document.createElement('div');
+  divEl37.setAttribute('class', 'button-container');
+
+  const buttonEl18 = document.createElement('button');
+  buttonEl18.setAttribute('class', 'submit-button');
+  buttonEl18.textContent = 'See My Returns';
+  divEl37.append(buttonEl18);
+  divEl31.append(divEl37);
+  divEl5.append(divEl31);
+  divEl2.append(divEl5);
   divEl.append(divEl2);
 
-    const divEl3 = document.createElement('div');
-    divEl3.setAttribute('class', 'flex-column col-lg-6 order-lg-1 home-page-banner-form');
-
-      const divEl4 = document.createElement('div');
-      divEl4.setAttribute('class', 'banner-content');
-
-        const h5El = document.createElement('h5');
-        h5El.setAttribute('class', 'sub-title mb-1 mt-1');
-        h5El.textContent = 'IN ULIPS, THE INVESTMENT RISK IN INVESTMENT PORTFOLIO IS BORNE BY THE POLICYHOLDER';
-      divEl4.append(h5El);
-
-        const h1El = document.createElement('h1');
-        h1El.setAttribute('class', 'sub-title');
-
-          const spanEl = document.createElement('span');
-          spanEl.setAttribute('class', 'badge badge-danger text-white');
-          spanEl.textContent = 'New';
-        h1El.append(spanEl);
-      divEl4.append(h1El);
-
-        const h6El = document.createElement('h6');
-        h6El.setAttribute('class', 'title');
-
-          const pEl = document.createElement('p');
-          pEl.textContent = 'Fuel Your Wealth, Protect Your Future';
-        h6El.append(pEl);
-      divEl4.append(h6El);
-
-        const agn_pictureEl2 = document.createElement('agn-picture');
-        agn_pictureEl2.setAttribute('class', 'd-lg-none d-block mb-4 hydrated');
-
-          const pictureEl2 = document.createElement('picture');
-          pictureEl2.setAttribute('class', 'banner-image style2');
-
-            const sourceEl3 = document.createElement('source');
-            sourceEl3.setAttribute('media', '(max-width:768px)');
-            sourceEl3.setAttribute('srcset', 'https://www.bandhanlife.com/staticassets/styles/homepage_mobile_banner/public/2025-01/iinvest-advantage-Banner-2025-new.webp?itok=HxDWqqI4');
-          pictureEl2.append(sourceEl3);
-
-            const sourceEl4 = document.createElement('source');
-            sourceEl4.setAttribute('media', '(min-width:768px)');
-            sourceEl4.setAttribute('srcset', 'https://www.bandhanlife.com/staticassets/styles/homepage_desktop_banner/public/2025-01/iinvest-advantage-Banner-2025-new.webp?itok=e1HY6uAT');
-          pictureEl2.append(sourceEl4);
-
-            const imgEl2 = document.createElement('img');
-            imgEl2.setAttribute('src', 'https://www.bandhanlife.com/staticassets/styles/homepage_desktop_banner/public/2025-01/iinvest-advantage-Banner-2025-new.webp?itok=e1HY6uAT');
-            imgEl2.setAttribute('alt', 'img');
-            imgEl2.setAttribute('height', '650');
-            imgEl2.setAttribute('width', '1069');
-            imgEl2.setAttribute('loading', 'lazy');
-          pictureEl2.append(imgEl2);
-        agn_pictureEl2.append(pictureEl2);
-      divEl4.append(agn_pictureEl2);
-
-        const divEl5 = document.createElement('div');
-        divEl5.setAttribute('class', 'box');
-
-          const divEl6 = document.createElement('div');
-          divEl6.setAttribute('class', 'box-body');
-
-            const divEl7 = document.createElement('div');
-            divEl7.setAttribute('class', 'step-1 active');
-
-              const divEl8 = document.createElement('div');
-
-                const divEl9 = document.createElement('div');
-                divEl9.setAttribute('class', 'tab-group mb-3');
-
-                  const h4El = document.createElement('h4');
-                  h4El.textContent = 'Gender';
-                divEl9.append(h4El);
-
-                  const ulEl = document.createElement('ul');
-                  ulEl.setAttribute('class', 'nav nav-tabs');
-                  ulEl.setAttribute('id', 'itermTab');
-                  ulEl.setAttribute('role', 'tablist');
-
-                    const liEl = document.createElement('li');
-                    liEl.setAttribute('class', 'nav-item');
-
-                      const aEl = document.createElement('a');
-                      aEl.setAttribute('class', 'nav-link active');
-                      aEl.textContent = 'Male';
-                    liEl.append(aEl);
-                  ulEl.append(liEl);
-
-                    const liEl2 = document.createElement('li');
-                    liEl2.setAttribute('class', 'nav-item');
-
-                      const aEl2 = document.createElement('a');
-                      aEl2.setAttribute('class', 'nav-link');
-                      aEl2.textContent = 'Female';
-                    liEl2.append(aEl2);
-                  ulEl.append(liEl2);
-
-                    const liEl3 = document.createElement('li');
-                    liEl3.setAttribute('class', 'nav-item');
-
-                      const aEl3 = document.createElement('a');
-                      aEl3.setAttribute('class', 'nav-link');
-                      aEl3.textContent = 'Others';
-                    liEl3.append(aEl3);
-                  ulEl.append(liEl3);
-                divEl9.append(ulEl);
-              divEl8.append(divEl9);
-
-                const divEl10 = document.createElement('div');
-
-                  const divEl11 = document.createElement('div');
-                  divEl11.setAttribute('class', 'tab-content');
-                  divEl11.setAttribute('id', 'itermContent');
-
-                    const divEl12 = document.createElement('div');
-                    divEl12.setAttribute('class', 'tab-pane fade show active');
-                    divEl12.setAttribute('id', 'male');
-                    divEl12.setAttribute('role', 'tabpanel');
-                    divEl12.setAttribute('aria-labelledby', 'male-tab');
-
-                      const divEl13 = document.createElement('div');
-                      divEl13.setAttribute('class', 'form');
-
-                        const divEl14 = document.createElement('div');
-                        divEl14.setAttribute('class', 'flex-row mb-2 input-group-step');
-
-                          const divEl15 = document.createElement('div');
-                          divEl15.setAttribute('class', 'flex-column col-lg-6 col-md-6 form-group-age padding-right-0 mb-2');
-
-                            const divEl16 = document.createElement('div');
-                            divEl16.setAttribute('class', 'form-group mb-3');
-
-                              const agn_inputEl = document.createElement('agn-input');
-                              agn_inputEl.setAttribute('input-place-holder', 'Eg 40 years');
-                              agn_inputEl.setAttribute('class', 'hydrated');
-
-                                const divEl17 = document.createElement('div');
-                                divEl17.setAttribute('class', 'agn-input-container');
-
-                                  const labelEl = document.createElement('label');
-
-                                    const spanEl2 = document.createElement('span');
-
-                                      const smallEl = document.createElement('small');
-                                      smallEl.textContent = 'As per PAN';
-                                    spanEl2.append(smallEl);
-                                  labelEl.append(spanEl2);
-                                divEl17.append(labelEl);
-
-                                  const inputEl = document.createElement('input');
-                                  inputEl.setAttribute('class', 'form-control');
-                                  inputEl.setAttribute('autocomplete', 'on');
-                                  inputEl.setAttribute('required', '');
-                                  inputEl.setAttribute('inputmode', 'numeric');
-                                  inputEl.setAttribute('type', 'text');
-                                  inputEl.setAttribute('placeholder', 'Eg 40 years');
-                                  inputEl.setAttribute('maxlength', '2');
-                                  inputEl.setAttribute('id', '1');
-                                divEl17.append(inputEl);
-
-                                  const pEl2 = document.createElement('p');
-                                  pEl2.setAttribute('class', 'input-error-msg');
-                                divEl17.append(pEl2);
-                              agn_inputEl.append(divEl17);
-                            divEl16.append(agn_inputEl);
-                          divEl15.append(divEl16);
-                        divEl14.append(divEl15);
-
-                          const divEl18 = document.createElement('div');
-                          divEl18.setAttribute('class', 'flex-column col-lg-6 col-md-6 padding-right-0 mb-2');
-
-                            const divEl19 = document.createElement('div');
-                            divEl19.setAttribute('class', 'form-group');
-
-                              const agn_inputEl2 = document.createElement('agn-input');
-                              agn_inputEl2.setAttribute('input-place-holder', 'XXXXXXXXXX');
-                              agn_inputEl2.setAttribute('value', '');
-                              agn_inputEl2.setAttribute('class', 'hydrated');
-
-                                const divEl20 = document.createElement('div');
-                                divEl20.setAttribute('class', 'agn-input-container');
-
-                                  const divEl21 = document.createElement('div');
-                                  divEl21.setAttribute('class', 'input-group');
-
-                                    const labelEl2 = document.createElement('label');
-
-                                      const smallEl2 = document.createElement('small');
-                                      smallEl2.textContent = 'We Don\'t Spam';
-                                    labelEl2.append(smallEl2);
-                                  divEl21.append(labelEl2);
-
-                                    const spanEl3 = document.createElement('span');
-                                    spanEl3.setAttribute('class', 'input-group-text');
-                                    spanEl3.textContent = '+91';
-                                  divEl21.append(spanEl3);
-
-                                    const inputEl2 = document.createElement('input');
-                                    inputEl2.setAttribute('class', 'form-control');
-                                    inputEl2.setAttribute('autocomplete', 'on');
-                                    inputEl2.setAttribute('required', '');
-                                    inputEl2.setAttribute('inputmode', 'numeric');
-                                    inputEl2.setAttribute('type', 'text');
-                                    inputEl2.setAttribute('placeholder', 'XXXXXXXXXX');
-                                    inputEl2.setAttribute('maxlength', '10');
-                                    inputEl2.setAttribute('id', '2');
-                                  divEl21.append(inputEl2);
-                                divEl20.append(divEl21);
-
-                                  const pEl3 = document.createElement('p');
-                                  pEl3.setAttribute('class', 'input-error-msg');
-                                  pEl3.textContent = 'Please enter valid phone number';
-                                divEl20.append(pEl3);
-                              agn_inputEl2.append(divEl20);
-                            divEl19.append(agn_inputEl2);
-                          divEl18.append(divEl19);
-                        divEl14.append(divEl18);
-
-                          const divEl22 = document.createElement('div');
-                          divEl22.setAttribute('class', 'flex-column col-lg-6 padding-right-0');
-
-                            const divEl23 = document.createElement('div');
-                            divEl23.setAttribute('class', 'form-group');
-
-                              const agn_inputEl3 = document.createElement('agn-input');
-                              agn_inputEl3.setAttribute('inputmode', 'numeric');
-                              agn_inputEl3.setAttribute('input-place-holder', 'Eg. ₹ 1,00,000');
-                              agn_inputEl3.setAttribute('class', 'hydrated');
-                              agn_inputEl3.setAttribute('value', '₹9,000');
-
-                                const divEl24 = document.createElement('div');
-                                divEl24.setAttribute('class', 'agn-input-container');
-
-                                  const labelEl3 = document.createElement('label');
-                                  labelEl3.textContent = 'Amount';
-                                divEl24.append(labelEl3);
-
-                                  const inputEl3 = document.createElement('input');
-                                  inputEl3.setAttribute('class', 'form-control');
-                                  inputEl3.setAttribute('autocomplete', 'on');
-                                  inputEl3.setAttribute('required', '');
-                                  inputEl3.setAttribute('inputmode', 'numeric');
-                                  inputEl3.setAttribute('type', 'textfield');
-                                  inputEl3.setAttribute('placeholder', 'Eg. ₹ 1,00,000');
-                                  inputEl3.setAttribute('maxlength', '14');
-                                  inputEl3.setAttribute('id', '3');
-                                divEl24.append(inputEl3);
-
-                                  const pEl4 = document.createElement('p');
-                                  pEl4.setAttribute('class', 'input-error-msg');
-                                divEl24.append(pEl4);
-                              agn_inputEl3.append(divEl24);
-                            divEl23.append(agn_inputEl3);
-                          divEl22.append(divEl23);
-                        divEl14.append(divEl22);
-
-                          const divEl25 = document.createElement('div');
-                          divEl25.setAttribute('class', 'flex-column col-lg-6 padding-right-0');
-
-                            const divEl26 = document.createElement('div');
-                            divEl26.setAttribute('class', 'form-group select-group');
-
-                              const divEl27 = document.createElement('div');
-                              divEl27.setAttribute('class', 'agn-input-container');
-
-                                const labelEl4 = document.createElement('label');
-                                labelEl4.textContent = 'Frequency';
-                              divEl27.append(labelEl4);
-
-                                const selectEl = document.createElement('select');
-                                selectEl.setAttribute('name', 'icanpay');
-                                selectEl.setAttribute('class', 'form-control pt-2 pb-2');
-
-                                  const optionEl = document.createElement('option');
-                                  optionEl.setAttribute('value', 'YEARLY');
-                                  optionEl.textContent = 'Yearly';
-                                selectEl.append(optionEl);
-
-                                  const optionEl2 = document.createElement('option');
-                                  optionEl2.setAttribute('value', 'HALF_YEARLY');
-                                  optionEl2.textContent = 'Half Yearly';
-                                selectEl.append(optionEl2);
-
-                                  const optionEl3 = document.createElement('option');
-                                  optionEl3.setAttribute('value', 'QUARTERLY');
-                                  optionEl3.textContent = 'Quarterly';
-                                selectEl.append(optionEl3);
-
-                                  const optionEl4 = document.createElement('option');
-                                  optionEl4.setAttribute('value', 'MONTHLY');
-                                  optionEl4.textContent = 'Monthly';
-                                selectEl.append(optionEl4);
-                              divEl27.append(selectEl);
-
-                                const divEl28 = document.createElement('div');
-                                divEl28.setAttribute('class', 'is-flex is-align-items-center mt-1');
-
-                                  const agn_imageEl = document.createElement('agn-image');
-                                  agn_imageEl.setAttribute('class', 'mr-1 hydrated');
-
-                                    const imgEl3 = document.createElement('img');
-                                    imgEl3.setAttribute('src', '/assets/images/icons/Artboard_1.svg');
-                                    imgEl3.setAttribute('alt', 'img');
-                                    imgEl3.setAttribute('loading', 'lazy');
-                                  agn_imageEl.append(imgEl3);
-                                divEl28.append(agn_imageEl);
-
-                                  const spanEl4 = document.createElement('span');
-                                  spanEl4.setAttribute('class', 'form-text');
-                                  spanEl4.setAttribute('style', 'font-family: Manrope-semibold; color: rgb(74, 136, 245);');
-                                  spanEl4.textContent = 'Monthly payment available!';
-                                divEl28.append(spanEl4);
-                              divEl27.append(divEl28);
-                            divEl26.append(divEl27);
-                          divEl25.append(divEl26);
-                        divEl14.append(divEl25);
-                      divEl13.append(divEl14);
-
-                        const divEl29 = document.createElement('div');
-                        divEl29.setAttribute('class', 'flex-row footer-text px-2 mb-0');
-
-                          const divEl30 = document.createElement('div');
-                          divEl30.setAttribute('class', 'checkbox');
-
-                            const inputEl4 = document.createElement('input');
-                            inputEl4.setAttribute('type', 'checkbox');
-                            inputEl4.setAttribute('id', 'is-checked');
-                            inputEl4.setAttribute('name', 'is_checked');
-                            inputEl4.setAttribute('value', 'checked');
-                          divEl30.append(inputEl4);
-                        divEl29.append(divEl30);
-
-                          const divEl31 = document.createElement('div');
-                          divEl31.setAttribute('class', 'checkbox-text');
-
-                            const pEl5 = document.createElement('p');
-                            pEl5.setAttribute('class', 'ml-1 without-Space mb-0');
-
-                              const aEl4 = document.createElement('a');
-                              aEl4.setAttribute('class', 'color-blue');
-                              aEl4.setAttribute('href', '/find-your-plan');
-                              aEl4.setAttribute('target', '_blank');
-                              aEl4.textContent = 'suitability analysis';
-                            pEl5.append(aEl4);
-                          divEl31.append(pEl5);
-                        divEl29.append(divEl31);
-                      divEl13.append(divEl29);
-
-                        const divEl32 = document.createElement('div');
-                        divEl32.setAttribute('class', 'flex-row footer-text px-2 mb-0 align-items-center');
-
-                          const divEl33 = document.createElement('div');
-                          divEl33.setAttribute('class', 'checkbox');
-
-                            const inputEl5 = document.createElement('input');
-                            inputEl5.setAttribute('type', 'checkbox');
-                            inputEl5.setAttribute('id', 'is-checked-ex');
-                            inputEl5.setAttribute('name', 'is_checked_ex');
-                            inputEl5.setAttribute('value', 'checked');
-                          divEl33.append(inputEl5);
-                        divEl32.append(divEl33);
-
-                          const divEl34 = document.createElement('div');
-                          divEl34.setAttribute('class', 'checkbox-text');
-
-                            const pEl6 = document.createElement('p');
-                            pEl6.setAttribute('class', 'ml-1 without-Space mb-0');
-                            pEl6.textContent = 'I explicitly consent to Bandhan Life contacting me via Call, SMS, Email, or WhatsApp for assistance. .';
-                          divEl34.append(pEl6);
-                        divEl32.append(divEl34);
-                      divEl13.append(divEl32);
-                    divEl12.append(divEl13);
-                  divEl11.append(divEl12);
-                divEl10.append(divEl11);
-
-                  const divEl35 = document.createElement('div');
-                  divEl35.setAttribute('class', 'banner-buttons');
-
-                    const agn_buttonEl = document.createElement('agn-button');
-                    agn_buttonEl.setAttribute('class', 'hydrated');
-
-                      const buttonEl = document.createElement('button');
-                      buttonEl.setAttribute('type', 'submit');
-                      buttonEl.setAttribute('class', 'agn-primary-button');
-                      buttonEl.setAttribute('data-aegon-analytics-name', 'common | banner_know_more | {"eventLabel": "Bandhan Life iInvest Advantage","eventAction": "banner_know_more_undefined"}');
-
-                        const spanEl5 = document.createElement('span');
-                        spanEl5.setAttribute('data-aegon-analytics-name', 'common | banner_know_more | {"eventLabel": "Bandhan Life iInvest Advantage","eventAction": "banner_know_more_undefined"}');
-                        spanEl5.setAttribute('class', 'agn-primary-button-title has-text-centered');
-                        spanEl5.textContent = 'See My Returns';
-                      buttonEl.append(spanEl5);
-                    agn_buttonEl.append(buttonEl);
-                  divEl35.append(agn_buttonEl);
-                divEl10.append(divEl35);
-              divEl8.append(divEl10);
-            divEl7.append(divEl8);
-          divEl6.append(divEl7);
-
-            const divEl36 = document.createElement('div');
-            divEl36.setAttribute('class', 'step-2 text-center d-none');
-
-              const divEl37 = document.createElement('div');
-              divEl37.setAttribute('class', 'header mb-4 pb-4');
-
-                const agn_anchor_tagEl = document.createElement('agn-anchor-tag');
-                agn_anchor_tagEl.setAttribute('class', 'btn-back hydrated');
-
-                  const aEl5 = document.createElement('a');
-                  aEl5.setAttribute('class', 'default-cursor');
-                  aEl5.setAttribute('target', '_self');
-
-                    const agn_imageEl2 = document.createElement('agn-image');
-                    agn_imageEl2.setAttribute('class', 'icon mr-1 hydrated');
-
-                      const imgEl4 = document.createElement('img');
-                      imgEl4.setAttribute('src', '/assets/images/icons/back-button.svg');
-                      imgEl4.setAttribute('alt', 'img');
-                    agn_imageEl2.append(imgEl4);
-                  aEl5.append(agn_imageEl2);
-                agn_anchor_tagEl.append(aEl5);
-              divEl37.append(agn_anchor_tagEl);
-
-                const pEl7 = document.createElement('p');
-                pEl7.setAttribute('class', '');
-                pEl7.textContent = 'Tell us about your occupation (Choose One)';
-              divEl37.append(pEl7);
-            divEl36.append(divEl37);
-
-              const divEl38 = document.createElement('div');
-              divEl38.setAttribute('class', 'mb-2');
-
-                const ulEl2 = document.createElement('ul');
-                ulEl2.setAttribute('class', 'list-chips select-occupation');
-
-                  const liEl4 = document.createElement('li');
-                  liEl4.setAttribute('class', '');
-
-                    const spanEl6 = document.createElement('span');
-                    spanEl6.textContent = 'Salaried';
-                  liEl4.append(spanEl6);
-                ulEl2.append(liEl4);
-
-                  const liEl5 = document.createElement('li');
-                  liEl5.setAttribute('class', '');
-
-                    const spanEl7 = document.createElement('span');
-                    spanEl7.textContent = 'Armed forces / Police';
-                  liEl5.append(spanEl7);
-                ulEl2.append(liEl5);
-
-                  const liEl6 = document.createElement('li');
-                  liEl6.setAttribute('class', '');
-
-                    const spanEl8 = document.createElement('span');
-                    spanEl8.textContent = 'Agriculturist';
-                  liEl6.append(spanEl8);
-                ulEl2.append(liEl6);
-
-                  const liEl7 = document.createElement('li');
-                  liEl7.setAttribute('class', '');
-
-                    const spanEl9 = document.createElement('span');
-                    spanEl9.textContent = 'Student';
-                  liEl7.append(spanEl9);
-                ulEl2.append(liEl7);
-
-                  const liEl8 = document.createElement('li');
-                  liEl8.setAttribute('class', '');
-
-                    const spanEl10 = document.createElement('span');
-                    spanEl10.textContent = 'Worker/labour';
-                  liEl8.append(spanEl10);
-                ulEl2.append(liEl8);
-
-                  const liEl9 = document.createElement('li');
-                  liEl9.setAttribute('class', '');
-
-                    const spanEl11 = document.createElement('span');
-                    spanEl11.textContent = 'Retired /Pensioners';
-                  liEl9.append(spanEl11);
-                ulEl2.append(liEl9);
-
-                  const liEl10 = document.createElement('li');
-                  liEl10.setAttribute('class', '');
-
-                    const spanEl12 = document.createElement('span');
-                    spanEl12.textContent = 'Self-employed (Professional)';
-                  liEl10.append(spanEl12);
-                ulEl2.append(liEl10);
-
-                  const liEl11 = document.createElement('li');
-                  liEl11.setAttribute('class', '');
-
-                    const spanEl13 = document.createElement('span');
-                    spanEl13.textContent = 'Self-employed (Business)';
-                  liEl11.append(spanEl13);
-                ulEl2.append(liEl11);
-              divEl38.append(ulEl2);
-            divEl36.append(divEl38);
-
-              const divEl39 = document.createElement('div');
-              divEl39.setAttribute('class', 'banner-buttons');
-
-                const agn_anchor_tagEl2 = document.createElement('agn-anchor-tag');
-                agn_anchor_tagEl2.setAttribute('class', 'hydrated');
-
-                  const aEl6 = document.createElement('a');
-                  aEl6.setAttribute('class', 'default-cursor');
-                  aEl6.setAttribute('target', '_self');
-
-                    const agn_buttonEl2 = document.createElement('agn-button');
-                    agn_buttonEl2.setAttribute('class', 'hydrated');
-
-                      const buttonEl2 = document.createElement('button');
-                      buttonEl2.setAttribute('type', 'button');
-                      buttonEl2.setAttribute('class', 'agn-primary-button');
-                      buttonEl2.setAttribute('data-aegon-analytics-name', 'common | banner_know_more | {"eventLabel": "Bandhan Life iInvest Advantage","eventAction": "banner_know_more_undefined"}');
-
-                        const spanEl14 = document.createElement('span');
-                        spanEl14.setAttribute('data-aegon-analytics-name', 'common | banner_know_more | {"eventLabel": "Bandhan Life iInvest Advantage","eventAction": "banner_know_more_undefined"}');
-                        spanEl14.setAttribute('class', 'agn-primary-button-title has-text-centered');
-                        spanEl14.textContent = 'Next';
-                      buttonEl2.append(spanEl14);
-                    agn_buttonEl2.append(buttonEl2);
-                  aEl6.append(agn_buttonEl2);
-                agn_anchor_tagEl2.append(aEl6);
-              divEl39.append(agn_anchor_tagEl2);
-            divEl36.append(divEl39);
-          divEl6.append(divEl36);
-        divEl5.append(divEl6);
-      divEl4.append(divEl5);
-    divEl3.append(divEl4);
-  divEl.append(divEl3);
+  const divEl38 = document.createElement('div');
+  divEl38.setAttribute('class', 'cmp-form-banner-image');
+
+  const pictureEl = document.createElement('picture');
+  pictureEl.setAttribute('class', 'banner-image style2');
+
+  const sourceEl = document.createElement('source');
+  sourceEl.setAttribute('media', '(max-width:768px)');
+  sourceEl.setAttribute('srcset', 'https://www.bandhanlife.com/staticassets/styles/homepage_mobile_banner/public/2025-01/iinvest-advantage-Banner-2025-new.webp?itok=HxDWqqI4');
+  pictureEl.append(sourceEl);
+
+  const sourceEl2 = document.createElement('source');
+  sourceEl2.setAttribute('media', '(min-width:768px)');
+  sourceEl2.setAttribute('srcset', 'https://www.bandhanlife.com/staticassets/styles/homepage_desktop_banner/public/2025-01/iinvest-advantage-Banner-2025-new.webp?itok=e1HY6uAT');
+  pictureEl.append(sourceEl2);
+
+  const imgEl = document.createElement('img');
+  imgEl.setAttribute('src', 'https://www.bandhanlife.com/staticassets/styles/homepage_desktop_banner/public/2025-01/iinvest-advantage-Banner-2025-new.webp?itok=e1HY6uAT');
+  imgEl.setAttribute('alt', 'img');
+  imgEl.setAttribute('height', '650');
+  imgEl.setAttribute('width', '1069');
+  imgEl.setAttribute('loading', 'lazy');
+  pictureEl.append(imgEl);
+  divEl38.append(pictureEl);
+  divEl.append(divEl38);
   container.append(divEl);
 
 
   block.textContent = '';
   block.append(container);
+
+  initFormHandler();
 }
