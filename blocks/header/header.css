@@ -257,7 +257,7 @@ header nav .nav-sections ul>li>ul>li {
     position: absolute;
     left: -24px;
     width: 200px;
-    top: 90%;
+    top: 100%;
     padding: 16px;
     background-color: var(--light-color);
     white-space: initial;
