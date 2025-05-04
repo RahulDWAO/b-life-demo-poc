@@ -4,6 +4,8 @@ export default function decorate(block) {
   const blocklist = [...block.children]; // Get the children of block
   const classes = block.className; // Get block's class
   const divwrapper = document.createElement("div");
+  const genderdiv=document.getElementsByClassName("gender-section-wrapper")[0];
+
   divwrapper.classList.add(...classes.split(" ")); // Add classes to the wrapper
 
   const labellist = block.children[0].textContent.trim().split(","); // First child = labels
@@ -41,4 +43,6 @@ export default function decorate(block) {
   block.textContent = "";
   divwrapper.appendChild(form);
   block.appendChild(divwrapper);
+  genderdiv.appendChild(block);
+
 }
