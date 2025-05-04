@@ -1,3 +1,4 @@
+export function getCaroselEffect() {
 
 
 document.addEventListener("DOMContentLoaded", (event) => {
@@ -39,3 +40,5 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
   });
 
+}
+getCaroselEffect();
