@@ -848,6 +848,126 @@
     ]
   },
   {
+    "id": "form-with-banner",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Form Options",
+        "description": "",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "Heading1",
+        "value": "",
+        "label": "Heading1",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "Heading2",
+        "value": "",
+        "label": "Heading2",
+        "valueType": "string",
+        "multi": true
+      },
+      {
+        "component": "text",
+        "name": "Heading3",
+        "value": "",
+        "label": "Heading3",
+        "valueType": "string",
+        "multi": true
+      },
+      {
+        "component": "container",
+        "label": "Gender",
+        "name": "gender",
+        "valueType": "string",
+        "collapsible": true,
+        "fields": [
+          {
+            "component": "text-input",
+            "label": "Gender Selection",
+            "name": "gender",
+            "valueType": "string",
+            "multi": true
+          }
+        ]
+      },
+      {
+        "component": "container",
+        "label": "Form Label",
+        "name": "formlabel",
+        "valueType": "string",
+        "collapsible": true,
+        "fields": [
+          {
+            "component": "text-input",
+            "label": "Label selection",
+            "name": "label",
+            "valueType": "string",
+            "multi": true
+          },
+          {
+            "component": "text-input",
+            "label": "PlaceHolder Value",
+            "name": "placeholdervalue",
+            "valueType": "string",
+            "multi": true
+          }
+        ]
+      },
+      {
+        "component": "container",
+        "label": "Disclamier",
+        "name": "Disclamier",
+        "valueType": "string",
+        "collapsible": true,
+        "fields": [
+          {
+            "component": "text-input",
+            "label": "Disclamier Text",
+            "name": "Disclamier",
+            "valueType": "string",
+            "multi": true
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "ctabutton",
+        "value": "",
+        "label": "CTA Button Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "occupationheading",
+        "value": "",
+        "label": "Occupation Heading"
+      },
+      {
+        "component": "text",
+        "name": "occupationoption",
+        "value": "",
+        "label": "occupation options",
+        "valueType": "string",
+        "multi": true
+      }
+    ]
+  },
+  {
     "id": "fragment",
     "fields": [
       {
@@ -895,49 +1015,6 @@
         "name": "text1",
         "value": "",
         "label": "Text",
-        "valueType": "string",
-        "multi": true
-      }
-    ]
-  },
-  {
-    "id": "form-with-banner",
-    "fields": [
-      {
-        "component": "select",
-        "name": "classes",
-        "value": "",
-        "label": "Form Options",
-        "description": "",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Default",
-            "value": ""
-          }
-        ]
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "name": "text1",
-        "value": "",
-        "label": "Text",
-        "valueType": "string",
-        "multi": true
-      },
-      {
-        "component": "text",
-        "name": "text2",
-        "value": "",
-        "label": "My Text",
         "valueType": "string",
         "multi": true
       }
