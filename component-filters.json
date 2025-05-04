@@ -35,7 +35,8 @@
       "accordian-cf",
       "customtitle",
       "bannerform",
-      "topsearches"
+      "topsearches",
+      "authorable-card"
     ]
   },
   {
@@ -48,6 +49,12 @@
     "id": "accordion-group",
     "components": [
       "accordion"
+    ]
+  },
+  {
+    "id": "authorable-card",
+    "components": [
+      "authored-card"
     ]
   },
   {
@@ -107,6 +114,27 @@
       "cardsv2",
       "cardv2"
     ]
+  },
+  {
+    "id": "custom-rte",
+    "rte": {
+      "format": [
+        "bold",
+        "italic"
+      ],
+      "alignment": [],
+      "indentation": [],
+      "sr_script": [],
+      "list": [],
+      "insert": [
+        "link"
+      ],
+      "advanced": [],
+      "extensions": [],
+      "editor": [
+        "removeformat"
+      ]
+    }
   },
   {
     "id": "gender-section",
