@@ -421,7 +421,7 @@ main .section.smart-cal>.cards-with-paragraph-wrapper .cards-with-paragraph>div>
 .section.smart-cal.mail-us-card.cards-with-paragraph-container{
     margin-top: 80px;
 }
-.section.smart-cal.mail-us-card.cards-with-paragraph-container::after{
+/* .section.smart-cal.mail-us-card.cards-with-paragraph-container::after{
     background-color: #F4FAFF;
     border-top-right-radius: 4rem;
     content: "";
@@ -431,7 +431,7 @@ main .section.smart-cal>.cards-with-paragraph-wrapper .cards-with-paragraph>div>
     transform: skewY(-5deg) translateY(-50%);
     width: 100%;
     z-index: -1;
-}
+} */
 
 .section.smart-cal.mail-us-card.cards-with-paragraph-container .default-content-wrapper{
     text-align: center;

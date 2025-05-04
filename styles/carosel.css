@@ -31,8 +31,10 @@
 
   .carousel-button.prev {
     left: 10px;
+    display: none;
   }
 
   .carousel-button.next {
     right: 10px;
+    display: none;
   }
