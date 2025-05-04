@@ -2,6 +2,9 @@ export default function decorate(block) {
   const container = document.createElement('div');
   container.setAttribute('class', 'container');
 
+  const divElMain = document.createElement('div');
+  divElMain.setAttribute('class', 'agn-home-banner-homepage__container flex-row py-0');
+
   const divEl = document.createElement('div');
   divEl.setAttribute('class', 'flex-column col-lg-6 order-lg-2');
 
@@ -30,7 +33,8 @@ export default function decorate(block) {
   pictureEl.append(imgEl);
   agn_pictureEl.append(pictureEl);
   divEl.append(agn_pictureEl);
-  container.append(divEl);
+  divElMain.append(divEl)
+  container.append(divElMain);
 
   const divEl2 = document.createElement('div');
   divEl2.setAttribute('class', 'flex-column col-lg-6 order-lg-1 home-page-banner-form');
