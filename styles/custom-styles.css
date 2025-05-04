@@ -233,7 +233,7 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     /* color: #002b47; */
     border-radius: 1.5rem;
     /* max-width: 1230px; */
-    background-color: #F4FAFF;
+    /* background-color: #F4FAFF; */
     margin: 20px;
 }
 
@@ -246,4 +246,9 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     top: -70px;
     position: absolute;
     right: 46%;
+}
+
+.section.columns-container .columns-wrapper > div > p:nth-child(1) {
+    font-size: 1.75rem;
+    color: #094771;
 }
