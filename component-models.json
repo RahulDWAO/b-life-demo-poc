@@ -899,21 +899,13 @@
         "component": "select",
         "name": "classes",
         "value": "",
-        "label": "Teaser options",
+        "label": "Form Options",
         "description": "",
         "valueType": "string",
         "options": [
           {
             "name": "Default",
             "value": ""
-          },
-          {
-            "name": "Side-by-side",
-            "value": "side-by-side"
-          },
-          {
-            "name": "Cards Container",
-            "value": "cards-container"
           }
         ]
       },
@@ -935,7 +927,7 @@
       },
       {
         "component": "text",
-        "name": "text1",
+        "name": "text2",
         "value": "",
         "label": "My Text",
         "valueType": "string",
