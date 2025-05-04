@@ -173,6 +173,9 @@ main .section.accordion-group-container .accordion-group-wrapper .accordion-grou
   margin-bottom: 60px;
 }
 
+.section.accordion-group-container .default-content-wrapper .button-container {
+  text-align: center;
+}
 .section.accordion-group-container .default-content-wrapper .button-container a{
   border: none;
   background-color: #153050;
