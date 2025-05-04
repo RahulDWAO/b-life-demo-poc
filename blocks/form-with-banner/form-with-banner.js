@@ -238,7 +238,7 @@ export default function decorate(block) {
 
   const spanEl = document.createElement('span');
   spanEl.setAttribute('class', 'new-tag');
-  spanEl.textContent = 'New';
+  spanEl.textContent = "'Bandhan Life iInvest Advantage', New";
   h1El.append(spanEl);
   divEl3.append(h1El);
 

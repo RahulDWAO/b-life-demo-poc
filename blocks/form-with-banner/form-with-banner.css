@@ -30,15 +30,14 @@
 }
 
 .cmp-form-banner-container .form-header {
-    margin-bottom: 40px;
     text-align: left;
 }
 
 .cmp-form-banner-container .disclaimer {
-    font-size: 12px;
+    font-size: 0.563rem;
+    font-weight: 500;
+    padding: 5px;
     color: #2c3e50;
-    margin-bottom: 15px;
-    font-weight: 600;
 }
 
 .cmp-form-banner-container .form-header h1 {
@@ -62,9 +61,11 @@
 
 .cmp-form-banner-container .form-header h2 {
     margin: 0;
-    font-size: 28px;
-    color: #4a90e2;
-    font-weight: normal;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #4A88F5;
+    margin-bottom: 0.2rem;
 }
 
 .cmp-form-banner-container .multi-step-form {
@@ -417,4 +418,8 @@
 
 .cmp-form-banner-container .step-indicators {
     display: none;
+}
+
+.section.form-with-banner-container .form-with-banner-wrapper{
+    padding: 50px;
 }
