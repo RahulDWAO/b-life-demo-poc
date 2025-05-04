@@ -1,4 +1,4 @@
-/* .columns > div {
+.columns > div {
   display: flex;
   flex-direction: column;
 }
@@ -27,7 +27,7 @@
   }
 
   .columns > div > div {
-    flex: 1;
-    order: unset;
+    /* flex: 1;
+    order: unset; */
   }
-} */
+}
