@@ -235,7 +235,7 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     border-radius: 1.5rem;
     /* max-width: 1230px; */
     /* background-color: #F4FAFF; */
-    margin: 20px;
+    margin: 20px 32px;
 }
 
 /* .section.settlement-card.columns-container.section-metadata-container .default-content-wrapper{
@@ -283,6 +283,7 @@ main .section.most-pop>.columns-wrapper>.columns-2-cols>div>div div.cards>div>di
     box-shadow: 0 0.5em 1em -0.125em rgba(0, 0, 0, 0.1), 0 0px 0 1px rgba(0, 0, 0, 0.02);
     /* color: #002b47; */
     max-width: 100%;
+    margin: 50px 32px;
 }
 
 .section.certified-card.columns-container > .columns-wrapper > div > div:nth-child(1){
