@@ -301,6 +301,11 @@ main .section.ban-why-choose-model .default-content-wrapper h2 {
 main .section.ban-why-choose-model .cards-wrapper {
   margin-top: 2rem;
   width: auto;
+  overflow: hidden;
+}
+
+main .section.ban-why-choose-model .cards-wrapper button.carousel-button {
+  color: black;
 }
 
 main .section.ban-why-choose-model .cards-wrapper>.cards>ul {
