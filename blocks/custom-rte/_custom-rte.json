@@ -3,10 +3,11 @@
     {
       "title": "Custom RTE",
       "id": "custom-rte",
+      "modelId": "text-model",
       "plugins": {
         "xwalk": {
           "page": {
-            "resourceType": "core/wcm/components/text/v2/text", 
+            "resourceType": "core/wcm/components/text/v2/text",
             "template": {
               "name": "Custom RTE"
             }
@@ -15,22 +16,25 @@
       }
     }
   ],
-  "models": [],
+  "models": [
+    {
+      "id": "text-model",
+      "fields": [
+        {
+          "id": "text",
+          "type": "richtext",
+          "label": "Body Text"
+        }
+      ]
+    }
+  ],
   "filters": [
     {
       "id": "custom-rte",
       "rte": {
-        "format": ["bold", "italic", "underline"],
-        "alignment": ["left", "center", "right"],
-        "list": ["unordered", "ordered"],
+        "format": ["bold", "italic"],
         "insert": ["link"],
-        "editor": ["removeformat", "undo", "redo"],
-        "ui": {
-          "language": "en",
-          "theme": "light",
-          "toolbarLayout": "top",
-          "showStatusbar": true
-        }
+        "editor": ["removeformat"]
       }
     }
   ]

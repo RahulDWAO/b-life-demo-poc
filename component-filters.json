@@ -120,32 +120,14 @@
     "rte": {
       "format": [
         "bold",
-        "italic",
-        "underline"
-      ],
-      "alignment": [
-        "left",
-        "center",
-        "right"
-      ],
-      "list": [
-        "unordered",
-        "ordered"
+        "italic"
       ],
       "insert": [
         "link"
       ],
       "editor": [
-        "removeformat",
-        "undo",
-        "redo"
-      ],
-      "ui": {
-        "language": "en",
-        "theme": "light",
-        "toolbarLayout": "top",
-        "showStatusbar": true
-      }
+        "removeformat"
+      ]
     }
   },
   {

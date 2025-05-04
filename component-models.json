@@ -677,6 +677,16 @@
     ]
   },
   {
+    "id": "text-model",
+    "fields": [
+      {
+        "id": "text",
+        "type": "richtext",
+        "label": "Body Text"
+      }
+    ]
+  },
+  {
     "id": "customcard",
     "fields": [
       {

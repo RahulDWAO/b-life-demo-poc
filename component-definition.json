@@ -327,6 +327,7 @@
         {
           "title": "Custom RTE",
           "id": "custom-rte",
+          "modelId": "text-model",
           "plugins": {
             "xwalk": {
               "page": {
