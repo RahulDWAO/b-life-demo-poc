@@ -431,3 +431,16 @@ main .section.smart-cal>.cards-with-paragraph-wrapper .cards-with-paragraph>div>
     width: 100%;
     z-index: -1;
 }
+
+section.smart-cal.mail-us-card.cards-with-paragraph-container::after{
+    background-color: #F4FAFF;
+    border-bottom-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+    content: "";
+    display: block;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    transform: skewY(-5deg) translateY(-50%);
+    width: 100%;
+}
