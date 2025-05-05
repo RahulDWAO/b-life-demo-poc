@@ -58,6 +58,19 @@
     ]
   },
   {
+    "id": "cards",
+    "components": [
+      "card",
+      "text"
+    ]
+  },
+  {
+    "id": "card",
+    "components": [
+      "text"
+    ]
+  },
+  {
     "id": "bannerform",
     "components": [
       "gender-section",
