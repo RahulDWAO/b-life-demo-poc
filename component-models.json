@@ -776,6 +776,16 @@
     ]
   },
   {
+    "id": "cf-page",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "label": "Reference"
+      }
+    ]
+  },
+  {
     "id": "columns",
     "fields": [
       {
@@ -1109,16 +1119,6 @@
         "name": "image",
         "label": "Image",
         "multi": false
-      }
-    ]
-  },
-  {
-    "id": "fragment",
-    "fields": [
-      {
-        "component": "aem-content",
-        "name": "reference",
-        "label": "Reference"
       }
     ]
   },
