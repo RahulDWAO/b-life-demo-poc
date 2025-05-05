@@ -97,7 +97,11 @@ header nav[aria-expanded='false'] .nav-hamburger-icon::before,
 header nav[aria-expanded='false'] .nav-hamburger-icon::after {
   height: 2px;
   border-radius: 2px;
-  background: currentcolor;
+  background-color: #ffffff;
+    display: block;
+    left: -40px;
+    overflow: visible;
+    padding: 0.5rem 0 0.5rem 0.5rem;
 }
 
 header nav[aria-expanded='false'] .nav-hamburger-icon::before {
