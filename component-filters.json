@@ -40,7 +40,8 @@
       "custom-columns",
       "quicklinkscards",
       "contentfragment",
-      "demo-fragment-component"
+      "demo-fragment-component",
+      "cf-page"
     ]
   },
   {
