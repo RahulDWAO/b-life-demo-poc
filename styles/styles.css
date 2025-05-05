@@ -192,7 +192,7 @@ button {
   box-sizing: border-box;
   display: inline-block;
   max-width: 100%;
-  margin: 12px 0;
+  /* margin: 12px 0; */
   font-style: normal;
   font-weight: 500;
   line-height: 1.25;
