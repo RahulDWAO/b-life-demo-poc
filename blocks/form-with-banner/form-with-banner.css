@@ -278,7 +278,7 @@
 }
 
 .cmp-form-banner-container .form-group input {
-    width: 100%;
+    width: 80%;
     padding: 12px 15px;
     border: 1px solid #d8d8d8;
     border-radius: 8px;
@@ -417,3 +417,16 @@
 .section.form-with-banner-container .form-with-banner-wrapper{
     padding: 50px;
 }
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* optional spacing between form-groups */
+  }
+  
+  .form-group {
+    flex: 1 1 45%; /* take about 45% width each */
+    min-width: 200px; /* prevent squeezing on small screens */
+    box-sizing: border-box;
+    margin-bottom: 16px;
+  }
+  
