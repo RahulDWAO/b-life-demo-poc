@@ -39,7 +39,8 @@
       "authorable-card",
       "custom-columns",
       "quicklinkscards",
-      "contentfragment"
+      "contentfragment",
+      "demo-fragment-component"
     ]
   },
   {
@@ -211,6 +212,12 @@
         "removeformat"
       ]
     }
+  },
+  {
+    "id": "demo-fragment-component",
+    "components": [
+      "contentfragment"
+    ]
   },
   {
     "id": "form-with-banner",

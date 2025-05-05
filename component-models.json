@@ -991,6 +991,10 @@
     ]
   },
   {
+    "id": "demo-fragment-component",
+    "fields": []
+  },
+  {
     "id": "form-with-banner",
     "fields": [
       {

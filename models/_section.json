@@ -126,7 +126,8 @@
         "authorable-card",
         "custom-columns",
         "quicklinkscards",
-        "contentfragment"
+        "contentfragment",
+        "demo-fragment-component"
       ]
     }
   ]
