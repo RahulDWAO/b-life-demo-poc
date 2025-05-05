@@ -99,20 +99,11 @@
           ]
         },
         {
-          "component": "container",
-          "label": "Disclamier",
+          "component": "text-input",
+          "label": "Disclamier Text",
           "name": "Disclamier",
           "valueType": "string",
-          "collapsible": true,
-          "fields": [
-            {
-              "component": "text-input",
-              "label": "Disclamier Text",
-              "name": "Disclamier",
-              "valueType": "string",
-              "multi":true
-            }
-          ]
+          "multi":true
         },
         {
           "component": "text",
