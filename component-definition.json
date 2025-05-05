@@ -355,6 +355,21 @@
           }
         },
         {
+          "title": "Custom Columns",
+          "id": "custom-columns",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/columns/v1/columns",
+                "template": {
+                  "columns": "2",
+                  "rows": "1"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Custom RTE",
           "id": "custom-rte",
           "modelId": "text-model",

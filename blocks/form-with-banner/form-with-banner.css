@@ -430,3 +430,17 @@
     margin-bottom: 16px;
   }
   
+
+
+  .opt-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* optional spacing between buttons */
+    max-width: 600px; /* optional, controls how many fit in a row */
+  }
+  
+  .opt-btn{
+    flex: 1 1 calc(33.333% - 10px); /* 3 per row, accounting for gap */
+    box-sizing: border-box;
+    min-width: 100px; /* optional, prevents buttons from becoming too narrow */
+  }
