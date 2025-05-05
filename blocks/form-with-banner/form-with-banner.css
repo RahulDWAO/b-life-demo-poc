@@ -422,3 +422,16 @@
 .cmp-form-banner-container .step-indicators {
     display: none;
 }
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* optional spacing between form-groups */
+  }
+  
+  .form-group {
+    flex: 1 1 45%; /* take about 45% width each */
+    min-width: 200px; /* prevent squeezing on small screens */
+    box-sizing: border-box;
+    margin-bottom: 16px;
+  }
+  
