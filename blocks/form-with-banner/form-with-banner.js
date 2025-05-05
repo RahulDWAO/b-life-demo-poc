@@ -115,22 +115,22 @@ function initFormHandler() {
     if (step1Next) {
         step1Next.addEventListener('click', function() {
             // Validate if gender is selected and fields are filled
-          //   if (!formData.gender) {
-          //       alert('Please select your gender before proceeding.');
-          //       return;
-          //   }
+            if (!formData.gender) {
+                alert('Please select your gender before proceeding.');
+                return;
+            }
             
-          //   const ageInput = document.getElementById('age');
-          //   if (!ageInput.value) {
-          //       alert('Please enter your age.');
-          //       return;
-          //   }
+            const ageInput = document.getElementById('age');
+            if (!ageInput.value) {
+                alert('Please enter your age.');
+                return;
+            }
             
-          //   const mobileInput = document.getElementById('mobile');
-          //   if (!mobileInput.value) {
-          //       alert('Please enter your mobile number.');
-          //       return;
-          //   }
+            const mobileInput = document.getElementById('mobile');
+            if (!mobileInput.value) {
+                alert('Please enter your mobile number.');
+                return;
+            }
             
             // Proceed to step 2
             showStep(2);
