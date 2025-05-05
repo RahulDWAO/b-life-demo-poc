@@ -1,3 +1,6 @@
+import { createOptimizedPicture } from '../../scripts/aem.js';
+import { moveInstrumentation } from '../../scripts/scripts.js';
+
 function initFormHandler() {
     // Current step tracking
     let currentStep = 1;
@@ -217,7 +220,13 @@ function initFormHandler() {
   }
   
   export default function decorate(block) {
-      
+  console.log("img",block.children[10].querySelector('picture > img'));
+  let img= block.children[10].querySelector('picture > img')
+      const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]);
+    moveInstrumentation(img, optimizedPic.querySelector('img'));
+    img.closest('picture').replaceWith(optimizedPic);
+    const newImg=optimizedPic.querySelector('picture > img').getAttribute("src")
+
       const head1=block.children[1].textContent.trim();
       const head2=block.children[2].textContent.trim();
       const genderOpt=block.children[3].textContent.trim().split(",");
@@ -390,7 +399,7 @@ function initFormHandler() {
      divEl15.setAttribute('class', 'form-group');
       // const innerdiv = document.createElement("div");
       // innerdiv.classList.add("innerform");
-    debugger
+    
       const label = document.createElement("label");
       const input = document.createElement("input");
     
@@ -728,16 +737,16 @@ function initFormHandler() {
   
     const sourceEl = document.createElement('source');
     sourceEl.setAttribute('media', '(max-width:768px)');
-    sourceEl.setAttribute('srcset', 'https://www.bandhanlife.com/staticassets/styles/homepage_mobile_banner/public/2025-01/iinvest-advantage-Banner-2025-new.webp?itok=HxDWqqI4');
+    sourceEl.setAttribute('srcset', newImg);
     pictureEl.append(sourceEl);
   
     const sourceEl2 = document.createElement('source');
     sourceEl2.setAttribute('media', '(min-width:768px)');
-    sourceEl2.setAttribute('srcset', 'https://www.bandhanlife.com/staticassets/styles/homepage_desktop_banner/public/2025-01/iinvest-advantage-Banner-2025-new.webp?itok=e1HY6uAT');
+    sourceEl2.setAttribute('srcset', newImg);
     pictureEl.append(sourceEl2);
   
     const imgEl = document.createElement('img');
-    imgEl.setAttribute('src', 'https://www.bandhanlife.com/staticassets/styles/homepage_desktop_banner/public/2025-01/iinvest-advantage-Banner-2025-new.webp?itok=e1HY6uAT');
+    imgEl.setAttribute('src', newImg);
     imgEl.setAttribute('alt', 'img');
     imgEl.setAttribute('height', '650');
     imgEl.setAttribute('width', '1069');
