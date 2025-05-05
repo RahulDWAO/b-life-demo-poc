@@ -236,7 +236,7 @@ function initFormHandler() {
   console.log(tellMeOcc);
   
   const occopt=block.children[9].textContent.trim();
-  console.log("img",block.children[10].children[0].childNodes[0].firstChild.attributes[0].nodeValue);
+//   console.log("img",block.children[10].children[0].childNodes[0].firstChild.attributes[0].nodeValue);
   
   
     const container = document.createElement('div');
