@@ -98,10 +98,10 @@ header nav[aria-expanded='false'] .nav-hamburger-icon::after {
   height: 2px;
   border-radius: 2px;
   background-color: #ffffff;
-    display: block;
-    left: -40px;
-    overflow: visible;
-    padding: 0.5rem 0 0.5rem 0.5rem;
+  display: block;
+  left: -40px;
+  overflow: visible;
+  padding: 0.5rem 0 0.5rem 0.5rem;
 }
 
 header nav[aria-expanded='false'] .nav-hamburger-icon::before {
@@ -238,12 +238,12 @@ header nav .nav-sections ul>li>ul>li {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.5;
-    margin-top: 4px;
+    padding-top: 4px;
   }
 
-  header nav .nav-sections ul li p:nth-child(2){
-  font-size: 12px !important;
-}
+  header nav .nav-sections ul li p:nth-child(2) {
+    font-size: 12px !important;
+  }
 
   header nav .nav-sections .default-content-wrapper>ul>li {
     flex: 0 1 auto;
@@ -344,11 +344,11 @@ header nav .nav-tools {
 }
 
 .header nav .nav-sections ul li p a {
-text-decoration: none;
+  text-decoration: none;
   color: #153050;
 }
 
-.header nav .nav-sections ul li p a:hover{
+.header nav .nav-sections ul li p a:hover {
   text-decoration: none;
   color: #006edc !important;
-  }
+}
