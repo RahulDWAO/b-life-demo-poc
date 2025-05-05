@@ -236,8 +236,7 @@ function initFormHandler() {
   console.log(tellMeOcc);
   
   const occopt=block.children[9].textContent.trim();
-  const img=block.children[10].children[0].childNodes[0].firstChild.attributes[0].nodeValue;
-  console.log(occopt);
+  console.log("img",block.children[10].children[0].childNodes[0].firstChild.attributes[0].nodeValue);
   
   
     const container = document.createElement('div');
@@ -729,16 +728,16 @@ function initFormHandler() {
   
     const sourceEl = document.createElement('source');
     sourceEl.setAttribute('media', '(max-width:768px)');
-    sourceEl.setAttribute('srcset', img);
+    sourceEl.setAttribute('srcset', 'https://www.bandhanlife.com/staticassets/styles/homepage_mobile_banner/public/2025-01/iinvest-advantage-Banner-2025-new.webp?itok=HxDWqqI4');
     pictureEl.append(sourceEl);
   
     const sourceEl2 = document.createElement('source');
     sourceEl2.setAttribute('media', '(min-width:768px)');
-    sourceEl2.setAttribute('srcset', img);
+    sourceEl2.setAttribute('srcset', 'https://www.bandhanlife.com/staticassets/styles/homepage_desktop_banner/public/2025-01/iinvest-advantage-Banner-2025-new.webp?itok=e1HY6uAT');
     pictureEl.append(sourceEl2);
   
     const imgEl = document.createElement('img');
-    imgEl.setAttribute('src', img);
+    imgEl.setAttribute('src', 'https://www.bandhanlife.com/staticassets/styles/homepage_desktop_banner/public/2025-01/iinvest-advantage-Banner-2025-new.webp?itok=e1HY6uAT');
     imgEl.setAttribute('alt', 'img');
     imgEl.setAttribute('height', '650');
     imgEl.setAttribute('width', '1069');
