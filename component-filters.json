@@ -42,6 +42,12 @@
     ]
   },
   {
+    "id": "accordian-cf",
+    "components": [
+      "accordion"
+    ]
+  },
+  {
     "id": "accordion-group",
     "components": [
       "accordion"
@@ -124,6 +130,38 @@
       "cards-with-paragraph",
       "card-with-paragraph",
       "quicklinkscards"
+    ]
+  },
+  {
+    "id": "custom-columns",
+    "components": [
+      "column",
+      "custom-cards-container",
+      "accordian",
+      "innvest-calculator",
+      "cards-with-paragraph",
+      "card-with-paragraph"
+    ]
+  },
+  {
+    "id": "column",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "cards",
+      "card",
+      "customcards",
+      "customcard",
+      "custom-cards-container",
+      "accordian",
+      "innvest-calculator",
+      "gender-section",
+      "inputform",
+      "text-with-image",
+      "cards-with-paragraph",
+      "card-with-paragraph"
     ]
   },
   {

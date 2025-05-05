@@ -274,18 +274,6 @@
         "name": "heading",
         "value": "",
         "label": "Heading"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "body",
-        "value": "",
-        "label": "Body"
-      },
-      {
-        "component": "aem-content",
-        "name": "reference",
-        "label": "Reference"
       }
     ]
   },
@@ -789,6 +777,35 @@
   },
   {
     "id": "columns",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "columns",
+        "value": "",
+        "label": "Columns"
+      },
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "rows",
+        "value": "",
+        "label": "Rows"
+      }
+    ]
+  },
+  {
+    "id": "common-cf",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "label": "Reference"
+      }
+    ]
+  },
+  {
+    "id": "custom-columns",
     "fields": [
       {
         "component": "text",
