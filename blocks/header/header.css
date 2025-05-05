@@ -237,8 +237,8 @@ header nav .nav-sections ul>li>ul>li {
     margin-top: 4px;
   }
 
-  header nav .nav-sections ul > li:nth-child(2) > p:nth-child(2)_{
-  font-size: 12px;
+  header nav .nav-sections ul li p:nth-child(2){
+  font-size: 12px !important;
 }
 
   header nav .nav-sections .default-content-wrapper>ul>li {
