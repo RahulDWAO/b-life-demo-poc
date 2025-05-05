@@ -265,7 +265,7 @@ main .section.smart-cal>.cards-with-paragraph-wrapper .cards-with-paragraph>div>
     position: absolute;
     top: 50%;
     transform: skewY(-5deg) translateY(-50%);
-    width: 1225px;
+    width: 100%;
     z-index: -1;
 }
 
