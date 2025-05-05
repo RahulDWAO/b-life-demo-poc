@@ -26,8 +26,8 @@ import {
       if (resp.ok) {
         console.log(resp,"resp")
         const main = document.createElement('main');
-        main.innerHTML = await resp.text();
-  
+        let resp1= await resp.text();
+        
         // reset base path for media to fragment base
         // const resetAttributeBase = (tag, attr) => {
         //   main.querySelectorAll(`${tag}[${attr}^="./media_"]`).forEach((elem) => {
