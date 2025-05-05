@@ -105,7 +105,8 @@
       "accordian",
       "innvest-calculator",
       "cards-with-paragraph",
-      "card-with-paragraph"
+      "card-with-paragraph",
+      "quicklinkscards"
     ]
   },
   {
@@ -126,7 +127,8 @@
       "inputform",
       "text-with-image",
       "cards-with-paragraph",
-      "card-with-paragraph"
+      "card-with-paragraph",
+      "quicklinkscards"
     ]
   },
   {
@@ -196,6 +198,18 @@
       "title",
       "text-input",
       "text-with-image"
+    ]
+  },
+  {
+    "id": "quicklinkscard",
+    "components": [
+      "quicklinkcard"
+    ]
+  },
+  {
+    "id": "quicklinkscard",
+    "components": [
+      "text"
     ]
   },
   {
