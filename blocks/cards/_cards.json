@@ -151,12 +151,7 @@
         "card",
         "text"
       ]
-    },
-    {
-      "id": "card",
-      "components": [
-        "text"
-      ]
     }
+  
   ]
 }

@@ -93,12 +93,6 @@
     ]
   },
   {
-    "id": "card",
-    "components": [
-      "text"
-    ]
-  },
-  {
     "id": "columns",
     "components": [
       "column",
