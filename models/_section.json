@@ -125,7 +125,8 @@
         "topsearches",
         "authorable-card",
         "custom-columns",
-        "quicklinkscards"
+        "quicklinkscards",
+        "contentfragment"
       ]
     }
   ]

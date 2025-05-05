@@ -38,13 +38,14 @@
       "topsearches",
       "authorable-card",
       "custom-columns",
-      "quicklinkscards"
+      "quicklinkscards",
+      "contentfragment"
     ]
   },
   {
     "id": "accordian-cf",
     "components": [
-      "accordion"
+      "contentfragment"
     ]
   },
   {

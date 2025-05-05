@@ -795,12 +795,13 @@
     ]
   },
   {
-    "id": "common-cf",
+    "id": "contentfragment",
     "fields": [
       {
         "component": "aem-content",
-        "name": "reference",
-        "label": "Reference"
+        "name": "content_fragment_path",
+        "label": "CF Path",
+        "valueType": "string"
       }
     ]
   },

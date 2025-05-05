@@ -54,7 +54,7 @@
   "filters": [
     {
       "id": "accordian-cf",
-      "components": ["accordion"]
+      "components": ["contentfragment"]
     }
   ]
 }
