@@ -1,0 +1,75 @@
+{
+  "definitions": [
+    {
+      "title": "Custom Columns",
+      "id": "custom-columns",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/columns/v1/columns",
+            "template": {
+              "columns": "2",
+              "rows": "1"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "custom-columns",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "number",
+          "name": "columns",
+          "value": "",
+          "label": "Columns"
+        },
+        {
+          "component": "text",
+          "valueType": "number",
+          "name": "rows",
+          "value": "",
+          "label": "Rows"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "custom-columns",
+      "components": [
+        "column",
+        "custom-cards-container",
+        "accordian",
+        "innvest-calculator",
+        "cards-with-paragraph",
+        "card-with-paragraph"
+        
+      ]
+    },
+    {
+      "id": "column",
+      "components": [
+        "text",
+        "image",
+        "button",
+        "title",
+        "cards",
+        "card",
+        "customcards",
+        "customcard",
+        "custom-cards-container",
+        "accordian",
+        "innvest-calculator",
+        "gender-section",
+        "inputform",
+        "text-with-image",
+        "cards-with-paragraph",
+        "card-with-paragraph"
+      ]
+    }
+  ]
+}
