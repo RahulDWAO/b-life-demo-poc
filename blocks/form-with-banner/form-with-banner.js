@@ -129,10 +129,10 @@ function initFormHandler() {
   if (step1Next) {
     step1Next.addEventListener("click", function () {
       // Validate if gender is selected and fields are filled
-      if (!formData.gender) {
-        alert("Please select your gender before proceeding.");
-        return;
-      }
+      // if (!formData.gender) {
+      //     alert('Please select your gender before proceeding.');
+      //     return;
+      // }
 
       // const ageInput = document.getElementById('age');
       // if (!ageInput.value) {
@@ -147,6 +147,8 @@ function initFormHandler() {
       // }
 
       // Proceed to step 2
+      this.parentElement.parentElement.parentElement.childNodes[3].childNodes[0].style.display =
+        "block";
       showStep(2);
     });
   }
@@ -212,11 +214,11 @@ function initFormHandler() {
       const bypassConsent = document.getElementById("bypass-consent");
       const contactConsent = document.getElementById("contact-consent");
 
-      // Check if both consents are checked
-      if (!bypassConsent.checked || !contactConsent.checked) {
-        alert("Please accept all the consent options to proceed.");
-        return;
-      }
+      // // Check if both consents are checked
+      // if (!bypassConsent.checked || !contactConsent.checked) {
+      //     alert('Please accept all the consent options to proceed.');
+      //     return;
+      // }
 
       // Form submission logic
       console.log("Form submitted with data:", formData);
@@ -257,7 +259,6 @@ async function fetchData(url) {
     throw error;
   }
 }
-
 export default function decorate(block) {
   console.log("img", block.children[10].querySelector("picture > img"));
   let img = block.children[10].querySelector("picture > img");
@@ -269,7 +270,7 @@ export default function decorate(block) {
   const newImg = optimizedPic
     .querySelector("picture > img")
     .getAttribute("src");
-
+  const mainHead = block.children[0].textContent.trim();
   const head1 = block.children[1].textContent.trim();
   const head2 = block.children[2].textContent.trim();
   const genderOpt = block.children[3].textContent.trim().split(",");
@@ -280,22 +281,22 @@ export default function decorate(block) {
   // const formLabel=block.children[4].textContent.trim();
   // const fromValue=block.children[5].textContent.trim();
 
-  const disc = block.children[6].textContent.trim();
+  const disc = block.children[6].textContent.trim().split(",");
   const ctaText = block.children[7].textContent.trim();
   const tellMeOcc = block.children[8].textContent.trim();
   console.log(tellMeOcc);
 
-  const occopt = block.children[9].textContent.trim();
+  const occopt = block.children[9].textContent.trim().split(",");
   const link = block.children[11].querySelector("a");
   //   const link = cfPath.
   const path = link ? link.getAttribute("href") : block.textContent.trim();
-  console.log(
-    "path",
-    path
-  )(async () => {
+  (async () => {
     try {
-      const resp = await fetchData("https://author-p102857-e1312424.adobeaemcloud.com/graphql/execute.json/bandhan-life-ue-demo/bannerquery");
-      console.log("Final Response:", resp);
+      const resp = await fetchData(
+        "https://author-p102857-e1312424.adobeaemcloud.com/graphql/execute.json/bandhan-life-ue-demo/bannerquery"
+      );
+      console.log("Final Response:", resp.data.demoBanByPath.item.bannerFiled);
+      const headingCf = resp.data.demoBanByPath.item.bannerFiled;
     } catch (err) {
       console.error("Error during fetchData call:", err);
     }
@@ -316,11 +317,11 @@ export default function decorate(block) {
 
   const divEl4 = document.createElement("div");
   divEl4.setAttribute("class", "disclaimer");
-  divEl4.textContent = head1;
+  divEl4.textContent = mainHead;
   divEl3.append(divEl4);
 
   const h1El = document.createElement("h1");
-
+  h1El.append(headingCf);
   const spanEl = document.createElement("span");
   spanEl.setAttribute("class", "new-tag");
   spanEl.textContent = "New";
@@ -375,10 +376,10 @@ export default function decorate(block) {
   buttonEl.append(spanEl2);
   divEl12.append(buttonEl);
 
-  const h3El = document.createElement("h3");
-  h3El.textContent = "Enter your personal details";
-  divEl12.append(h3El);
-  divEl11.append(divEl12);
+  // const h3El = document.createElement('h3');
+  // h3El.textContent = 'Enter your personal details';
+  // divEl12.append(h3El);
+  // divEl11.append(divEl12);
 
   const h3El2 = document.createElement("h3");
   h3El2.textContent = "Gender";
@@ -594,20 +595,23 @@ export default function decorate(block) {
   //   labelEl5.append(aEl);
   //   divEl24.append(labelEl5);
   //   divEl23.append(divEl24);
-
   const divEl25 = document.createElement("div");
-  divEl25.setAttribute("class", "checkbox-group");
 
-  const inputEl5 = document.createElement("input");
-  inputEl5.setAttribute("type", "checkbox");
-  inputEl5.setAttribute("id", "contact-consent");
-  inputEl5.setAttribute("checked", "");
-  divEl25.append(inputEl5);
+  disc.forEach(function (disctxt) {
+    divEl25.setAttribute("class", "checkbox-group");
 
-  const labelEl6 = document.createElement("label");
-  labelEl6.setAttribute("for", "contact-consent");
-  labelEl6.textContent = disc;
-  divEl25.append(labelEl6);
+    const inputEl5 = document.createElement("input");
+    inputEl5.setAttribute("type", "checkbox");
+    inputEl5.setAttribute("id", "contact-consent");
+    inputEl5.setAttribute("checked", "");
+    divEl25.append(inputEl5);
+
+    const labelEl6 = document.createElement("label");
+    labelEl6.setAttribute("for", "contact-consent");
+    labelEl6.textContent = disc;
+    divEl25.append(labelEl6);
+  });
+
   divEl23.append(divEl25);
   divEl11.append(divEl23);
 
@@ -629,6 +633,7 @@ export default function decorate(block) {
 
   const divEl28 = document.createElement("div");
   divEl28.setAttribute("class", "step-header");
+  divEl27.setAttribute("style", "display: block;");
 
   const buttonEl6 = document.createElement("button");
   buttonEl6.setAttribute("class", "back-button");
@@ -683,6 +688,7 @@ export default function decorate(block) {
 
   const divEl32 = document.createElement("div");
   divEl32.setAttribute("class", "step-header");
+  divEl31.setAttribute("style", "display: block;");
 
   const buttonEl9 = document.createElement("button");
   buttonEl9.setAttribute("class", "back-button");
@@ -702,65 +708,68 @@ export default function decorate(block) {
   divEl33.setAttribute("class", "occupation-options");
 
   const divEl34 = document.createElement("div");
-  divEl34.setAttribute("class", "option-row");
+  divEl34.setAttribute("class", "option-row opt-row");
 
-  //   occopt.forEach(function(occopt,index){
-  //     const buttonEl10 = document.createElement('button');
-  //     buttonEl10.setAttribute('class', 'option-button');
-  //     buttonEl10.textContent = occopt;
-  //     divEl34.append(buttonEl10)
+  occopt.forEach(function (occopt, index) {
+    const buttonEl10 = document.createElement("button");
+    buttonEl10.setAttribute("class", "option-button opt-btn");
+    buttonEl10.textContent = occopt;
+    divEl34.append(buttonEl10);
+  });
 
-  //   })
-
-  const buttonEl10 = document.createElement("button");
-  buttonEl10.setAttribute("class", "option-button");
-  buttonEl10.textContent = "Salaried";
-  divEl34.append(buttonEl10);
-
-  const buttonEl11 = document.createElement("button");
-  buttonEl11.setAttribute("class", "option-button");
-  buttonEl11.textContent = "Armed forces / Police";
-  divEl34.append(buttonEl11);
-
-  const buttonEl12 = document.createElement("button");
-  buttonEl12.setAttribute("class", "option-button");
-  buttonEl12.textContent = "Agriculturist";
-  divEl34.append(buttonEl12);
+  // divEl36.append(buttonEl17);
   divEl33.append(divEl34);
-
-  const divEl35 = document.createElement("div");
-  divEl35.setAttribute("class", "option-row");
-
-  const buttonEl13 = document.createElement("button");
-  buttonEl13.setAttribute("class", "option-button");
-  buttonEl13.textContent = "Student";
-  divEl35.append(buttonEl13);
-
-  const buttonEl14 = document.createElement("button");
-  buttonEl14.setAttribute("class", "option-button selected");
-  buttonEl14.textContent = "Worker/labour";
-  divEl35.append(buttonEl14);
-
-  const buttonEl15 = document.createElement("button");
-  buttonEl15.setAttribute("class", "option-button");
-  buttonEl15.textContent = "Retired /Pensioners";
-  divEl35.append(buttonEl15);
-  divEl33.append(divEl35);
-
-  const divEl36 = document.createElement("div");
-  divEl36.setAttribute("class", "option-row");
-
-  const buttonEl16 = document.createElement("button");
-  buttonEl16.setAttribute("class", "option-button");
-  buttonEl16.textContent = "Self-employed (Professional)";
-  divEl36.append(buttonEl16);
-
-  const buttonEl17 = document.createElement("button");
-  buttonEl17.setAttribute("class", "option-button");
-  buttonEl17.textContent = "Self-employed (Business)";
-  divEl36.append(buttonEl17);
-  divEl33.append(divEl36);
   divEl31.append(divEl33);
+
+  // const buttonEl10 = document.createElement('button');
+  // buttonEl10.setAttribute('class', 'option-button');
+  // buttonEl10.textContent = 'Salaried';
+  // divEl34.append(buttonEl10);
+
+  // const buttonEl11 = document.createElement('button');
+  // buttonEl11.setAttribute('class', 'option-button');
+  // buttonEl11.textContent = 'Armed forces / Police';
+  // divEl34.append(buttonEl11);
+
+  // const buttonEl12 = document.createElement('button');
+  // buttonEl12.setAttribute('class', 'option-button');
+  // buttonEl12.textContent = 'Agriculturist';
+  // divEl34.append(buttonEl12);
+  // divEl33.append(divEl34);
+
+  // const divEl35 = document.createElement('div');
+  // divEl35.setAttribute('class', 'option-row');
+
+  // const buttonEl13 = document.createElement('button');
+  // buttonEl13.setAttribute('class', 'option-button');
+  // buttonEl13.textContent = 'Student';
+  // divEl35.append(buttonEl13);
+
+  // const buttonEl14 = document.createElement('button');
+  // buttonEl14.setAttribute('class', 'option-button selected');
+  // buttonEl14.textContent = 'Worker/labour';
+  // divEl35.append(buttonEl14);
+
+  // const buttonEl15 = document.createElement('button');
+  // buttonEl15.setAttribute('class', 'option-button');
+  // buttonEl15.textContent = 'Retired /Pensioners';
+  // divEl35.append(buttonEl15);
+  // divEl33.append(divEl35);
+
+  // const divEl36 = document.createElement('div');
+  // divEl36.setAttribute('class', 'option-row');
+
+  // const buttonEl16 = document.createElement('button');
+  // buttonEl16.setAttribute('class', 'option-button');
+  // buttonEl16.textContent = 'Self-employed (Professional)';
+  // divEl36.append(buttonEl16);
+
+  // const buttonEl17 = document.createElement('button');
+  // buttonEl17.setAttribute('class', 'option-button');
+  // buttonEl17.textContent = 'Self-employed (Business)';
+  // divEl36.append(buttonEl17);
+  // divEl33.append(divEl36);
+  // divEl31.append(divEl33);
 
   const divEl37 = document.createElement("div");
   divEl37.setAttribute("class", "button-container");
