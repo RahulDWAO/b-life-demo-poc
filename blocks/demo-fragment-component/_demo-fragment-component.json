@@ -20,7 +20,13 @@
     "models": [
       {
         "id": "demo-fragment-component",
-        "fields": []
+        "fields": [
+          {
+            "component": "aem-content",
+            "name": "reference",
+            "label": "Reference"
+          }
+        ]
       }
     ],
     "filters": [
