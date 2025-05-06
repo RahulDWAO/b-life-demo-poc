@@ -1233,7 +1233,7 @@
     ]
   },
   {
-    "id": "fragment",
+    "id": "spreedsheetfragment",
     "fields": [
       {
         "component": "aem-content",
