@@ -1077,6 +1077,11 @@
         "name": "image",
         "label": "Image",
         "multi": false
+      },
+      {
+        "component": "aem-content",
+        "name": "cf-path",
+        "label": "Content Fragment Path"
       }
     ]
   },
