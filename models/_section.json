@@ -123,7 +123,8 @@
         "customtitle",
         "bannerform",
         "topsearches",
-        "authorable-card"
+        "authorable-card",
+        "form-with-banner"
       ]
     }
   ]
