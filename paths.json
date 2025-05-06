@@ -2,7 +2,8 @@
   "mappings": [
     "/content/bandhan-life-ue-demo/:/",
     "/content/bandhan-life-ue-demo/configuration:/.helix/config.json",
-    "/content/bandhan-life-ue-demo/metadata:/metadata.json"
+    "/content/bandhan-life-ue-demo/metadata:/metadata.json",
+    "/content/bandhan-life-ue-demo/spreadsheet:/spreadsheet.json"
   ],
   "includes": [
     "/content/bandhan-life-ue-demo/"
