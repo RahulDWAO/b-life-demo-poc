@@ -263,7 +263,7 @@ async function fetchData(url) {
 
 export default function decorate(block) {
 
-    const headingCf=""
+    let headingCf=""
   console.log("img", block.children[10].querySelector("picture > img"));
   let img = block.children[10].querySelector("picture > img");
   const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [
