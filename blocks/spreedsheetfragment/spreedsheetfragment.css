@@ -1,0 +1,12 @@
+.spreedsheetfragment-wrapper{
+
+    margin-top: 5% !important;
+}
+.spreedsheetfragment .form-row{
+    margin-top: 10%;
+
+}
+.spreedsheetfragment .form-row .row-grp{
+display: flex;
+    gap: 12px;
+}
