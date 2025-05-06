@@ -452,3 +452,6 @@
     min-width: 100px;
     /* optional, prevents buttons from becoming too narrow */
 }
+#cf-heading{
+    flex-direction: row-reverse;
+}

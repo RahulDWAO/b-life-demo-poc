@@ -260,12 +260,24 @@ async function fetchData(url) {
   }
 }
 
-
 export default function decorate(block) {
+  let headingCf = "";
 
-    let headingCf=""
-  console.log("img", block.children[10].querySelector("picture > img"));
-  let img = block.children[10].querySelector("picture > img");
+  const mainHead = block.children[0].textContent.trim();
+  // const head1 = block.children[1].textContent.trim();
+  const head2 = block.children[1].textContent.trim();
+  const genderOpt = block.children[2].textContent.trim().split(",");
+
+  const labellist = block.children[3].textContent.trim().split(","); // First child = labels
+  const inputValue = block.children[4].textContent.trim().split(","); // Second child = placeholders
+
+  // const formLabel=block.children[4].textContent.trim();
+  // const fromValue=block.children[5].textContent.trim();
+
+  const disc = block.children[5].textContent.trim().split(",");
+  const ctaText = block.children[6].textContent.trim();
+  const tellMeOcc = block.children[7].textContent.trim();
+  let img = block.children[9].querySelector("picture > img");
   const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [
     { width: "750" },
   ]);
@@ -274,26 +286,13 @@ export default function decorate(block) {
   const newImg = optimizedPic
     .querySelector("picture > img")
     .getAttribute("src");
-  const mainHead = block.children[0].textContent.trim();
-  const head1 = block.children[1].textContent.trim();
-  const head2 = block.children[2].textContent.trim();
-  const genderOpt = block.children[3].textContent.trim().split(",");
-
-  const labellist = block.children[4].textContent.trim().split(","); // First child = labels
-  const inputValue = block.children[5].textContent.trim().split(","); // Second child = placeholders
-
-  // const formLabel=block.children[4].textContent.trim();
-  // const fromValue=block.children[5].textContent.trim();
-
-  const disc = block.children[6].textContent.trim().split(",");
-  const ctaText = block.children[7].textContent.trim();
-  const tellMeOcc = block.children[8].textContent.trim();
-  console.log(tellMeOcc);
-
-  const occopt = block.children[9].textContent.trim().split(",");
-  const link = block.children[11].querySelector("a");
-  //   const link = cfPath.
-  const path = link ? link.getAttribute("href") : block.textContent.trim();
+  const occopt = block.children[8].textContent.trim().split(",");
+  const BlockLink = block.children[10];
+  if (BlockLink) {
+    const linkauthorCfPath = BlockLink.querySelector("a");
+    const path = link ? link.getAttribute("href") : block.textContent.trim();
+  }
+  // //   const link = cfPath.
 
   //   console.log("img",block.children[10].children[0].childNodes[0].firstChild.attributes[0].nodeValue);
 
@@ -815,12 +814,12 @@ export default function decorate(block) {
     try {
       //  "https://author-p102857-e1312424.adobeaemcloud.com/graphql/execute.json/bandhan-life-ue-demo/bannerquery;path=/content/dam/bandhan-life-ue-demo/banner-text-demo;variation=master"
 
-
       const resp = await fetchData(
-        "https://author-p102857-e1312424.adobeaemcloud.com/graphql/execute.json/bandhan-life-ue-demo/bannerquery");
+        "https://author-p102857-e1312424.adobeaemcloud.com/graphql/execute.json/bandhan-life-ue-demo/bannerquery"
+      );
       console.log("Final Response:", resp.data.demoBanByPath.item.bannerFiled);
-       headingCf = resp.data.demoBanByPath.item.bannerFiled;
-       document.getElementById("cf-heading").textContent=headingCf;
+      headingCf = resp.data.demoBanByPath.item.bannerFiled;
+      document.getElementById("cf-heading").append(headingCf);
     } catch (err) {
       console.error("Error during fetchData call:", err);
     }
