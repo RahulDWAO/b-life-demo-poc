@@ -9,6 +9,7 @@ import {
 } from '../../scripts/scripts.js';
 
 import {
+  getMetadata,
   loadSections,
 } from '../../scripts/aem.js';
 
