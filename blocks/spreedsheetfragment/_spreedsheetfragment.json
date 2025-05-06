@@ -1,0 +1,32 @@
+{
+    "definitions": [
+      {
+        "title": "Spreed Sheet Fragment",
+        "id": "spreedsheetfragment",
+        "plugins": {
+          "xwalk": {
+            "page": {
+              "resourceType": "core/franklin/components/block/v1/block",
+              "template": {
+                "name": "Spreed Sheet Fragment",
+                "model": "_spreedsheetfragment"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "models": [
+      {
+        "id": "fragment",
+        "fields": [
+          {
+            "component": "aem-content",
+            "name": "reference",
+            "label": "Reference"
+          }
+        ]
+      }
+    ],
+    "filters": []
+  }
