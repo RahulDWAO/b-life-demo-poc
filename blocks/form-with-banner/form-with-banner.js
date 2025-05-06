@@ -259,7 +259,11 @@ async function fetchData(url) {
     throw error;
   }
 }
+
+
 export default function decorate(block) {
+
+    const headingCf=""
   console.log("img", block.children[10].querySelector("picture > img"));
   let img = block.children[10].querySelector("picture > img");
   const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [
@@ -290,17 +294,7 @@ export default function decorate(block) {
   const link = block.children[11].querySelector("a");
   //   const link = cfPath.
   const path = link ? link.getAttribute("href") : block.textContent.trim();
-  (async () => {
-    try {
-      const resp = await fetchData(
-        "https://author-p102857-e1312424.adobeaemcloud.com/graphql/execute.json/bandhan-life-ue-demo/bannerquery"
-      );
-      console.log("Final Response:", resp.data.demoBanByPath.item.bannerFiled);
-      const headingCf = resp.data.demoBanByPath.item.bannerFiled;
-    } catch (err) {
-      console.error("Error during fetchData call:", err);
-    }
-  })();
+
   //   console.log("img",block.children[10].children[0].childNodes[0].firstChild.attributes[0].nodeValue);
 
   const container = document.createElement("div");
@@ -321,6 +315,8 @@ export default function decorate(block) {
   divEl3.append(divEl4);
 
   const h1El = document.createElement("h1");
+  h1El.setAttribute("id", "cf-heading");
+
   h1El.append(headingCf);
   const spanEl = document.createElement("span");
   spanEl.setAttribute("class", "new-tag");
@@ -814,4 +810,17 @@ export default function decorate(block) {
   block.append(container);
 
   initFormHandler();
+
+  (async () => {
+    try {
+      const resp = await fetchData(
+        "https://author-p102857-e1312424.adobeaemcloud.com/graphql/execute.json/bandhan-life-ue-demo/bannerquery"
+      );
+      console.log("Final Response:", resp.data.demoBanByPath.item.bannerFiled);
+       headingCf = resp.data.demoBanByPath.item.bannerFiled;
+       document.getElementById("cf-heading").innerHTML=headingCf;
+    } catch (err) {
+      console.error("Error during fetchData call:", err);
+    }
+  })();
 }
