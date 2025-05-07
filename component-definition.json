@@ -171,23 +171,12 @@
                   "classes": [
                     "header-left"
                   ],
-                  "headingType": "h2",
                   "item1": {
                     "sling:resourceType": "core/franklin/components/block/v1/block/item",
                     "name": "Authored Card",
                     "model": "authored-card"
                   },
                   "item2": {
-                    "sling:resourceType": "core/franklin/components/block/v1/block/item",
-                    "name": "Authored Card",
-                    "model": "authored-card"
-                  },
-                  "item3": {
-                    "sling:resourceType": "core/franklin/components/block/v1/block/item",
-                    "name": "Authored Card",
-                    "model": "authored-card"
-                  },
-                  "item4": {
                     "sling:resourceType": "core/franklin/components/block/v1/block/item",
                     "name": "Authored Card",
                     "model": "authored-card"
