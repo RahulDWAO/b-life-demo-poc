@@ -462,5 +462,8 @@ main .section.smart-cal>.cards-with-paragraph-wrapper .cards-with-paragraph>div>
         width: 100%;
         padding-bottom: 0;
     }
+    .section.smart-cal.cards-with-paragraph-container .cards-with-paragraph-wrapper{
+        width: auto;
+    }
     
 }
