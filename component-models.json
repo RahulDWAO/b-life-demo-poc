@@ -1039,16 +1039,16 @@
         "multi": true
       },
       {
+        "component": "aem-content",
+        "name": "cf-path",
+        "label": "Content Fragment Path"
+      },
+      {
         "component": "reference",
         "valueType": "string",
         "name": "image",
         "label": "Image",
         "multi": false
-      },
-      {
-        "component": "aem-content",
-        "name": "cf-path",
-        "label": "Content Fragment Path"
       }
     ]
   },
@@ -1204,6 +1204,88 @@
         "component": "text-with-image",
         "label": "Text  with  Image",
         "name": "txtimg"
+      }
+    ]
+  },
+  {
+    "id": "authorable-card",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Block Options",
+        "description": "Options that affect block appearance and behavior.",
+        "valueType": "string",
+        "required": true,
+        "maxSize": 1,
+        "options": [
+          {
+            "name": "Header Alignment",
+            "children": [
+              {
+                "name": "Left",
+                "value": "header-left"
+              },
+              {
+                "name": "Center",
+                "value": "header-center"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "heading",
+        "value": "",
+        "label": "Heading",
+        "description": "Sets the heading."
+      }
+    ]
+  },
+  {
+    "id": "authored-card",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "rte",
+        "value": "",
+        "label": "Rich Text",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "rte1",
+        "value": "",
+        "label": "Rich Text Additional optional",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "Simple Texts",
+        "label": "Enter Simple Texts",
+        "valueType": "string"
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "card-with-paragraph",
+            "value": "card-with-paragraph"
+          }
+        ]
       }
     ]
   },
