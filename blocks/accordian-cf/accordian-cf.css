@@ -166,6 +166,7 @@ main .section.accordion-group-container .accordion-group-wrapper .accordion-grou
 
 
 @media screen and (max-width: 768px) {
+
   main .section.accordion-group-container .accordion-group-wrapper .accordion-group.acc-grp .accordion.block {
     width: 100% !important;
   }
