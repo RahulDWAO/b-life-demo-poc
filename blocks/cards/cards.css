@@ -67,3 +67,9 @@ margin: 0;
 .section.bandhan-iterm-prime-cards.cards-container .cards-card-body{
   margin: 2px;
 }
+
+@media screen and (max-width: 768px) {
+  .section.bandhan-iterm-prime-cards.cards-container .cards.block ul{
+    flex-direction: column;
+  }
+}

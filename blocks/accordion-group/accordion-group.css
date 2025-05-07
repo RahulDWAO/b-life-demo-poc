@@ -21,3 +21,9 @@
   z-index: 1;
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .accordion-group>.accordion details summary{
+    align-items: flex-end;
+  }
+}

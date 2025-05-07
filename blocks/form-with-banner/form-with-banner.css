@@ -400,6 +400,10 @@
     .cmp-form-banner-container .hazard-options {
         gap: 20px;
     }
+
+    .section.form-with-banner-container .form-with-banner-wrapper{
+        padding: 24px;
+    }
 }
 
 .cmp-form-banner-container .investment-form-container {
@@ -430,3 +434,8 @@
     margin-bottom: 16px;
   }
   
+  @media screen and (max-width: 768px) {
+    .cmp-form-banner-container{
+        flex-direction: column-reverse;
+    }
+  }

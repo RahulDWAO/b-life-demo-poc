@@ -190,3 +190,9 @@ main .section.accordion-group-container .accordion-group-wrapper .accordion-grou
   letter-spacing: 0.22px;
   font-size: 22px;
 }
+
+@media screen and (max-width: 768px) {
+  .accordion details {
+    padding: 12px;
+  }
+}

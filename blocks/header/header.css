@@ -27,8 +27,8 @@ header nav[aria-expanded='true'] {
   overflow-y: auto;
   min-height: 100dvh;
   height: 7rem;
-  margin: 0 16px;
-  padding: 32px 24px;
+  /* margin: 0 16px; */
+  /* padding: 32px 24px; */
 }
 
 @media (width >=900px) {
@@ -64,8 +64,8 @@ header nav .nav-hamburger {
 }
 
 header nav .nav-hamburger button {
-  height: 22px;
   margin: 0;
+  width: 40px;
   border: 0;
   border-radius: 0;
   padding: 0;
@@ -95,13 +95,18 @@ header nav .nav-hamburger-icon::after {
 header nav[aria-expanded='false'] .nav-hamburger-icon,
 header nav[aria-expanded='false'] .nav-hamburger-icon::before,
 header nav[aria-expanded='false'] .nav-hamburger-icon::after {
-  height: 2px;
+  height: 40px;
   border-radius: 2px;
   background-color: #ffffff;
   display: block;
-  left: -40px;
+  /* left: -40px; */
   overflow: visible;
   padding: 0.5rem 0 0.5rem 0.5rem;
+  mask-image: var(--svg);
+  --svg: url(data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23000' d='M80 96h352v32H80zm0 144h352v32H80zm0 144h352v32H80z'/%3E%3C/svg%3E);
+    background-color: currentColor;
+    width: 80px;
+    -webkit-mask-size: 100% 100%;
 }
 
 header nav[aria-expanded='false'] .nav-hamburger-icon::before {
@@ -351,4 +356,10 @@ header nav .nav-tools {
 .header nav .nav-sections ul li p a:hover {
   text-decoration: none;
   color: #006edc !important;
+}
+
+@media screen and (max-width: 768px) {
+  .section.nav-tools .default-content-wrapper .button-container{
+    display: none;
+  }
 }
