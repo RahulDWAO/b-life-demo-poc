@@ -1,5 +1,5 @@
 import { createOptimizedPicture } from "../../scripts/aem.js";
-import { moveInstrumentation } from "../../scripts/scripts.js";
+import { isAuthorEnvironment, moveInstrumentation } from "../../scripts/scripts.js";
 
 function initFormHandler() {
   // Current step tracking
@@ -262,36 +262,39 @@ async function fetchData(url) {
 
 
 export default function decorate(block) {
-
     let headingCf=""
-  console.log("img", block.children[10].querySelector("picture > img"));
-  let img = block.children[10].querySelector("picture > img");
-  const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [
-    { width: "750" },
-  ]);
-  moveInstrumentation(img, optimizedPic.querySelector("img"));
-  img.closest("picture").replaceWith(optimizedPic);
-  const newImg = optimizedPic
-    .querySelector("picture > img")
-    .getAttribute("src");
+    let newImg="";
+  const blockImg = block.children[9]
+  if(blockImg){
+    const img=blockImg.querySelector("picture > img");
+    const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [
+      { width: "750" },
+    ]);
+    moveInstrumentation(img, optimizedPic.querySelector("img"));
+    img.closest("picture").replaceWith(optimizedPic);
+    newImg = optimizedPic
+      .querySelector("picture > img")
+      .getAttribute("src");
+  }
+
+
+
   const mainHead = block.children[0].textContent.trim();
   // const head1 = block.children[1].textContent.trim();
-  const head2 = block.children[2].textContent.trim();
-  const genderOpt = block.children[3].textContent.trim().split(",");
+  const head2 = block.children[1].textContent.trim();
+  const genderOpt = block.children[2].textContent.trim().split(",");
 
-  const labellist = block.children[4].textContent.trim().split(","); // First child = labels
-  const inputValue = block.children[5].textContent.trim().split(","); // Second child = placeholders
+  const labellist = block.children[3].textContent.trim().split(","); // First child = labels
+  const inputValue = block.children[4].textContent.trim().split(","); // Second child = placeholders
 
   // const formLabel=block.children[4].textContent.trim();
   // const fromValue=block.children[5].textContent.trim();
 
-  const disc = block.children[6].textContent.trim().split(",");
-  const ctaText = block.children[7].textContent.trim();
-  const tellMeOcc = block.children[8].textContent.trim();
-  console.log(tellMeOcc);
-
-  const occopt = block.children[9].textContent.trim().split(",");
-  const blockLink = block.children[11];
+  const disc = block.children[5].textContent.trim().split(",");
+  const ctaText = block.children[6].textContent.trim();
+  const tellMeOcc = block.children[7].textContent.trim();
+  const occopt = block.children[8].textContent.trim().split(",");
+  const blockLink = block.children[10];
   if(blockLink){
 
     const link=blockLink.querySelector("a");
@@ -316,13 +319,14 @@ export default function decorate(block) {
 
   const divEl4 = document.createElement("div");
   divEl4.setAttribute("class", "disclaimer");
-  divEl4.textContent = mainHead;
+  divEl4.setAttribute("id", "disclaimer");
+  divEl4.textContent = headingCf;
   divEl3.append(divEl4);
 
   const h1El = document.createElement("h1");
-  h1El.setAttribute("id", "cf-heading");
+  // h1El.setAttribute("id", "cf-heading");
 
-  h1El.append(headingCf);
+  h1El.append(mainHead);
   const spanEl = document.createElement("span");
   spanEl.setAttribute("class", "new-tag");
   spanEl.textContent = "New";
@@ -390,7 +394,7 @@ export default function decorate(block) {
   const divEl13 = document.createElement("div");
   divEl13.setAttribute("class", "gender-options");
 
-  block.children[3].textContent
+  block.children[2].textContent
     .trim()
     .split(",")
     .forEach((labelText, index) => {
@@ -598,19 +602,25 @@ export default function decorate(block) {
   //   divEl23.append(divEl24);
   const divEl25 = document.createElement("div");
 
+
   disc.forEach(function (disctxt) {
-    divEl25.setAttribute("class", "checkbox-group");
+      const innerDiv = document.createElement("div");
+
+    innerDiv.setAttribute("class", "checkbox-group");
 
     const inputEl5 = document.createElement("input");
     inputEl5.setAttribute("type", "checkbox");
     inputEl5.setAttribute("id", "contact-consent");
     inputEl5.setAttribute("checked", "");
-    divEl25.append(inputEl5);
+    innerDiv.append(inputEl5);
 
     const labelEl6 = document.createElement("label");
     labelEl6.setAttribute("for", "contact-consent");
-    labelEl6.textContent = disc;
-    divEl25.append(labelEl6);
+    labelEl6.textContent = disctxt;
+    innerDiv.append(labelEl6);
+    divEl25.append(innerDiv);
+
+    
   });
 
   divEl23.append(divEl25);
@@ -818,12 +828,20 @@ export default function decorate(block) {
 
   (async () => {
     try {
-     let url= "https://publish-p102857-e1312424.adobeaemcloud.com/graphql/execute.json/bandhan-life-ue-demo/bannerquery;path=/content/dam/bandhan-life-ue-demo/banner-text-demo;variation=master"
+      let domainUrl=""
+      // const envCheck=isAuthorEnvironment();
+      if(isAuthorEnvironment()){
+        domainUrl= "https://author-p102857-e1312424.adobeaemcloud.com/graphql/execute.json/bandhan-life-ue-demo/bannerquery;path=/content/dam/bandhan-life-ue-demo/banner-text-demo;variation=master"
 
-      const resp = await fetchData(url);
+      }else{
+        domainUrl= "https://publish-p102857-e1312424.adobeaemcloud.com/graphql/execute.json/bandhan-life-ue-demo/bannerquery;path=/content/dam/bandhan-life-ue-demo/banner-text-demo;variation=master"
+
+      }
+
+      const resp = await fetchData(domainUrl);
       console.log("Final Response:", resp.data.demoBanByPath.item.bannerFiled);
        headingCf = resp.data.demoBanByPath.item.bannerFiled;
-       document.getElementById("cf-heading").append(headingCf);
+       document.getElementById("disclaimer").append(headingCf);
     } catch (err) {
       console.error("Error during fetchData call:", err);
     }

@@ -1,4 +1,6 @@
 
+// import { isAuthorEnvironment } from "../../scripts/scripts";
+
 async function fetchAPI(method, url, data) {
   return new Promise(async (resolve, reject) => {
     try {
@@ -35,13 +37,18 @@ async function fetchAPI(method, url, data) {
     }
   });
 }
+
+
 export default async function decorate(block) {
 
-
+// const isAuthor=isAuthorEnvironment();
   const link = block.querySelector('a');
   const path = link ? link.getAttribute('href') : block.textContent.trim();
   console.log(path,"path")
 
+  // if(isAuthor){
+  //   path=path
+  // }
   //  resp  await fetchAPI("GET", path);
    const response = await fetchAPI('GET', path);
   const responseJson = await response.json();
