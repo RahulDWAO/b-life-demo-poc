@@ -369,43 +369,6 @@
 .cmp-form-banner-container .link:hover {
     text-decoration: underline;
 }
-
-@media screen and (max-width: 768px) {
-
-
-    .cmp-form-banner-container .form-header h1 {
-        font-size: 24px;
-    }
-
-    .cmp-form-banner-container .form-header h2 {
-        font-size: 20px;
-    }
-
-    .cmp-form-banner-container .multi-step-form {
-        padding: 20px;
-    }
-
-    .cmp-form-banner-container .option-row {
-        flex-direction: column;
-    }
-
-    .cmp-form-banner-container .form-row {
-        flex-direction: column;
-    }
-
-    .cmp-form-banner-container .step {
-        margin: 0 20px;
-    }
-
-    .cmp-form-banner-container .hazard-options {
-        gap: 20px;
-    }
-
-    .section.form-with-banner-container .form-with-banner-wrapper{
-        padding: 24px;
-    }
-}
-
 .cmp-form-banner-container .investment-form-container {
     flex: 0.4;
 }
@@ -441,5 +404,37 @@
   @media screen and (max-width: 768px) {
     .cmp-form-banner-container{
         flex-direction: column-reverse;
+    }
+    
+    .cmp-form-banner-container .form-header h1 {
+        font-size: 24px;
+    }
+
+    .cmp-form-banner-container .form-header h2 {
+        font-size: 20px;
+    }
+
+    .cmp-form-banner-container .multi-step-form {
+        padding: 20px;
+    }
+
+    .cmp-form-banner-container .option-row {
+        flex-direction: column;
+    }
+
+    .cmp-form-banner-container .form-row {
+        flex-direction: column;
+    }
+
+    .cmp-form-banner-container .step {
+        margin: 0 20px;
+    }
+
+    .cmp-form-banner-container .hazard-options {
+        gap: 20px;
+    }
+
+    .section.form-with-banner-container .form-with-banner-wrapper{
+        padding: 24px;
     }
   }
