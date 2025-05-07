@@ -818,11 +818,9 @@ export default function decorate(block) {
 
   (async () => {
     try {
-      //  "https://author-p102857-e1312424.adobeaemcloud.com/graphql/execute.json/bandhan-life-ue-demo/bannerquery;path=/content/dam/bandhan-life-ue-demo/banner-text-demo;variation=master"
+     let url= "https://publish-p102857-e1312424.adobeaemcloud.com/graphql/execute.json/bandhan-life-ue-demo/bannerquery;path=/content/dam/bandhan-life-ue-demo/banner-text-demo;variation=master"
 
-
-      const resp = await fetchData(
-        "https://author-p102857-e1312424.adobeaemcloud.com/graphql/execute.json/bandhan-life-ue-demo/bannerquery");
+      const resp = await fetchData(url);
       console.log("Final Response:", resp.data.demoBanByPath.item.bannerFiled);
        headingCf = resp.data.demoBanByPath.item.bannerFiled;
        document.getElementById("cf-heading").append(headingCf);
