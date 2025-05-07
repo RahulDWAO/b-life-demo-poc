@@ -360,7 +360,7 @@ header nav .nav-tools {
 }
 
 @media screen and (max-width: 768px) {
-  .section.nav-tools .default-content-wrapper:nth-child(1) {
+  .section.nav-tools .default-content-wrapper p:nth-child(1) {
     display: none;
   }
 }
