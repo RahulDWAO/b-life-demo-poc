@@ -195,4 +195,18 @@ main .section.accordion-group-container .accordion-group-wrapper .accordion-grou
   .accordion details {
     padding: 12px;
   }
+  
+  main .section.accordion-group-container .accordion-group-wrapper .accordion-group.acc-grp .accordion.block {
+    width: 100% !important;
+  }
+
+  main .section.accordion-group-container .accordion-group-wrapper .accordion-group.acc-grp {
+    width: 100%;
+  }
+
+  main .section.accordion-group-container .accordion-group-wrapper {
+    margin: 0;
+    width: 80%;
+
+  }
 }
