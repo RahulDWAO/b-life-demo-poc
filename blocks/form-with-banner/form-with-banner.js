@@ -239,9 +239,6 @@ async function fetchData(url) {
   try {
     const response = await fetch(url, {
       method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
       credentials: "include",
     });
 
