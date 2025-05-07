@@ -453,3 +453,14 @@ main .section.smart-cal>.cards-with-paragraph-wrapper .cards-with-paragraph>div>
 .section.ban-why-choose-model.ban-why-choose-model-section.cards-container button{
     display: none;
 }
+
+
+@media screen and (max-width: 768px) {
+
+    .section.most-pop.columns-container .cards-with-paragraph>div,
+    main .section.smart-cal>.cards-with-paragraph-wrapper .cards-with-paragraph>div {
+        width: 100%;
+        padding-bottom: 0;
+    }
+    
+}
