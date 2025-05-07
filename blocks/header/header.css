@@ -363,4 +363,22 @@ header nav .nav-tools {
   .section.nav-tools .default-content-wrapper p:nth-child(1) {
     display: none;
   }
+
+  header nav .nav-brand img{
+    width: 110px;
+  }
+
+  header nav{
+    gap: 0;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+  }
+  .section.nav-tools .default-content-wrapper {
+    gap: 0;
+  }
+
+  .section.nav-tools .default-content-wrapper p:nth-child(2){
+    margin-right: 0;
+    background: #fff;
+  }
+
 }
