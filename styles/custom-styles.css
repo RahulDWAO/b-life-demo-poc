@@ -389,7 +389,7 @@ main .section.smart-cal>.cards-with-paragraph-wrapper .cards-with-paragraph>div>
 
 }
 
-.section.people-search-buttons.columns-container > div > div > div > div:nth-child(1){
+.section.people-search-buttons.columns-container>div>div>div>div:nth-child(1) {
     display: flex;
     gap: 15px;
 }
@@ -426,12 +426,13 @@ main .section.smart-cal>.cards-with-paragraph-wrapper .cards-with-paragraph>div>
 .section.people-search-buttons.columns-container>div>div>div>div:nth-child(2) .button-container a:hover {
     color: #fff;
     background-color: #153050;
-   
+
 }
 
-.section.smart-cal.mail-us-card.cards-with-paragraph-container{
+.section.smart-cal.mail-us-card.cards-with-paragraph-container {
     margin-top: 80px;
 }
+
 /* .section.smart-cal.mail-us-card.cards-with-paragraph-container::after{
     background-color: #F4FAFF;
     border-top-right-radius: 4rem;
@@ -444,13 +445,13 @@ main .section.smart-cal>.cards-with-paragraph-wrapper .cards-with-paragraph>div>
     z-index: -1;
 } */
 
-.section.smart-cal.mail-us-card.cards-with-paragraph-container .default-content-wrapper{
+.section.smart-cal.mail-us-card.cards-with-paragraph-container .default-content-wrapper {
     text-align: center;
     font-size: 1.5rem;
     line-height: 1.5;
 }
 
-.section.ban-why-choose-model.ban-why-choose-model-section.cards-container button{
+.section.ban-why-choose-model.ban-why-choose-model-section.cards-container button {
     display: none;
 }
 
@@ -462,8 +463,32 @@ main .section.smart-cal>.cards-with-paragraph-wrapper .cards-with-paragraph>div>
         width: 100%;
         padding-bottom: 0;
     }
-    .section.smart-cal.cards-with-paragraph-container .cards-with-paragraph-wrapper{
+
+    .section.smart-cal.cards-with-paragraph-container .cards-with-paragraph-wrapper {
         width: auto;
     }
-    
+
+    .section.lets-go-card .button-container {
+        top: 168%;
+        right: 28%;
+    }
+
+    .section.settlement-card.columns-container {
+        flex-direction: column;
+        margin-top: 200px;
+
+    }
+
+    .section.settlement-card.columns-container .default-content-wrapper p:nth-child(2) {
+        right: 31%;
+    }
+
+    .section.certified-card.columns-container>.columns-wrapper>div>div:nth-child(1) {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .section.certified-card.columns-container>.columns-wrapper>div>div:nth-child(1)>div{
+        padding-left: 0;
+    }
 }
