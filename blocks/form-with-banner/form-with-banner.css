@@ -118,7 +118,7 @@
 }
 
 .cmp-form-banner-container .step-header {
-   display: none;
+    display: none;
 }
 
 .cmp-form-banner-container .back-button {
@@ -371,7 +371,7 @@
 }
 
 @media screen and (max-width: 768px) {
-   
+
 
     .cmp-form-banner-container .form-header h1 {
         font-size: 24px;
@@ -418,18 +418,22 @@
     display: none;
 }
 
-.section.form-with-banner-container .form-with-banner-wrapper{
+.section.form-with-banner-container .form-with-banner-wrapper {
     padding: 50px;
 }
+
 .form-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px; /* optional spacing between form-groups */
-  }
-  
-  .form-group {
-    flex: 1 1 45%; /* take about 45% width each */
-    min-width: 200px; /* prevent squeezing on small screens */
+    gap: 16px;
+    /* optional spacing between form-groups */
+}
+
+.form-group {
+    flex: 1 1 45%;
+    /* take about 45% width each */
+    min-width: 200px;
+    /* prevent squeezing on small screens */
     box-sizing: border-box;
     margin-bottom: 16px;
   }

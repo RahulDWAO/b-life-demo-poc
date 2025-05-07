@@ -45,14 +45,6 @@
         },
         {
           "component": "text",
-          "name": "Heading2",
-          "value": "",
-          "label": "Heading2",
-          "valueType": "string",
-          "multi": true
-        },
-        {
-          "component": "text",
           "name": "Heading3",
           "value": "",
           "label": "Heading3",
@@ -137,12 +129,18 @@
           "multi": true
         },
         {
+          "component": "aem-content",
+          "name": "cf-path",
+          "label": "Content Fragment Path"
+        },
+        {
           "component": "reference",
           "valueType": "string",
           "name": "image",
           "label": "Image",
           "multi": false
         }
+     
       ]
     }
   ],

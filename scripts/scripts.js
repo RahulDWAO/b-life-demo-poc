@@ -144,4 +144,16 @@ async function loadPage() {
   loadDelayed();
 }
 
+
+
+export function isAuthorEnvironment(domainUrlparam) {
+
+  domainUrlparam = window.location.origin.includes("author");
+  if(domainUrlparam){
+    return true
+  }
+return 
+
+}
+
 loadPage();

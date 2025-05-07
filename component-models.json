@@ -441,63 +441,6 @@
         "value": "",
         "label": "Heading",
         "description": "Sets the heading."
-      },
-      {
-        "component": "select",
-        "valueType": "string",
-        "name": "headingType",
-        "value": "h2",
-        "label": "Heading Type",
-        "options": [
-          {
-            "name": "H1",
-            "value": "h1"
-          },
-          {
-            "name": "H2",
-            "value": "h2"
-          },
-          {
-            "name": "H3",
-            "value": "h3"
-          },
-          {
-            "name": "H4",
-            "value": "h4"
-          },
-          {
-            "name": "H5",
-            "value": "h5"
-          },
-          {
-            "name": "H6",
-            "value": "h6"
-          }
-        ]
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "tooltip",
-        "value": "",
-        "label": "Tooltip",
-        "description": "Sets the tooltip."
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "linkText",
-        "value": "",
-        "label": "Link text",
-        "description": "Sets the text for link."
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "link",
-        "value": "",
-        "label": "Link URL",
-        "description": "Sets the text url."
       }
     ]
   },
@@ -505,12 +448,44 @@
     "id": "authored-card",
     "fields": [
       {
-        "component": "text",
+        "component": "reference",
         "valueType": "string",
-        "name": "contentURL",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "rte",
         "value": "",
-        "label": "Content URL",
-        "description": "Provide a link to one of the following content types: Playlist, Tutorial, Documentation, Troubleshooting, On-Demand Event, Certification or Perspective"
+        "label": "Rich Text",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "rte1",
+        "value": "",
+        "label": "Rich Text Additional optional",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "Simple Texts",
+        "label": "Enter Simple Texts",
+        "valueType": "string"
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "card-with-paragraph",
+            "value": "card-with-paragraph"
+          }
+        ]
       }
     ]
   },
@@ -980,14 +955,6 @@
       },
       {
         "component": "text",
-        "name": "Heading2",
-        "value": "",
-        "label": "Heading2",
-        "valueType": "string",
-        "multi": true
-      },
-      {
-        "component": "text",
         "name": "Heading3",
         "value": "",
         "label": "Heading3",
@@ -1070,6 +1037,11 @@
         "label": "occupation options",
         "valueType": "string",
         "multi": true
+      },
+      {
+        "component": "aem-content",
+        "name": "cf-path",
+        "label": "Content Fragment Path"
       },
       {
         "component": "reference",
@@ -1232,6 +1204,98 @@
         "component": "text-with-image",
         "label": "Text  with  Image",
         "name": "txtimg"
+      }
+    ]
+  },
+  {
+    "id": "authorable-card",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Block Options",
+        "description": "Options that affect block appearance and behavior.",
+        "valueType": "string",
+        "required": true,
+        "maxSize": 1,
+        "options": [
+          {
+            "name": "Header Alignment",
+            "children": [
+              {
+                "name": "Left",
+                "value": "header-left"
+              },
+              {
+                "name": "Center",
+                "value": "header-center"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "heading",
+        "value": "",
+        "label": "Heading",
+        "description": "Sets the heading."
+      }
+    ]
+  },
+  {
+    "id": "authored-card",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "rte",
+        "value": "",
+        "label": "Rich Text",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "rte1",
+        "value": "",
+        "label": "Rich Text Additional optional",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "Simple Texts",
+        "label": "Enter Simple Texts",
+        "valueType": "string"
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "card-with-paragraph",
+            "value": "card-with-paragraph"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "spreedsheetfragment",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "label": "Reference"
       }
     ]
   },

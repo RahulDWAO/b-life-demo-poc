@@ -9,6 +9,7 @@ import {
 } from '../../scripts/scripts.js';
 
 import {
+  getMetadata,
   loadSections,
 } from '../../scripts/aem.js';
 
@@ -18,6 +19,10 @@ import {
  * @returns {HTMLElement} The root element of the fragment
  */
 export async function loadFragment(path) {
+  const aemauthorurl = getMetadata('authorurl') || '';
+  const aempublishurl = getMetadata('publishurl') || '';
+  console.log(aemauthorurl,"aemauthorurl")
+
   if (path && path.startsWith('/')) {
     // eslint-disable-next-line no-param-reassign
     path = path.replace(/(\.plain)?\.html/, '');

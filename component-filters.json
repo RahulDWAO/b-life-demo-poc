@@ -36,7 +36,9 @@
       "customtitle",
       "bannerform",
       "topsearches",
-      "authorable-card"
+      "authorable-card",
+      "form-with-banner",
+      "spreedsheetfragment"
     ]
   },
   {
@@ -163,6 +165,12 @@
       "title",
       "text-input",
       "text-with-image"
+    ]
+  },
+  {
+    "id": "authorable-card",
+    "components": [
+      "authored-card"
     ]
   },
   {
