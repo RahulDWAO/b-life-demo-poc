@@ -355,7 +355,6 @@ main .section.ban-why-choose-model .cards-card-image {
   main .section.ban-why-choose-model .cards-wrapper>.cards>ul {
     flex-direction: column;
     align-items: center;
-    /* padding: 0 1rem; */
     width: 100%;
   }
 
