@@ -28,6 +28,7 @@
   color: inherit;
   display: inline;
 }
+
 /* 
 .accordion details summary::before {
   content: url('../../icons/chevron_right.svg');
@@ -44,6 +45,7 @@
   left: -4.2px;
   margin-right: -2px;
 }
+
 .accordion details summary::-webkit-details-marker {
   display: none;
 }
@@ -52,7 +54,7 @@
   content: none;
 }
 
-.accordion details > div > div {
+.accordion details>div>div {
   color: var(--non-spectrum-raisin-black);
   font-size: var(--spectrum-font-size-200);
   line-height: var(--spectrum-line-height-m);
@@ -115,8 +117,8 @@ ol .accordion summary {
 
 .accordion details[open] {
   padding-bottom: 16px;
-      background-color: #F2F8FF;
-     margin-bottom: -2rem !important;
+  background-color: #F2F8FF;
+  margin-bottom: -2rem !important;
 }
 
 /* .accordion details[open] summary::before {
@@ -131,13 +133,14 @@ ol .accordion summary {
 }
 
 
-main .section.accordion-group-container .accordion-group-wrapper{
+main .section.accordion-group-container .accordion-group-wrapper {
   margin: 1rem 0 2rem;
   width: 100%;
   margin-bottom: 3rem;
 
 }
-main .section.accordion-group-container .accordion-group-wrapper .accordion-group.acc-grp{
+
+main .section.accordion-group-container .accordion-group-wrapper .accordion-group.acc-grp {
 
   align-items: center;
   display: flex;
@@ -155,25 +158,25 @@ main .section.accordion-group-container .accordion-group-wrapper .accordion-grou
   /* background-color: azure; */
 
 }
-main .section.accordion-group-container .accordion-group-wrapper .accordion-group.acc-grp .accordion.block{
+
+main .section.accordion-group-container .accordion-group-wrapper .accordion-group.acc-grp .accordion.block {
   width: 792px;
   border: 3px solid transparent;
 }
 
 
 @media screen and (max-width: 768px) {
-  main .section.accordion-group-container .accordion-group-wrapper .accordion-group.acc-grp .accordion.block
-  {
+  main .section.accordion-group-container .accordion-group-wrapper .accordion-group.acc-grp .accordion.block {
+    width: 100% !important;
+  }
+
+  main .section.accordion-group-container .accordion-group-wrapper .accordion-group.acc-grp {
     width: 100%;
   }
 
-  main .section.accordion-group-container .accordion-group-wrapper .accordion-group.acc-grp{
-    width: 100%;
-  }
-
-  main .section.accordion-group-container .accordion-group-wrapper{
+  main .section.accordion-group-container .accordion-group-wrapper {
     margin: 0;
     width: 80%;
-  
+
   }
 }
