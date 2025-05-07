@@ -95,7 +95,7 @@ header nav .nav-hamburger-icon::after {
 header nav[aria-expanded='false'] .nav-hamburger-icon,
 header nav[aria-expanded='false'] .nav-hamburger-icon::before,
 header nav[aria-expanded='false'] .nav-hamburger-icon::after {
-  height: 40px;
+  /* height: 40px; */
   border-radius: 2px;
   background-color: #ffffff;
   display: block;
@@ -103,7 +103,7 @@ header nav[aria-expanded='false'] .nav-hamburger-icon::after {
   overflow: visible;
   padding: 0.5rem 0 0.5rem 0.5rem;
   mask-image: var(--svg);
-  --svg: url(data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23000' d='M80 96h352v32H80zm0 144h352v32H80zm0 144h352v32H80z'/%3E%3C/svg%3E);
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23000' d='M80 96h352v32H80zm0 144h352v32H80zm0 144h352v32H80z'/%3E%3C/svg%3E");
     background-color: currentColor;
     width: 80px;
     -webkit-mask-size: 100% 100%;

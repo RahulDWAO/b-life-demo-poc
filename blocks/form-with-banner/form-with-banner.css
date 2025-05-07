@@ -424,6 +424,7 @@
 
     .cmp-form-banner-container .form-row {
         flex-direction: column;
+        gap: 0;
     }
 
     .cmp-form-banner-container .step {
