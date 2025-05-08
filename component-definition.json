@@ -159,7 +159,7 @@
         },
         {
           "title": "AEM Content Fragments - 2",
-          "id": "aem-cf-component",
+          "id": "aem-cf-component-new",
           "plugins": {
             "xwalk": {
               "cf": {

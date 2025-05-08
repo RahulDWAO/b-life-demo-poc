@@ -412,7 +412,7 @@
     ]
   },
   {
-    "id": "aem-cf-component",
+    "id": "aem-cf-component-new",
     "fields": [
       {
         "component": "aem-content-fragment",
