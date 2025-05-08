@@ -68,7 +68,7 @@
         },
         {
           "component": "richtext",
-          "name": "rte",
+          "name": "rtenew",
           "value": "",
           "label": "Rich Text Additional optional",
           "valueType": "string",
@@ -88,6 +88,10 @@
             {
               "name": "card-with-paragraph",
               "value": "card-with-paragraph"
+            },
+            {
+              "name": "card-with-sadparagraph",
+              "value": "card-with-pardsagraph"
             }
           ]
         }

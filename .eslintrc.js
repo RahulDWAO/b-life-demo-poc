@@ -1,24 +1,34 @@
 module.exports = {
   root: true,
-  extends: [
-    'airbnb-base',
-    'plugin:json/recommended',
-    'plugin:xwalk/recommended',
-  ],
+  parser: '@babel/eslint-parser',
+  parserOptions: {
+    sourceType: 'module',
+    requireConfigFile: false,
+    allowImportExportEverywhere: true,
+  },
   env: {
     browser: true,
   },
-  parser: '@babel/eslint-parser',
-  parserOptions: {
-    allowImportExportEverywhere: true,
-    sourceType: 'module',
-    requireConfigFile: false,
-  },
+  extends: [
+    'airbnb-base',
+    'plugin:json/recommended',
+    'plugin:xwalk/recommended', // keep using xwalk
+  ],
+  overrides: [
+    {
+      files: ['*.json'],
+      rules: {
+        'xwalk/max-cells': 'off', // disable only for JSON files
+      },
+    },
+  ],
   rules: {
-    'import/extensions': ['error', { js: 'always' }], // require js file extensions in imports
-    'linebreak-style': ['error', 'unix'], // enforce unix linebreaks
-    'no-param-reassign': [2, { props: false }], // allow modifying properties of param
-    'max-len': 'off', // disable max-len rule
+    'import/extensions': ['error', { js: 'always' }],
+    'linebreak-style': ['error', 'unix'],
+    'no-param-reassign': ['error', { props: false }],
+
+    // Disabled rules
+    'max-len': 'off',
     'no-shadow': 'off',
     'no-unused-vars': 'off',
     'no-use-before-define': 'off',
@@ -28,7 +38,6 @@ module.exports = {
     'consistent-return': 'off',
     'import/prefer-default-export': 'off',
     'no-case-declarations': 'off',
-    'xwalk/max-cells': 'off',
-
+    'xwalk/max-cells': 'off', // global fallback (optional)
   },
 };

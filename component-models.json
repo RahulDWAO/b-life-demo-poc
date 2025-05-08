@@ -635,7 +635,7 @@
       },
       {
         "component": "richtext",
-        "name": "rte",
+        "name": "rtenew",
         "value": "",
         "label": "Rich Text Additional optional",
         "valueType": "string",
@@ -655,6 +655,10 @@
           {
             "name": "card-with-paragraph",
             "value": "card-with-paragraph"
+          },
+          {
+            "name": "card-with-sadparagraph",
+            "value": "card-with-pardsagraph"
           }
         ]
       }
@@ -1223,11 +1227,6 @@
         "component": "aem-content",
         "name": "reference",
         "label": "Reference"
-      },
-      {
-        "component": "aem-content",
-        "name": "refesdsdrence",
-        "label": "Reference"
       }
     ]
   },
@@ -1358,8 +1357,7 @@
         "component": "aem-tag",
         "label": "AEM Tag Picker",
         "name": "toptags",
-        "valueType": "string",
-        "rootPath": "content/cq:tags/bandhan-life"
+        "valueType": "string"
       }
     ]
   }

@@ -45,8 +45,7 @@
           "component": "aem-tag",
           "label": "AEM Tag Picker",
           "name": "toptags",
-          "valueType": "string",
-          "rootPath":"content/cq:tags/bandhan-life"    
+          "valueType": "string"
         }
       ]
     }
