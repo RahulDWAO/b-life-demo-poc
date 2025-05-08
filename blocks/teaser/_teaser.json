@@ -77,6 +77,12 @@
           "name": "textContent_ctaText",
           "label": "CTA label",
           "valueType": "string"
+        },
+        {
+          "component": "text new added",
+          "name": "textContent_ctaText11",
+          "label": "CTA label new",
+          "valueType": "string"
         }
       ]
     }
