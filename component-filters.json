@@ -16,7 +16,9 @@
       "cards",
       "columns",
       "fragment",
-      "accordion-group"
+      "accordion-group",
+      "cards-with-paragraph",
+      "card-with-paragraph"
     ]
   },
   {
@@ -29,18 +31,36 @@
     "id": "accordion-group",
     "components": [
       "accordion"
+    ]
+  },
+  {
+    "id": "cards-with-paragraph",
+    "components": [
+      "card-with-paragraph"
     ]
   },
   {
     "id": "cards",
     "components": [
-      "card"
+      "card",
+      "text"
+    ]
+  },
+  {
+    "id": "card",
+    "components": [
+      "text"
     ]
   },
   {
     "id": "columns",
     "components": [
-      "column"
+      "column",
+      "custom-cards-container",
+      "accordian",
+      "innvest-calculator",
+      "cards-with-paragraph",
+      "card-with-paragraph"
     ]
   },
   {
@@ -49,7 +69,19 @@
       "text",
       "image",
       "button",
-      "title"
+      "title",
+      "cards",
+      "card",
+      "customcards",
+      "customcard",
+      "custom-cards-container",
+      "accordian",
+      "innvest-calculator",
+      "gender-section",
+      "inputform",
+      "text-with-image",
+      "cards-with-paragraph",
+      "card-with-paragraph"
     ]
   }
 ]

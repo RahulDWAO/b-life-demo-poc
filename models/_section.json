@@ -51,8 +51,10 @@
         "cards",
         "columns",
         "fragment",
-        "accordion-group"
-      ]
+        "accordion-group",
+        "cards-with-paragraph",
+         "card-with-paragraph"
+        ]
     }
   ]
 }
