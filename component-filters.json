@@ -39,7 +39,8 @@
       "authorable-card",
       "form-with-banner",
       "spreedsheetfragment",
-      "cf-component"
+      "cf-component",
+      "aem-cf-component"
     ]
   },
   {

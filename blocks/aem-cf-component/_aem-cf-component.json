@@ -1,0 +1,33 @@
+{
+  "definitions": [
+    {
+      "title": "AEM Content Fragments - 2",
+      "id": "aem-cf-component",
+      "plugins": {
+        "xwalk": {
+          "cf": {
+            "name": "SampleCF",
+            "cfModel": "demo-ban",
+            "cfFolder": "/content/dam/bandhan-life-ue-demo/content-fragments",
+            "title": "Sample",
+            "description": "sampledescription"
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "aem-cf-component",
+      "fields": [
+        {
+          "component": "aem-content-fragment",
+          "name": "picker",
+          "label": "Content Fragment Picker",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}
