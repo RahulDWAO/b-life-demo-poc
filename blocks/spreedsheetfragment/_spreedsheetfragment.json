@@ -24,11 +24,6 @@
             "component": "aem-content",
             "name": "reference",
             "label": "Reference"
-          },
-          {
-            "component": "aem-content",
-            "name": "refesdsdrence",
-            "label": "Reference"
           }
         ]
       }
