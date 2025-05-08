@@ -85,6 +85,10 @@
             {
               "name": "Mail us card",
               "value": "mail-us-card"
+            },
+             {
+              "name": "Bandhan Footer",
+              "value": "bandhan-footer"
             }
           ]
         }
