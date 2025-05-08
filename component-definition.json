@@ -158,108 +158,6 @@
           }
         },
         {
-          "title": "Authorable Card",
-          "id": "authorable-card",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "filter": "authorable-card",
-                  "name": "Authorable Card",
-                  "model": "authorable-card",
-                  "classes": [
-                    "header-left"
-                  ],
-                  "item1": {
-                    "sling:resourceType": "core/franklin/components/block/v1/block/item",
-                    "name": "Authored Card",
-                    "model": "authored-card"
-                  },
-                  "item2": {
-                    "sling:resourceType": "core/franklin/components/block/v1/block/item",
-                    "name": "Authored Card",
-                    "model": "authored-card"
-                  }
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Authored Card",
-          "id": "authored-card",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Authored Card",
-                  "model": "authored-card"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "BandhanHeader",
-          "id": "bandhanheader",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "BandhanHeader",
-                  "filter": "bandhanheader"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "BandhanHeaderlist",
-          "id": "bandhanheaderlist",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "BandhanHeaderlist",
-                  "model": "bandhanheaderlist"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "BannerForm",
-          "id": "bannerform",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "BannerForm",
-                  "model": "bannerform",
-                  "filter": "bannerform",
-                  "item": [
-                    {
-                      "sling:resourceType": "core/franklin/components/block/v1/block/item",
-                      "name": "Gender Section",
-                      "model": "gender-section"
-                    },
-                    {
-                      "sling:resourceType": "core/franklin/components/block/v1/block/item",
-                      "name": "Inputform",
-                      "model": "inputform"
-                    }
-                  ]
-                }
-              }
-            }
-          }
-        },
-        {
           "title": "Cards with paragraph",
           "id": "cards-with-paragraph",
           "plugins": {
@@ -344,21 +242,6 @@
           }
         },
         {
-          "title": "Custom RTE",
-          "id": "custom-rte",
-          "modelId": "text-model",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "Custom RTE"
-                }
-              }
-            }
-          }
-        },
-        {
           "title": "Custom Card",
           "id": "customcard",
           "plugins": {
@@ -368,21 +251,6 @@
                 "template": {
                   "name": "Custom Card",
                   "model": "customcard"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Custom Cards Container",
-          "id": "custom-cards-container",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "Custom Cards Container",
-                  "filter": "custom-cards-container"
                 }
               }
             }
