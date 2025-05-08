@@ -168,12 +168,6 @@
     ]
   },
   {
-    "id": "authorable-card",
-    "components": [
-      "authored-card"
-    ]
-  },
-  {
     "id": "text-with-image",
     "components": [
       "image",
