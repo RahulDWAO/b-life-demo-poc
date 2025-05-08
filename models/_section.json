@@ -53,7 +53,11 @@
         "fragment",
         "accordion-group",
         "cards-with-paragraph",
-         "card-with-paragraph"
+         "card-with-paragraph",
+         "form-with-banner",
+         "quote",
+         "text-with-image",
+         "teaser"
         ]
     }
   ]
