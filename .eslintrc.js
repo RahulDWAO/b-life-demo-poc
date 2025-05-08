@@ -28,5 +28,7 @@ module.exports = {
     'consistent-return': 'off',
     'import/prefer-default-export': 'off',
     'no-case-declarations': 'off',
+    'xwalk/max-cells': 'off',
+
   },
 };
