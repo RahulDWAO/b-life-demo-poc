@@ -4,8 +4,7 @@
     "/content/bandhan-life-ue-demo/configuration:/.helix/config.json",
     "/content/bandhan-life-ue-demo/metadata:/metadata.json",
     "/content/bandhan-life-ue-demo/spreadsheet:/spreadsheet.json",
-    "/content/bandhan-life-ue-demo/headers:/.helix/headers.json",
-    "content/bandhan-life-ue-demo/configuration:/configuration.json"
+    "/content/bandhan-life-ue-demo/headers:/.helix/headers.json"
   ],
   "includes": [
     "/content/bandhan-life-ue-demo/"
