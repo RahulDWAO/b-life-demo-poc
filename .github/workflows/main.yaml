@@ -1,9 +1,6 @@
 name: Build
 
-on:
-  push:
-    branches-ignore:
-      - develop
+on: [push]
 
 jobs:
   build:
