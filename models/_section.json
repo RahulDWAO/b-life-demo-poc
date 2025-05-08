@@ -131,7 +131,8 @@
         "form-with-banner",
         "spreedsheetfragment",
         "cf-component",
-        "aem-cf-component"
+        "aem-cf-component",
+        "aem-cf-component-new"
       ]
     }
   ]
