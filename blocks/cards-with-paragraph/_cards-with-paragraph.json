@@ -76,7 +76,7 @@
         },
         {
           "component": "text",
-          "name": "Simple Texts",
+          "name": "simpletext",
           "label": "Enter Simple Texts",
           "valueType": "string"
         },

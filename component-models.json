@@ -455,7 +455,7 @@
       },
       {
         "component": "text",
-        "name": "Simple Texts",
+        "name": "simpletext",
         "label": "Enter Simple Texts",
         "valueType": "string"
       },
@@ -743,7 +743,7 @@
       {
         "component": "container",
         "label": "Gender",
-        "name": "gender",
+        "name": "gendervalue",
         "valueType": "string",
         "collapsible": true,
         "fields": [
@@ -782,7 +782,7 @@
       {
         "component": "container",
         "label": "Disclamier",
-        "name": "Disclamier",
+        "name": "disclamiercontainer",
         "valueType": "string",
         "collapsible": true,
         "fields": [
