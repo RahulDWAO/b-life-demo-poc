@@ -224,20 +224,16 @@
           }
         },
         {
-          "title": "Content Fragments",
+          "title": "AEM Content Fragments",
           "id": "cf-component",
           "plugins": {
             "xwalk": {
               "cf": {
-                "name": "Sample CF",
-                "cfModel": "EDS Xwalk Model",
-                "cfFolder": "samplecf",
+                "name": "SampleCF",
+                "cfModel": "demo-ban",
+                "cfFolder": "/content/dam/bandhan-life-ue-demo/content-fragments",
                 "title": "Sample",
-                "description": "sample description",
-                "template": {
-                  "name": "Content Fragment",
-                  "model": "cf-component"
-                }
+                "description": "sampledescription"
               }
             }
           }

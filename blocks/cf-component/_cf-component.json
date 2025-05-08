@@ -1,40 +1,33 @@
 {
-    "definitions": [
-      {
-        "title": "Content Fragments",
-        "id": "cf-component",
-        "plugins": {
-          "xwalk": {
-            "cf": {
-              "name": "Sample CF",
-              "cfModel": "EDS Xwalk Model",
-              "cfFolder": "samplecf",
-              "title": "Sample",
-              "description": "sample description",
-              "template": {
-                "name": "Content Fragment",
-                "model": "cf-component"
-              }
-            }
+  "definitions": [
+    {
+      "title": "AEM Content Fragments",
+      "id": "cf-component",
+      "plugins": {
+        "xwalk": {
+          "cf": {
+            "name": "SampleCF",
+            "cfModel": "demo-ban",
+            "cfFolder": "/content/dam/bandhan-life-ue-demo/content-fragments",
+            "title": "Sample",
+            "description": "sampledescription"
           }
         }
       }
-    ],
-    "models": [
-      {
-        "id": "cf-component",
-        "fields": [
-          {
-            "component": "aem-content",
-            "name": "picker",
-            "label": "Content Fragment Picker",
-            "valueType": "string",
-            "validation": {
-              "rootPath": "/content/dam/bandhan-life-ue-demo/content-fragments"
-            }
-          }
-        ]
-      }
-    ],
-    "filters": []
-  }
+    }
+  ],
+  "models": [
+    {
+      "id": "cf-component",
+      "fields": [
+        {
+          "component": "aem-content-fragment",
+          "name": "picker",
+          "label": "Content Fragment Picker",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}
