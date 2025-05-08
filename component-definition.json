@@ -224,6 +224,25 @@
           }
         },
         {
+          "title": "Content Fragments",
+          "id": "cf-component",
+          "plugins": {
+            "xwalk": {
+              "cf": {
+                "name": "Sample CF",
+                "cfModel": "EDS Xwalk Model",
+                "cfFolder": "samplecf",
+                "title": "Sample",
+                "description": "sample description",
+                "template": {
+                  "name": "Content Fragment",
+                  "model": "cf-component"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Columns",
           "id": "columns",
           "plugins": {

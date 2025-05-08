@@ -583,6 +583,20 @@
     ]
   },
   {
+    "id": "cf-component",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "picker",
+        "label": "Content Fragment Picker",
+        "valueType": "string",
+        "validation": {
+          "rootPath": "/content/dam/bandhan-life-ue-demo/content-fragments"
+        }
+      }
+    ]
+  },
+  {
     "id": "columns",
     "fields": [
       {
