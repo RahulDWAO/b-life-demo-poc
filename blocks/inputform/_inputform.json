@@ -66,7 +66,13 @@
           "component": "text-with-image",
           "label": "Text  with  Image",
           "name": "txtimg"
+        },
+        {
+          "component": "text-with-image",
+          "label": "Text  with  Image",
+          "name": "txtimg11"
         }
+        
     
       ]
     }
