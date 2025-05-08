@@ -1,4 +1,3 @@
-
 // import { isAuthorEnvironment } from "../../scripts/scripts";
 
 async function fetchAPI(method, url, data) {
@@ -38,54 +37,46 @@ async function fetchAPI(method, url, data) {
   });
 }
 
-
 export default async function decorate(block) {
-
 // const isAuthor=isAuthorEnvironment();
   const link = block.querySelector('a');
   const path = link ? link.getAttribute('href') : block.textContent.trim();
-  console.log(path,"path")
+  console.log(path, 'path');
 
   // if(isAuthor){
   //   path=path
   // }
   //  resp  await fetchAPI("GET", path);
-   const response = await fetchAPI('GET', path);
+  const response = await fetchAPI('GET', path);
   const responseJson = await response.json();
-  const divEl11 = document.createElement("div");
+  const divEl11 = document.createElement('div');
 
-  const divtable = document.createElement("div");
-  const table = document.createElement("table");
-  table.border = "1";
-  table.cellPadding = "5";
-  
+  const divtable = document.createElement('div');
+  const table = document.createElement('table');
+  table.border = '1';
+  table.cellPadding = '5';
+
   const headerRow = table.insertRow();
-  const headers = Object.keys(responseJson.data[0]); 
-  
-  headers.forEach(key => {
-      const th = document.createElement("th");
-      th.textContent = key.charAt(0).toUpperCase() + key.slice(1); 
-      headerRow.appendChild(th);
+  const headers = Object.keys(responseJson.data[0]);
+
+  headers.forEach((key) => {
+    const th = document.createElement('th');
+    th.textContent = key.charAt(0).toUpperCase() + key.slice(1);
+    headerRow.appendChild(th);
   });
-  
+
   // Create table rows
-  responseJson.data.forEach(item => {
-      const row = table.insertRow();
-      headers.forEach(key => {
-          const cell = row.insertCell();
-          cell.textContent = item[key];
-      });
+  responseJson.data.forEach((item) => {
+    const row = table.insertRow();
+    headers.forEach((key) => {
+      const cell = row.insertCell();
+      cell.textContent = item[key];
+    });
   });
-divtable.append(table)
-
-
-
-  
+  divtable.append(table);
 
   divEl11.append(divtable);
 
-  block.textContent = "";
+  block.textContent = '';
   block.append(divEl11);
-
-
 }

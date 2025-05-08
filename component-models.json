@@ -241,51 +241,12 @@
           {
             "name": "Mail us card",
             "value": "mail-us-card"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "accordian-cf",
-    "fields": [
-      {
-        "component": "multiselect",
-        "name": "classes",
-        "label": "Accordion classes",
-        "description": "Options that affect block appearance and behavior.",
-        "valueType": "string",
-        "required": true,
-        "maxSize": 1,
-        "options": [
-          {
-            "name": "Left",
-            "value": "acc-child-cf"
           },
           {
-            "name": "Center",
-            "value": "acc-child1"
+            "name": "Bandhan Footer",
+            "value": "bandhan-footer"
           }
         ]
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "heading",
-        "value": "",
-        "label": "Heading"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "body",
-        "value": "",
-        "label": "Body"
-      },
-      {
-        "component": "aem-content",
-        "name": "reference",
-        "label": "Reference"
       }
     ]
   },

@@ -1,5 +1,5 @@
-import { createOptimizedPicture } from "../../scripts/aem.js";
-import { isAuthorEnvironment, moveInstrumentation } from "../../scripts/scripts.js";
+import { createOptimizedPicture } from '../../scripts/aem.js';
+import { isAuthorEnvironment, moveInstrumentation } from '../../scripts/scripts.js';
 
 function initFormHandler() {
   // Current step tracking
@@ -7,14 +7,14 @@ function initFormHandler() {
   const totalSteps = 3;
 
   // Form data object to store selections
-  let formData = {
-    gender: "",
-    age: "",
-    mobile: "",
-    amount: "",
-    frequency: "",
-    occupation: "",
-    hazardous: "",
+  const formData = {
+    gender: '',
+    age: '',
+    mobile: '',
+    amount: '',
+    frequency: '',
+    occupation: '',
+    hazardous: '',
     bypassConsent: true,
     contactConsent: true,
   };
@@ -22,21 +22,20 @@ function initFormHandler() {
   // Update progress bar based on current step
   function updateProgressBar() {
     const progressPercentage = ((currentStep - 1) / (totalSteps - 1)) * 100;
-    document.querySelector(".progress-bar").style.width =
-      progressPercentage + "%";
+    document.querySelector('.progress-bar').style.width = `${progressPercentage}%`;
   }
 
   // Function to show a specific step
   function showStep(stepNumber) {
     // Hide all form steps
-    document.querySelectorAll(".form-step").forEach((step) => {
-      step.style.display = "none";
+    document.querySelectorAll('.form-step').forEach((step) => {
+      step.style.display = 'none';
     });
 
     // Show the current step with fade-in effect
-    const currentStepElement = document.getElementById("step" + stepNumber);
-    currentStepElement.style.display = "block";
-    currentStepElement.style.opacity = "0";
+    const currentStepElement = document.getElementById(`step${stepNumber}`);
+    currentStepElement.style.display = 'block';
+    currentStepElement.style.opacity = '0';
 
     // Simple fade in animation
     let opacity = 0;
@@ -49,12 +48,12 @@ function initFormHandler() {
     }, 30);
 
     // Update active step indicators
-    document.querySelectorAll(".step").forEach((step, index) => {
-      step.classList.remove("active");
+    document.querySelectorAll('.step').forEach((step, index) => {
+      step.classList.remove('active');
       if (index + 1 < stepNumber) {
-        step.classList.add("completed");
+        step.classList.add('completed');
       } else if (index + 1 === stepNumber) {
-        step.classList.add("active");
+        step.classList.add('active');
       }
     });
 
@@ -62,9 +61,9 @@ function initFormHandler() {
     updateProgressBar();
 
     // Show/hide back button on first step
-    const backButtons = document.querySelectorAll(".back-button");
+    const backButtons = document.querySelectorAll('.back-button');
     backButtons.forEach((button) => {
-      button.style.visibility = stepNumber === 1 ? "hidden" : "visible";
+      button.style.visibility = stepNumber === 1 ? 'hidden' : 'visible';
     });
 
     // Update current step
@@ -73,61 +72,60 @@ function initFormHandler() {
 
   // Set up event handlers for gender selection
   document
-    .querySelectorAll(".gender-options .gender-option")
+    .querySelectorAll('.gender-options .gender-option')
     .forEach((option) => {
-      option.addEventListener("click", function () {
+      option.addEventListener('click', function () {
         // Remove selection from all options
         document
-          .querySelectorAll(".gender-options .gender-option")
+          .querySelectorAll('.gender-options .gender-option')
           .forEach((opt) => {
-            opt.classList.remove("selected");
+            opt.classList.remove('selected');
           });
         // Add selection to clicked option
-        this.classList.add("selected");
+        this.classList.add('selected');
         formData.gender = this.textContent.trim();
       });
     });
 
   // Set up event handlers for occupation selection
   document
-    .querySelectorAll(".occupation-options .option-button")
+    .querySelectorAll('.occupation-options .option-button')
     .forEach((option) => {
-      option.addEventListener("click", function () {
+      option.addEventListener('click', function () {
         // Remove selection from all options
         document
-          .querySelectorAll(".occupation-options .option-button")
+          .querySelectorAll('.occupation-options .option-button')
           .forEach((opt) => {
-            opt.classList.remove("selected");
+            opt.classList.remove('selected');
           });
         // Add selection to clicked option
-        this.classList.add("selected");
+        this.classList.add('selected');
         formData.occupation = this.textContent.trim();
       });
     });
 
   // Set up event handlers for hazard selection
   document
-    .querySelectorAll(".hazard-options .option-button")
+    .querySelectorAll('.hazard-options .option-button')
     .forEach((option) => {
-      option.addEventListener("click", function () {
+      option.addEventListener('click', function () {
         // Remove selection from all options
         document
-          .querySelectorAll(".hazard-options .option-button")
+          .querySelectorAll('.hazard-options .option-button')
           .forEach((opt) => {
-            opt.classList.remove("selected");
+            opt.classList.remove('selected');
           });
         // Add selection to clicked option
-        this.classList.add("selected");
-        formData.hazardous = this.getAttribute("data-hazard");
-        window.location.href =
-          "https://www.bandhanlife.com/online-plans/imaximize2";
+        this.classList.add('selected');
+        formData.hazardous = this.getAttribute('data-hazard');
+        window.location.href = 'https://www.bandhanlife.com/online-plans/imaximize2';
       });
     });
 
   // Set up event handler for next button on step 1
-  const step1Next = document.getElementById("step1Next");
+  const step1Next = document.getElementById('step1Next');
   if (step1Next) {
-    step1Next.addEventListener("click", function () {
+    step1Next.addEventListener('click', function () {
       // Validate if gender is selected and fields are filled
       // if (!formData.gender) {
       //     alert('Please select your gender before proceeding.');
@@ -147,15 +145,14 @@ function initFormHandler() {
       // }
 
       // Proceed to step 2
-      this.parentElement.parentElement.parentElement.childNodes[3].childNodes[0].style.display =
-        "block";
+      this.parentElement.parentElement.parentElement.childNodes[3].childNodes[0].style.display = 'block';
       showStep(2);
     });
   }
 
   // Set up event handlers for back buttons
-  document.querySelectorAll(".back-button").forEach((button) => {
-    button.addEventListener("click", function () {
+  document.querySelectorAll('.back-button').forEach((button) => {
+    button.addEventListener('click', () => {
       if (currentStep > 1) {
         showStep(currentStep - 1);
       }
@@ -163,56 +160,56 @@ function initFormHandler() {
   });
 
   // Set up event handlers for input fields
-  const ageInput = document.getElementById("age");
+  const ageInput = document.getElementById('age');
   if (ageInput) {
-    ageInput.addEventListener("change", function () {
+    ageInput.addEventListener('change', function () {
       formData.age = this.value;
     });
   }
 
-  const mobileInput = document.getElementById("mobile");
+  const mobileInput = document.getElementById('mobile');
   if (mobileInput) {
-    mobileInput.addEventListener("change", function () {
+    mobileInput.addEventListener('change', function () {
       formData.mobile = this.value;
     });
   }
 
-  const amountInput = document.getElementById("amount");
+  const amountInput = document.getElementById('amount');
   if (amountInput) {
-    amountInput.addEventListener("change", function () {
+    amountInput.addEventListener('change', function () {
       formData.amount = this.value;
     });
   }
 
-  const frequencyInput = document.getElementById("frequency");
+  const frequencyInput = document.getElementById('frequency');
   if (frequencyInput) {
-    frequencyInput.addEventListener("change", function () {
+    frequencyInput.addEventListener('change', function () {
       formData.frequency = this.value;
     });
   }
 
   // Set up event handlers for consent checkboxes
-  const bypassConsent = document.getElementById("bypass-consent");
+  const bypassConsent = document.getElementById('bypass-consent');
   if (bypassConsent) {
-    bypassConsent.addEventListener("change", function () {
+    bypassConsent.addEventListener('change', function () {
       formData.bypassConsent = this.checked;
     });
   }
 
-  const contactConsent = document.getElementById("contact-consent");
+  const contactConsent = document.getElementById('contact-consent');
   if (contactConsent) {
-    contactConsent.addEventListener("change", function () {
+    contactConsent.addEventListener('change', function () {
       formData.contactConsent = this.checked;
     });
   }
 
   // Set up submit button event handler
-  document.querySelectorAll(".submit-button").forEach((button) => {
-    button.addEventListener("click", function (e) {
+  document.querySelectorAll('.submit-button').forEach((button) => {
+    button.addEventListener('click', (e) => {
       e.preventDefault();
 
-      const bypassConsent = document.getElementById("bypass-consent");
-      const contactConsent = document.getElementById("contact-consent");
+      const bypassConsent = document.getElementById('bypass-consent');
+      const contactConsent = document.getElementById('contact-consent');
 
       // // Check if both consents are checked
       // if (!bypassConsent.checked || !contactConsent.checked) {
@@ -221,7 +218,7 @@ function initFormHandler() {
       // }
 
       // Form submission logic
-      console.log("Form submitted with data:", formData);
+      console.log('Form submitted with data:', formData);
 
       setTimeout(() => {
         showStep(3);
@@ -238,143 +235,138 @@ function initFormHandler() {
 async function fetchData(url) {
   try {
     const response = await fetch(url, {
-      method: "GET",
-      credentials: "include",
+      method: 'GET',
+      credentials: 'include',
     });
 
-    console.log(response, "response");
+    console.log(response, 'response');
 
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
 
     const data = await response.json();
-    console.log("Response JSON:", data);
+    console.log('Response JSON:', data);
     return data;
   } catch (error) {
-    console.error("Fetch error:", error);
+    console.error('Fetch error:', error);
     throw error;
   }
 }
 
-
 export default function decorate(block) {
-    let headingCf=""
-    let newImg="";
-  const blockImg = block.children[9]
-  if(blockImg){
-    const img=blockImg.querySelector("picture > img");
+  let headingCf = '';
+  let newImg = '';
+  const blockImg = block.children[9];
+  if (blockImg) {
+    const img = blockImg.querySelector('picture > img');
     const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [
-      { width: "750" },
+      { width: '750' },
     ]);
-    moveInstrumentation(img, optimizedPic.querySelector("img"));
-    img.closest("picture").replaceWith(optimizedPic);
+    moveInstrumentation(img, optimizedPic.querySelector('img'));
+    img.closest('picture').replaceWith(optimizedPic);
     newImg = optimizedPic
-      .querySelector("picture > img")
-      .getAttribute("src");
+      .querySelector('picture > img')
+      .getAttribute('src');
   }
-
-
 
   const mainHead = block.children[0].textContent.trim();
   // const head1 = block.children[1].textContent.trim();
   const head2 = block.children[1].textContent.trim();
-  const genderOpt = block.children[2].textContent.trim().split(",");
+  const genderOpt = block.children[2].textContent.trim().split(',');
 
-  const labellist = block.children[3].textContent.trim().split(","); // First child = labels
-  const inputValue = block.children[4].textContent.trim().split(","); // Second child = placeholders
+  const labellist = block.children[3].textContent.trim().split(','); // First child = labels
+  const inputValue = block.children[4].textContent.trim().split(','); // Second child = placeholders
 
   // const formLabel=block.children[4].textContent.trim();
   // const fromValue=block.children[5].textContent.trim();
 
-  const disc = block.children[5].textContent.trim().split(",");
+  const disc = block.children[5].textContent.trim().split(',');
   const ctaText = block.children[6].textContent.trim();
   const tellMeOcc = block.children[7].textContent.trim();
-  const occopt = block.children[8].textContent.trim().split(",");
+  const occopt = block.children[8].textContent.trim().split(',');
   const blockLink = block.children[10];
-  if(blockLink){
-
-    const link=blockLink.querySelector("a");
-      const path = link ? link.getAttribute("href") : block.textContent.trim();
-
+  if (blockLink) {
+    const link = blockLink.querySelector('a');
+    const path = link ? link.getAttribute('href') : block.textContent.trim();
   }
   // //   const link = cfPath.
 
   //   console.log("img",block.children[10].children[0].childNodes[0].firstChild.attributes[0].nodeValue);
 
-  const container = document.createElement("div");
-  container.setAttribute("class", "container");
+  const container = document.createElement('div');
+  container.setAttribute('class', 'container');
 
-  const divEl = document.createElement("div");
-  divEl.setAttribute("class", "cmp-form-banner-container");
+  const divEl = document.createElement('div');
+  divEl.setAttribute('class', 'cmp-form-banner-container');
 
-  const divEl2 = document.createElement("div");
-  divEl2.setAttribute("class", "investment-form-container");
+  const divEl2 = document.createElement('div');
+  divEl2.setAttribute('class', 'investment-form-container');
 
-  const divEl3 = document.createElement("div");
-  divEl3.setAttribute("class", "form-header");
+  const divEl3 = document.createElement('div');
+  divEl3.setAttribute('class', 'form-header');
 
-  const divEl4 = document.createElement("div");
-  divEl4.setAttribute("class", "disclaimer");
-  divEl4.setAttribute("id", "disclaimer");
+  const divEl4 = document.createElement('div');
+  divEl4.setAttribute('class', 'disclaimer');
+  divEl4.setAttribute('id', 'disclaimer');
   divEl4.textContent = headingCf;
   divEl3.append(divEl4);
 
-  const h1El = document.createElement("h1");
+  const h1El = document.createElement('h1');
   // h1El.setAttribute("id", "cf-heading");
 
   h1El.append(mainHead);
-  const spanEl = document.createElement("span");
-  spanEl.setAttribute("class", "new-tag");
-  spanEl.textContent = "New";
+  const spanEl = document.createElement('span');
+  spanEl.setAttribute('class', 'new-tag');
+  spanEl.textContent = 'New';
   h1El.append(spanEl);
   divEl3.append(h1El);
 
-  const h2El = document.createElement("h2");
+  const h2El = document.createElement('h2');
   h2El.textContent = head2;
   divEl3.append(h2El);
   divEl2.append(divEl3);
 
-  const divEl5 = document.createElement("div");
-  divEl5.setAttribute("class", "multi-step-form");
+  const divEl5 = document.createElement('div');
+  divEl5.setAttribute('class', 'multi-step-form');
 
-  const divEl6 = document.createElement("div");
-  divEl6.setAttribute("class", "step-indicators");
+  const divEl6 = document.createElement('div');
+  divEl6.setAttribute('class', 'step-indicators');
 
-  const divEl7 = document.createElement("div");
-  divEl7.setAttribute("class", "progress-bar");
+  const divEl7 = document.createElement('div');
+  divEl7.setAttribute('class', 'progress-bar');
   divEl6.append(divEl7);
 
-  const divEl8 = document.createElement("div");
-  divEl8.setAttribute("class", "step active");
-  divEl8.setAttribute("data-step", "1");
+  const divEl8 = document.createElement('div');
+  divEl8.setAttribute('class', 'step active');
+  divEl8.setAttribute('data-step', '1');
   divEl6.append(divEl8);
 
-  const divEl9 = document.createElement("div");
-  divEl9.setAttribute("class", "step");
-  divEl9.setAttribute("data-step", "2");
+  const divEl9 = document.createElement('div');
+  divEl9.setAttribute('class', 'step');
+  divEl9.setAttribute('data-step', '2');
   divEl6.append(divEl9);
 
-  const divEl10 = document.createElement("div");
-  divEl10.setAttribute("class", "step");
-  divEl10.setAttribute("data-step", "3");
+  const divEl10 = document.createElement('div');
+  divEl10.setAttribute('class', 'step');
+  divEl10.setAttribute('data-step', '3');
   divEl6.append(divEl10);
   divEl5.append(divEl6);
 
-  const divEl11 = document.createElement("div");
-  divEl11.setAttribute("class", "form-step");
-  divEl11.setAttribute("id", "step1");
+  const divEl11 = document.createElement('div');
+  divEl11.setAttribute('class', 'form-step');
+  divEl11.setAttribute('id', 'step1');
 
-  const divEl12 = document.createElement("div");
-  divEl12.setAttribute("class", "step-header");
+  const divEl12 = document.createElement('div');
+  divEl12.setAttribute('class', 'step-header');
 
-  const buttonEl = document.createElement("button");
-  buttonEl.setAttribute("class", "back-button");
-  buttonEl.setAttribute("style", "visibility: hidden;");
+  const buttonEl = document.createElement('button');
+  buttonEl.setAttribute('class', 'back-button');
+  buttonEl.setAttribute('style', 'visibility: hidden;');
 
-  const spanEl2 = document.createElement("span");
-  spanEl2.setAttribute("class", "arrow-icon");
-  spanEl2.textContent = "←";
+  const spanEl2 = document.createElement('span');
+  spanEl2.setAttribute('class', 'arrow-icon');
+  spanEl2.textContent = '←';
   buttonEl.append(spanEl2);
   divEl12.append(buttonEl);
 
@@ -383,21 +375,21 @@ export default function decorate(block) {
   // divEl12.append(h3El);
   // divEl11.append(divEl12);
 
-  const h3El2 = document.createElement("h3");
-  h3El2.textContent = "Gender";
+  const h3El2 = document.createElement('h3');
+  h3El2.textContent = 'Gender';
   divEl11.append(h3El2);
 
-  //gender div
-  const divEl13 = document.createElement("div");
-  divEl13.setAttribute("class", "gender-options");
+  // gender div
+  const divEl13 = document.createElement('div');
+  divEl13.setAttribute('class', 'gender-options');
 
   block.children[2].textContent
     .trim()
-    .split(",")
+    .split(',')
     .forEach((labelText, index) => {
-      const btn = document.createElement("button");
+      const btn = document.createElement('button');
 
-      btn.classList.add("gender-option");
+      btn.classList.add('gender-option');
 
       // const label = document.createElement("label");
       // const input = document.c
@@ -419,7 +411,7 @@ export default function decorate(block) {
       // Append inner div to the form
       divEl13.appendChild(btn);
     });
-  console.log("divEl13", divEl13);
+  console.log('divEl13', divEl13);
   divEl11.append(divEl13);
 
   //   const buttonEl2 = document.createElement('button');
@@ -439,24 +431,24 @@ export default function decorate(block) {
   //   divEl13.append(buttonEl4);
   //   divEl11.append(divEl13);
 
-  const divEl14 = document.createElement("div");
-  divEl14.setAttribute("class", "form-row");
+  const divEl14 = document.createElement('div');
+  divEl14.setAttribute('class', 'form-row');
 
-  const divEl15 = document.createElement("div");
-  divEl15.setAttribute("class", "form-group");
+  const divEl15 = document.createElement('div');
+  divEl15.setAttribute('class', 'form-group');
 
   labellist.forEach((labelText, index) => {
-    const divEl15 = document.createElement("div");
-    divEl15.setAttribute("class", "form-group");
+    const divEl15 = document.createElement('div');
+    divEl15.setAttribute('class', 'form-group');
     // const innerdiv = document.createElement("div");
     // innerdiv.classList.add("innerform");
 
-    const label = document.createElement("label");
-    const input = document.createElement("input");
+    const label = document.createElement('label');
+    const input = document.createElement('input');
 
     // Setup input
-    input.type = "text";
-    input.placeholder = inputValue[index] || "";
+    input.type = 'text';
+    input.placeholder = inputValue[index] || '';
     input.name = `input${index}`;
     input.id = `input${index}`;
 
@@ -575,11 +567,11 @@ export default function decorate(block) {
   //   divEl18.append(divEl20);
   //   divEl11.append(divEl18);
 
-  const divEl23 = document.createElement("div");
-  divEl23.setAttribute("class", "consent-section");
+  const divEl23 = document.createElement('div');
+  divEl23.setAttribute('class', 'consent-section');
 
-  const divEl24 = document.createElement("div");
-  divEl24.setAttribute("class", "checkbox-group");
+  const divEl24 = document.createElement('div');
+  divEl24.setAttribute('class', 'checkbox-group');
 
   //   const inputEl4 = document.createElement('input');
   //   inputEl4.setAttribute('type', 'checkbox');
@@ -597,130 +589,125 @@ export default function decorate(block) {
   //   labelEl5.append(aEl);
   //   divEl24.append(labelEl5);
   //   divEl23.append(divEl24);
-  const divEl25 = document.createElement("div");
+  const divEl25 = document.createElement('div');
 
+  disc.forEach((disctxt) => {
+    const innerDiv = document.createElement('div');
 
-  disc.forEach(function (disctxt) {
-      const innerDiv = document.createElement("div");
+    innerDiv.setAttribute('class', 'checkbox-group');
 
-    innerDiv.setAttribute("class", "checkbox-group");
-
-    const inputEl5 = document.createElement("input");
-    inputEl5.setAttribute("type", "checkbox");
-    inputEl5.setAttribute("id", "contact-consent");
-    inputEl5.setAttribute("checked", "");
+    const inputEl5 = document.createElement('input');
+    inputEl5.setAttribute('type', 'checkbox');
+    inputEl5.setAttribute('id', 'contact-consent');
+    inputEl5.setAttribute('checked', '');
     innerDiv.append(inputEl5);
 
-    const labelEl6 = document.createElement("label");
-    labelEl6.setAttribute("for", "contact-consent");
+    const labelEl6 = document.createElement('label');
+    labelEl6.setAttribute('for', 'contact-consent');
     labelEl6.textContent = disctxt;
     innerDiv.append(labelEl6);
     divEl25.append(innerDiv);
-
-    
   });
 
   divEl23.append(divEl25);
   divEl11.append(divEl23);
 
-  const divEl26 = document.createElement("div");
-  divEl26.setAttribute("class", "button-container");
+  const divEl26 = document.createElement('div');
+  divEl26.setAttribute('class', 'button-container');
 
-  const buttonEl5 = document.createElement("button");
-  buttonEl5.setAttribute("class", "next-button");
-  buttonEl5.setAttribute("id", "step1Next");
+  const buttonEl5 = document.createElement('button');
+  buttonEl5.setAttribute('class', 'next-button');
+  buttonEl5.setAttribute('id', 'step1Next');
   buttonEl5.textContent = ctaText;
   divEl26.append(buttonEl5);
   divEl11.append(divEl26);
   divEl5.append(divEl11);
 
-  const divEl27 = document.createElement("div");
-  divEl27.setAttribute("class", "form-step");
-  divEl27.setAttribute("id", "step3");
-  divEl27.setAttribute("style", "display: none;");
+  const divEl27 = document.createElement('div');
+  divEl27.setAttribute('class', 'form-step');
+  divEl27.setAttribute('id', 'step3');
+  divEl27.setAttribute('style', 'display: none;');
 
-  const divEl28 = document.createElement("div");
-  divEl28.setAttribute("class", "step-header");
-  divEl27.setAttribute("style", "display: block;");
+  const divEl28 = document.createElement('div');
+  divEl28.setAttribute('class', 'step-header');
+  divEl27.setAttribute('style', 'display: block;');
 
-  const buttonEl6 = document.createElement("button");
-  buttonEl6.setAttribute("class", "back-button");
+  const buttonEl6 = document.createElement('button');
+  buttonEl6.setAttribute('class', 'back-button');
 
-  const spanEl4 = document.createElement("span");
-  spanEl4.setAttribute("class", "arrow-icon");
-  spanEl4.textContent = "←";
+  const spanEl4 = document.createElement('span');
+  spanEl4.setAttribute('class', 'arrow-icon');
+  spanEl4.textContent = '←';
   buttonEl6.append(spanEl4);
   divEl28.append(buttonEl6);
 
-  const h3El3 = document.createElement("h3");
+  const h3El3 = document.createElement('h3');
   h3El3.textContent = tellMeOcc;
   divEl28.append(h3El3);
   divEl27.append(divEl28);
 
-  const divEl29 = document.createElement("div");
-  divEl29.setAttribute("class", "hazard-question");
+  const divEl29 = document.createElement('div');
+  divEl29.setAttribute('class', 'hazard-question');
 
-  const h4El = document.createElement("h4");
-  h4El.textContent =
-    "Is your occupation associated with any specific hazard or do you take part in activities that could be dangerous in any way?";
+  const h4El = document.createElement('h4');
+  h4El.textContent = 'Is your occupation associated with any specific hazard or do you take part in activities that could be dangerous in any way?';
   divEl29.append(h4El);
 
-  const pEl = document.createElement("p");
-  pEl.setAttribute("class", "examples");
-  pEl.textContent =
-    "(e.g. Heavy machines, chemical factory, mines explosives, radiation, etc.)";
+  const pEl = document.createElement('p');
+  pEl.setAttribute('class', 'examples');
+  pEl.textContent = '(e.g. Heavy machines, chemical factory, mines explosives, radiation, etc.)';
   divEl29.append(pEl);
 
-  const divEl30 = document.createElement("div");
-  divEl30.setAttribute("class", "hazard-options");
+  const divEl30 = document.createElement('div');
+  divEl30.setAttribute('class', 'hazard-options');
 
-  const buttonEl7 = document.createElement("button");
-  buttonEl7.setAttribute("class", "option-button");
-  buttonEl7.setAttribute("data-hazard", "yes");
-  buttonEl7.textContent = "Yes";
+  const buttonEl7 = document.createElement('button');
+  buttonEl7.setAttribute('class', 'option-button');
+  buttonEl7.setAttribute('data-hazard', 'yes');
+  buttonEl7.textContent = 'Yes';
   divEl30.append(buttonEl7);
 
-  const buttonEl8 = document.createElement("button");
-  buttonEl8.setAttribute("class", "option-button");
-  buttonEl8.setAttribute("data-hazard", "no");
-  buttonEl8.textContent = "No";
+  const buttonEl8 = document.createElement('button');
+  buttonEl8.setAttribute('class', 'option-button');
+  buttonEl8.setAttribute('data-hazard', 'no');
+  buttonEl8.textContent = 'No';
   divEl30.append(buttonEl8);
   divEl29.append(divEl30);
   divEl27.append(divEl29);
   divEl5.append(divEl27);
 
-  const divEl31 = document.createElement("div");
-  divEl31.setAttribute("class", "form-step");
-  divEl31.setAttribute("id", "step2");
-  divEl31.setAttribute("style", "display: none;");
+  const divEl31 = document.createElement('div');
+  divEl31.setAttribute('class', 'form-step');
+  divEl31.setAttribute('id', 'step2');
+  divEl31.setAttribute('style', 'display: none;');
 
-  const divEl32 = document.createElement("div");
-  divEl32.setAttribute("class", "step-header");
-  divEl31.setAttribute("style", "display: block;");
+  const divEl32 = document.createElement('div');
+  divEl32.setAttribute('class', 'step-header');
+  divEl31.setAttribute('style', 'display: block;');
 
-  const buttonEl9 = document.createElement("button");
-  buttonEl9.setAttribute("class", "back-button");
+  const buttonEl9 = document.createElement('button');
+  buttonEl9.setAttribute('class', 'back-button');
 
-  const spanEl5 = document.createElement("span");
-  spanEl5.setAttribute("class", "arrow-icon");
-  spanEl5.textContent = "←";
+  const spanEl5 = document.createElement('span');
+  spanEl5.setAttribute('class', 'arrow-icon');
+  spanEl5.textContent = '←';
   buttonEl9.append(spanEl5);
   divEl32.append(buttonEl9);
 
-  const h3El4 = document.createElement("h3");
+  const h3El4 = document.createElement('h3');
   h3El4.textContent = tellMeOcc;
   divEl32.append(h3El4);
   divEl31.append(divEl32);
 
-  const divEl33 = document.createElement("div");
-  divEl33.setAttribute("class", "occupation-options");
+  const divEl33 = document.createElement('div');
+  divEl33.setAttribute('class', 'occupation-options');
 
-  const divEl34 = document.createElement("div");
-  divEl34.setAttribute("class", "option-row opt-row");
+  const divEl34 = document.createElement('div');
+  divEl34.setAttribute('class', 'option-row opt-row');
 
-  occopt.forEach(function (occopt, index) {
-    const buttonEl10 = document.createElement("button");
-    buttonEl10.setAttribute("class", "option-button opt-btn");
+  occopt.forEach((occopt, index) => {
+    const buttonEl10 = document.createElement('button');
+    buttonEl10.setAttribute('class', 'option-button opt-btn');
     buttonEl10.textContent = occopt;
     divEl34.append(buttonEl10);
   });
@@ -779,68 +766,66 @@ export default function decorate(block) {
   // divEl33.append(divEl36);
   // divEl31.append(divEl33);
 
-  const divEl37 = document.createElement("div");
-  divEl37.setAttribute("class", "button-container");
+  const divEl37 = document.createElement('div');
+  divEl37.setAttribute('class', 'button-container');
 
-  const buttonEl18 = document.createElement("button");
-  buttonEl18.setAttribute("class", "submit-button");
-  buttonEl18.textContent = "See My Returns";
+  const buttonEl18 = document.createElement('button');
+  buttonEl18.setAttribute('class', 'submit-button');
+  buttonEl18.textContent = 'See My Returns';
   divEl37.append(buttonEl18);
   divEl31.append(divEl37);
   divEl5.append(divEl31);
   divEl2.append(divEl5);
   divEl.append(divEl2);
 
-  const divEl38 = document.createElement("div");
-  divEl38.setAttribute("class", "cmp-form-banner-image");
+  const divEl38 = document.createElement('div');
+  divEl38.setAttribute('class', 'cmp-form-banner-image');
 
-  const pictureEl = document.createElement("picture");
-  pictureEl.setAttribute("class", "banner-image style2");
+  const pictureEl = document.createElement('picture');
+  pictureEl.setAttribute('class', 'banner-image style2');
 
-  const sourceEl = document.createElement("source");
-  sourceEl.setAttribute("media", "(max-width:768px)");
-  sourceEl.setAttribute("srcset", newImg);
+  const sourceEl = document.createElement('source');
+  sourceEl.setAttribute('media', '(max-width:768px)');
+  sourceEl.setAttribute('srcset', newImg);
   pictureEl.append(sourceEl);
 
-  const sourceEl2 = document.createElement("source");
-  sourceEl2.setAttribute("media", "(min-width:768px)");
-  sourceEl2.setAttribute("srcset", newImg);
+  const sourceEl2 = document.createElement('source');
+  sourceEl2.setAttribute('media', '(min-width:768px)');
+  sourceEl2.setAttribute('srcset', newImg);
   pictureEl.append(sourceEl2);
 
-  const imgEl = document.createElement("img");
-  imgEl.setAttribute("src", newImg);
-  imgEl.setAttribute("alt", "img");
-  imgEl.setAttribute("height", "650");
-  imgEl.setAttribute("width", "1069");
-  imgEl.setAttribute("loading", "lazy");
+  const imgEl = document.createElement('img');
+  imgEl.setAttribute('src', newImg);
+  imgEl.setAttribute('alt', 'img');
+  imgEl.setAttribute('height', '650');
+  imgEl.setAttribute('width', '1069');
+  imgEl.setAttribute('loading', 'lazy');
   pictureEl.append(imgEl);
   divEl38.append(pictureEl);
   divEl.append(divEl38);
   container.append(divEl);
 
-  block.textContent = "";
+  block.textContent = '';
   block.append(container);
 
   initFormHandler();
 
   (async () => {
     try {
-      let domainUrl=""
+      let domainUrl = '';
       // const envCheck=isAuthorEnvironment();
-      if(isAuthorEnvironment()){
-        domainUrl= "https://author-p102857-e1312424.adobeaemcloud.com/graphql/execute.json/bandhan-life-ue-demo/bannerquery;path=/content/dam/bandhan-life-ue-demo/banner-text-demo;variation=master"
-
-      }else{
-        domainUrl= "https://publish-p102857-e1312424.adobeaemcloud.com/graphql/execute.json/bandhan-life-ue-demo/bannerquery;path=/content/dam/bandhan-life-ue-demo/banner-text-demo;variation=master"
-
+      if (isAuthorEnvironment()) {
+        domainUrl = 'https://author-p102857-e1312424.adobeaemcloud.com/graphql/execute.json/bandhan-life-ue-demo/bannerquery;path=/content/dam/bandhan-life-ue-demo/banner-text-demo;variation=master';
+      } else {
+        domainUrl = 'https://publish-p102857-e1312424.adobeaemcloud.com/graphql/execute.json/bandhan-life-ue-demo/bannerquery;path=/content/dam/bandhan-life-ue-demo/banner-text-demo;variation=master';
       }
 
       const resp = await fetchData(domainUrl);
-      console.log("Final Response:", resp.data.demoBanByPath.item.bannerFiled);
-       headingCf = resp.data.demoBanByPath.item.bannerFiled;
-       document.getElementById("disclaimer").append(headingCf);
+      console.log('Final Response:', resp.data.demoBanByPath.item.bannerFiled);
+      headingCf = resp.data.demoBanByPath.item.bannerFiled;
+      document.getElementById('disclaimer').append(headingCf);
     } catch (err) {
-      console.error("Error during fetchData call:", err);
+      console.error('Error during fetchData call:', err);
     }
   })();
 }

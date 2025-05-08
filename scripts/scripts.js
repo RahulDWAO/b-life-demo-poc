@@ -144,16 +144,11 @@ async function loadPage() {
   loadDelayed();
 }
 
-
-
-export function isAuthorEnvironment(domainUrlparam) {
-
-  domainUrlparam = window.location.origin.includes("author");
-  if(domainUrlparam){
-    return true
+export function isAuthorEnvironment() {
+  const domainUrlparam = window.location.origin.includes('author');
+  if (domainUrlparam) {
+    return true;
   }
-return 
-
 }
 
 loadPage();

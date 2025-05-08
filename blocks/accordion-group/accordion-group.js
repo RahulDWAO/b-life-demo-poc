@@ -3,7 +3,7 @@ import { generateAccordionDOM } from '../accordion/accordion.js';
 
 export default function decorate(block) {
   // each row is an accordion entry
- 
+
   const accordions = [...block.children];
 
   // loop through all accordion blocks
