@@ -87,6 +87,21 @@
       "id": "blocks",
       "components": [
         {
+          "title": "Accordian CF",
+          "id": "accordian-cf",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Accordian CF",
+                  "model": "accordian-cf"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Accordian old",
           "id": "accordianold",
           "plugins": {
