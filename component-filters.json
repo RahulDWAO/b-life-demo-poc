@@ -31,6 +31,25 @@
     ]
   },
   {
+    "id": "authorable-card",
+    "components": [
+      "authored-card"
+    ]
+  },
+  {
+    "id": "bannerform",
+    "components": [
+      "gender-section",
+      "inputform"
+    ]
+  },
+  {
+    "id": "cards-with-paragraph",
+    "components": [
+      "card-with-paragraph"
+    ]
+  },
+  {
     "id": "cards",
     "components": [
       "card",
@@ -74,6 +93,21 @@
       "cards-with-paragraph",
       "card-with-paragraph"
     ]
+  },
+  {
+    "id": "custom-rte",
+    "rte": {
+      "format": [
+        "bold",
+        "italic"
+      ],
+      "insert": [
+        "link"
+      ],
+      "editor": [
+        "removeformat"
+      ]
+    }
   },
   {
     "id": "form-with-banner",

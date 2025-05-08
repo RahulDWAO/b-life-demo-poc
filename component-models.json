@@ -142,6 +142,49 @@
     ]
   },
   {
+    "id": "accordian-cf",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Accordion classes",
+        "description": "Options that affect block appearance and behavior.",
+        "valueType": "string",
+        "required": true,
+        "maxSize": 1,
+        "options": [
+          {
+            "name": "Left",
+            "value": "acc-child-cf"
+          },
+          {
+            "name": "Center",
+            "value": "acc-child1"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "heading",
+        "value": "",
+        "label": "Heading"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "body",
+        "value": "",
+        "label": "Body"
+      },
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "label": "Reference"
+      }
+    ]
+  },
+  {
     "id": "accordion-group",
     "fields": [
       {
@@ -210,6 +253,149 @@
         "name": "body",
         "value": "",
         "label": "Body"
+      }
+    ]
+  },
+  {
+    "id": "authorable-card",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Block Options",
+        "description": "Options that affect block appearance and behavior.",
+        "valueType": "string",
+        "required": true,
+        "maxSize": 1,
+        "options": [
+          {
+            "name": "Header Alignment",
+            "children": [
+              {
+                "name": "Left",
+                "value": "header-left"
+              },
+              {
+                "name": "Center",
+                "value": "header-center"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "heading",
+        "value": "",
+        "label": "Heading",
+        "description": "Sets the heading."
+      }
+    ]
+  },
+  {
+    "id": "authored-card",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "rte",
+        "value": "",
+        "label": "Rich Text",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "rte1",
+        "value": "",
+        "label": "Rich Text Additional optional",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "Simple Texts",
+        "label": "Enter Simple Texts",
+        "valueType": "string"
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "card-with-paragraph",
+            "value": "card-with-paragraph"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cards-with-paragraph",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "cards-with-paragraph",
+            "value": "cards-with-paragraph"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "card-with-paragraph",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "rte",
+        "value": "",
+        "label": "Rich Text",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "rte",
+        "value": "",
+        "label": "Rich Text Additional optional",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "Simple Texts",
+        "label": "Enter Simple Texts",
+        "valueType": "string"
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "card-with-paragraph",
+            "value": "card-with-paragraph"
+          }
+        ]
       }
     ]
   },
@@ -335,6 +521,16 @@
         "name": "rows",
         "value": "",
         "label": "Rows"
+      }
+    ]
+  },
+  {
+    "id": "text-model",
+    "fields": [
+      {
+        "id": "text",
+        "type": "richtext",
+        "label": "Body Text"
       }
     ]
   },
