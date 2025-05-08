@@ -12,9 +12,17 @@ footer .footer > div {
 footer .footer p {
   margin: 0;
 }
+ 
+footer .default-content-wrapper img{
+  width: 100%;
+  height: 100%;
+}
+
 
 @media (width >= 900px) {
   footer .footer > div {
     padding: 40px 32px 24px;
   }
 }
+
+
