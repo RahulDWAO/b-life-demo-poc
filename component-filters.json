@@ -18,7 +18,6 @@
       "fragment",
       "quote",
       "teaser",
-      "section",
       "accordion-group",
       "accordian",
       "text-with-image",
@@ -28,7 +27,8 @@
       "spreedsheetfragment",
       "inputform",
       "aem-cf-component-new",
-      "aem-cf-component"
+      "aem-cf-component",
+      "topsearches"
     ]
   },
   {
@@ -117,6 +117,12 @@
       "text",
       "title",
       "text-input"
+    ]
+  },
+  {
+    "id": "topsearches-group",
+    "components": [
+      "topsearches"
     ]
   }
 ]

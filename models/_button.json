@@ -52,6 +52,17 @@
               "value": "secondary"
             }
           ]
+        },
+        {
+          "component": "multiselect",
+          "name": "style",
+          "label": "Style",
+          "options": [
+            {
+              "name": "button",
+              "value": "cmp-btn"
+            }
+          ]
         }
       ]
     }

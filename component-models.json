@@ -116,6 +116,17 @@
             "value": "secondary"
           }
         ]
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "button",
+            "value": "cmp-btn"
+          }
+        ]
       }
     ]
   },
@@ -813,6 +824,38 @@
         "name": "imageAlt",
         "label": "Image alt text",
         "required": false
+      }
+    ]
+  },
+  {
+    "id": "topsearches",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "body",
+        "value": "",
+        "label": "Body"
+      },
+      {
+        "component": "text-input",
+        "label": "Labels for Tags",
+        "name": "text",
+        "valueType": "string",
+        "multi": true
+      },
+      {
+        "component": "aem-tag",
+        "label": "AEM Tag Picker",
+        "name": "toptags",
+        "valueType": "string"
       }
     ]
   }
