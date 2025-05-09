@@ -10,7 +10,11 @@
             "cfModel": "/conf/bandhan-life-ue-demo/settings/dam/cfm/models/demo-ban",
             "cfFolder": "/content/dam/bandhan-life-ue-demo/content-fragments",
             "title": "Sample",
-            "description": "sampledescription"
+            "description": "sampledescription",
+            "template": {
+              "name": "AEM Content Fragments - 2",
+              "model": "aem-cf-component"
+            }
           }
         }
       }
