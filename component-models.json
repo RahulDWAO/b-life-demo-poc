@@ -251,95 +251,6 @@
     ]
   },
   {
-    "id": "accordian-cf",
-    "fields": [
-      {
-        "component": "multiselect",
-        "name": "classes",
-        "label": "Accordion classes",
-        "description": "Options that affect block appearance and behavior.",
-        "valueType": "string",
-        "required": true,
-        "maxSize": 1,
-        "options": [
-          {
-            "name": "Left",
-            "value": "acc-child-cf"
-          },
-          {
-            "name": "Center",
-            "value": "acc-child1"
-          }
-        ]
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "heading",
-        "value": "",
-        "label": "Heading"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "body",
-        "value": "",
-        "label": "Body"
-      },
-      {
-        "component": "aem-content",
-        "name": "reference",
-        "label": "Reference"
-      }
-    ]
-  },
-  {
-    "id": "accordianold",
-    "fields": [
-      {
-        "component": "select",
-        "name": "classes",
-        "value": "",
-        "label": "Teaser options",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "HomePage Accordian",
-            "value": "accv1"
-          }
-        ]
-      },
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "imageAlt",
-        "label": "Image alt text",
-        "required": true
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "acc_title",
-        "label": "Accordian Title",
-        "required": true
-      },
-      {
-        "component": "richtext",
-        "name": "acc_desc",
-        "label": "Accordian Description",
-        "valueType": "string",
-        "required": true
-      }
-    ]
-  },
-  {
     "id": "accordion-group",
     "fields": [
       {
@@ -408,28 +319,6 @@
         "name": "body",
         "value": "",
         "label": "Body"
-      }
-    ]
-  },
-  {
-    "id": "aem-cf-component-new",
-    "fields": [
-      {
-        "component": "aem-content-fragment",
-        "name": "picker",
-        "label": "Content Fragment Picker",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "aem-cf-component",
-    "fields": [
-      {
-        "component": "aem-content-fragment",
-        "name": "picker",
-        "label": "Content Fragment Picker",
-        "valueType": "string"
       }
     ]
   },
@@ -605,17 +494,6 @@
     ]
   },
   {
-    "id": "cf-component",
-    "fields": [
-      {
-        "component": "aem-content-fragment",
-        "name": "picker",
-        "label": "Content Fragment Picker",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
     "id": "columns",
     "fields": [
       {
@@ -631,112 +509,6 @@
         "name": "rows",
         "value": "",
         "label": "Rows"
-      }
-    ]
-  },
-  {
-    "id": "customcard",
-    "fields": [
-      {
-        "component": "select",
-        "name": "classes",
-        "value": "",
-        "label": "Card Style options",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Default",
-            "value": ""
-          },
-          {
-            "name": "Card Custom Style",
-            "value": "cmp-custom-style"
-          },
-          {
-            "name": "Card Custom Style 1",
-            "value": "cmp-custom-style-1"
-          }
-        ]
-      },
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "imageAlt",
-        "label": "Image alt text",
-        "required": true
-      },
-      {
-        "component": "richtext",
-        "name": "textContent_text",
-        "label": "Text",
-        "valueType": "string",
-        "required": true
-      },
-      {
-        "component": "aem-content",
-        "name": "textContent_cta",
-        "label": "CTA",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "textContent_ctaText",
-        "label": "CTA label",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "customtitle",
-    "fields": [
-      {
-        "component": "select",
-        "name": "titleType",
-        "label": "Title Type",
-        "options": [
-          {
-            "name": "h1",
-            "value": "h1"
-          },
-          {
-            "name": "h2",
-            "value": "h2"
-          },
-          {
-            "name": "h3",
-            "value": "h3"
-          },
-          {
-            "name": "h4",
-            "value": "h4"
-          },
-          {
-            "name": "h5",
-            "value": "h5"
-          },
-          {
-            "name": "h6",
-            "value": "h6"
-          }
-        ]
-      },
-      {
-        "component": "multiselect",
-        "name": "style",
-        "label": "Style",
-        "options": [
-          {
-            "name": "title",
-            "value": "cmp-customtitle"
-          }
-        ]
       }
     ]
   },
@@ -871,49 +643,6 @@
         "component": "aem-content",
         "name": "reference",
         "label": "Reference"
-      }
-    ]
-  },
-  {
-    "id": "gender-section",
-    "fields": [
-      {
-        "component": "select",
-        "name": "classes",
-        "value": "",
-        "label": "Teaser options",
-        "description": "",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Default",
-            "value": ""
-          },
-          {
-            "name": "Side-by-side",
-            "value": "side-by-side"
-          },
-          {
-            "name": "Cards Container",
-            "value": "cards-container"
-          }
-        ]
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "name": "text1",
-        "value": "",
-        "label": "Text",
-        "valueType": "string",
-        "multi": true
       }
     ]
   },

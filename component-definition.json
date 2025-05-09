@@ -87,36 +87,6 @@
       "id": "blocks",
       "components": [
         {
-          "title": "Accordian CF",
-          "id": "accordian-cf",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Accordian CF",
-                  "model": "accordian-cf"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Accordian old",
-          "id": "accordianold",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "Accordianold",
-                  "model": "accordianold"
-                }
-              }
-            }
-          }
-        },
-        {
           "title": "Accordion Group",
           "id": "accordion-group",
           "plugins": {
@@ -152,40 +122,6 @@
                   "model": "accordion",
                   "heading": "Lorem ipsum",
                   "body": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "AEM CF Component New",
-          "id": "aem-cf-component-new",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "AEM CF Component New",
-                  "model": "aem-cf-component-new"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "AEM CF Component",
-          "id": "aem-cf-component",
-          "plugins": {
-            "xwalk": {
-              "cf": {
-                "name": "SampleCF",
-                "cfModel": "demo-ban",
-                "cfFolder": "/content/dam/bandhan-life-ue-demo/content-fragments",
-                "title": "Sample",
-                "description": "sampledescription",
-                "template": {
-                  "name": "AEM CF Component",
-                  "model": "aem-cf-component"
                 }
               }
             }
@@ -258,21 +194,6 @@
           }
         },
         {
-          "title": "AEM Content Fragments",
-          "id": "cf-component",
-          "plugins": {
-            "xwalk": {
-              "cf": {
-                "name": "SampleCF",
-                "cfModel": "demo-ban",
-                "cfFolder": "/content/dam/bandhan-life-ue-demo/content-fragments",
-                "title": "Sample",
-                "description": "sampledescription"
-              }
-            }
-          }
-        },
-        {
           "title": "Columns",
           "id": "columns",
           "plugins": {
@@ -285,35 +206,6 @@
                   "classes": [
                     "column-container"
                   ]
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Custom Card",
-          "id": "customcard",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "Custom Card",
-                  "model": "customcard"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Custom Title",
-          "id": "customtitle",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/title/v1/title",
-                "template": {
-                  "model": "customtitle"
                 }
               }
             }
@@ -345,22 +237,6 @@
                 "template": {
                   "name": "Fragment",
                   "model": "fragment"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Gender Section",
-          "id": "gender-section",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "Gender Section",
-                  "model": "gender-section",
-                  "filter": "gender-section"
                 }
               }
             }

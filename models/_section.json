@@ -109,30 +109,16 @@
         "fragment",
         "quote",
         "teaser",
-        "customcards",
-        "customcard",
-        "custom-cards-container",
-        "section",
-        "accordianold",
         "accordion-group",
         "accordian",
-        "gender-section",
-        "inputform",
         "text-with-image",
         "custom-rte",
         "cards-with-paragraph",
         "card-with-paragraph",
-        "gendernew",
-        "accordian-cf",
-        "customtitle",
-        "bannerform",
         "topsearches",
-        "authorable-card",
         "form-with-banner",
-        "spreedsheetfragment",
-        "cf-component",
-        "aem-cf-component",
-        "aem-cf-component-new"
+        "spreedsheetfragment"
+        
       ]
     }
   ]
