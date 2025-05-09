@@ -124,6 +124,21 @@
           }
         },
         {
+          "title": "AEM Content Fragments - 2",
+          "id": "aem-cf-component",
+          "plugins": {
+            "xwalk": {
+              "cf": {
+                "name": "SampleCF",
+                "cfModel": "/conf/bandhan-life-ue-demo/settings/dam/cfm/models/demo-ban",
+                "cfFolder": "/content/dam/bandhan-life-ue-demo/content-fragments",
+                "title": "Sample",
+                "description": "sampledescription"
+              }
+            }
+          }
+        },
+        {
           "title": "Cards with paragraph",
           "id": "cards-with-paragraph",
           "plugins": {
@@ -239,6 +254,21 @@
           }
         },
         {
+          "title": "Header",
+          "id": "Header",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Header",
+                  "model": "Header"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Hero",
           "id": "hero",
           "plugins": {
@@ -248,6 +278,37 @@
                 "template": {
                   "name": "Hero",
                   "model": "hero"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Inputform",
+          "id": "inputform",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Inputform",
+                  "model": "inputform",
+                  "filter": "inputform"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "spreedsheetfragment",
+          "id": "spreedsheetfragment",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "spreedsheetfragment",
+                  "model": "spreedsheetfragment"
                 }
               }
             }

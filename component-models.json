@@ -136,6 +136,62 @@
           {
             "name": "Highlight",
             "value": "highlight"
+          },
+          {
+            "name": "ban-why-choose-model",
+            "value": "ban-why-choose-model"
+          },
+          {
+            "name": "most-pop",
+            "value": "most-pop"
+          },
+          {
+            "name": "quick-link",
+            "value": "quick-link"
+          },
+          {
+            "name": "Smart Calculator",
+            "value": "smart-cal"
+          },
+          {
+            "name": "most-pop-left",
+            "value": "most-pop-left"
+          },
+          {
+            "name": "section-container",
+            "value": "section-container"
+          },
+          {
+            "name": "Why iTerm Prime?",
+            "value": "bandhan-iterm-prime-cards"
+          },
+          {
+            "name": "lets go card",
+            "value": "lets-go-card"
+          },
+          {
+            "name": "lets go card11",
+            "value": "lets-go-card1"
+          },
+          {
+            "name": "people-search-buttons",
+            "value": "people-search-buttons"
+          },
+          {
+            "name": " Certified Card",
+            "value": "certified-card"
+          },
+          {
+            "name": "Settlement Card",
+            "value": "settlement-card"
+          },
+          {
+            "name": "Mail us card",
+            "value": "mail-us-card"
+          },
+          {
+            "name": "Bandhan Footer",
+            "value": "bandhan-footer"
           }
         ]
       }
@@ -210,6 +266,17 @@
         "name": "body",
         "value": "",
         "label": "Body"
+      }
+    ]
+  },
+  {
+    "id": "aem-cf-component",
+    "fields": [
+      {
+        "component": "aem-content-fragment",
+        "name": "picker",
+        "label": "Content Fragment Picker",
+        "valueType": "string"
       }
     ]
   },
@@ -534,6 +601,32 @@
     ]
   },
   {
+    "id": "Header",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "hero",
     "fields": [
       {
@@ -556,6 +649,71 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "inputform",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "value": "",
+        "label": "Form Style options",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default",
+            "value": ""
+          },
+          {
+            "name": "form-container",
+            "value": "input-form"
+          }
+        ]
+      },
+      {
+        "component": "container",
+        "label": "Label & Inputs",
+        "name": "container",
+        "valueType": "string",
+        "collapsible": true,
+        "fields": [
+          {
+            "component": "text-input",
+            "label": "Labels for Form",
+            "name": "text",
+            "valueType": "string",
+            "multi": true
+          },
+          {
+            "component": "text-input",
+            "label": "Input Values for form",
+            "name": "text2",
+            "valueType": "string",
+            "multi": true
+          }
+        ]
+      },
+      {
+        "component": "text-with-image",
+        "label": "Text  with  Image",
+        "name": "txtimg"
+      },
+      {
+        "component": "text-with-image",
+        "label": "Text  with  Image",
+        "name": "txtimg11"
+      }
+    ]
+  },
+  {
+    "id": "spreedsheetfragment",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "label": "Reference"
       }
     ]
   },

@@ -16,13 +16,18 @@
       "cards",
       "columns",
       "fragment",
+      "quote",
+      "teaser",
+      "section",
       "accordion-group",
+      "accordian",
+      "text-with-image",
       "cards-with-paragraph",
       "card-with-paragraph",
       "form-with-banner",
-      "quote",
-      "text-with-image",
-      "teaser"
+      "spreedsheetfragment",
+      "aem-cf-component",
+      "inputform"
     ]
   },
   {
@@ -92,6 +97,16 @@
     "id": "form-with-banner",
     "components": [
       "inputform"
+    ]
+  },
+  {
+    "id": "inputform",
+    "components": [
+      "image",
+      "text",
+      "title",
+      "text-input",
+      "text-with-image"
     ]
   },
   {
