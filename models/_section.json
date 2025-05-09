@@ -117,9 +117,8 @@
         "card-with-paragraph",
         "form-with-banner",
         "spreedsheetfragment",
-        "inputform",
-        "aem-cf-component-new",
-        "aem-cf-component"
+        "inputform"
+        
       ]
     }
   ]
