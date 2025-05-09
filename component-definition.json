@@ -173,7 +173,7 @@
           }
         },
         {
-          "title": "AEM Content Fragments - 2",
+          "title": "AEM CF Component",
           "id": "aem-cf-component",
           "plugins": {
             "xwalk": {
@@ -182,7 +182,11 @@
                 "cfModel": "demo-ban",
                 "cfFolder": "/content/dam/bandhan-life-ue-demo/content-fragments",
                 "title": "Sample",
-                "description": "sampledescription"
+                "description": "sampledescription",
+                "template": {
+                  "name": "AEM CF Component",
+                  "model": "aem-cf-component"
+                }
               }
             }
           }
