@@ -26,7 +26,9 @@
       "card-with-paragraph",
       "form-with-banner",
       "spreedsheetfragment",
-      "inputform"
+      "inputform",
+      "aem-cf-component-new",
+      "aem-cf-component"
     ]
   },
   {
