@@ -1,0 +1,77 @@
+{
+  "definitions": [
+    {
+      "title": "Banner Form",
+      "id": "bannerform",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/section/v1/section",
+            "template": {
+              "model": "bannerform"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "bannerform",
+      "fields": [
+        {
+          "component": "text",
+          "name": "name",
+          "label": "Banner Form Name",
+          "description": "The label shown for this Banner Form in the Content Tree"
+        },
+        {
+          "component": "multiselect",
+          "name": "style",
+          "label": "Style",
+          "options": [
+            {
+              "name": "Bandhan Banner Form",
+              "value": "bandhan-banner-form"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "bannerform",
+      "components": [
+        "text",
+        "image",
+        "button",
+        "title",
+        "hero",
+        "cards",
+        "columns",
+        "fragment",
+        "quote",
+        "teaser",
+        "customcards",
+        "customcard",
+        "custom-cards-container",
+        "section",
+        "bannerform",
+        "accordianold",
+        "accordion-group",
+        "accordian",
+        "gender-section",
+        "inputform",
+        "text-with-image",
+        "custom-rte",
+        "gendernew",
+        "accordian-cf",
+        "customtitle",
+        "bannerform",
+        "topsearches",
+        "authorable-card"
+      ]
+    }
+  ]
+}
