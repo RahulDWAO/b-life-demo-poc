@@ -144,18 +144,16 @@
           "plugins": {
             "xwalk": {
               "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
+                "resourceType": "core/franklin/components/block/v1/block"
+              },
+              "cf": {
+                "name": "SampleCF",
+                "cfModel": "/conf/bandhan-life-ue-demo/settings/dam/cfm/models/demo-ban",
+                "cfFolder": "/content/dam/bandhan-life-ue-demo/content-fragments",
+                "title": "Sample",
+                "description": "sampledescription",
                 "template": {
-                  "cf": {
-                    "name": "SampleCF",
-                    "cfModel": "/conf/bandhan-life-ue-demo/settings/dam/cfm/models/demo-ban",
-                    "cfFolder": "/content/dam/bandhan-life-ue-demo/content-fragments",
-                    "title": "Sample",
-                    "description": "sampledescription",
-                    "template": {
-                      "bannerFiled": "Demo"
-                    }
-                  }
+                  "bannerFiled": "Demo"
                 }
               }
             }
