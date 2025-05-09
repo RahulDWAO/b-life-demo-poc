@@ -27,7 +27,8 @@
       "form-with-banner",
       "spreedsheetfragment",
       "aem-cf-component",
-      "inputform"
+      "inputform",
+      "aem-cf-component-new"
     ]
   },
   {

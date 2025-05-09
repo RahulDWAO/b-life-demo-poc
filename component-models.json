@@ -270,6 +270,17 @@
     ]
   },
   {
+    "id": "aem-cf-component-new",
+    "fields": [
+      {
+        "component": "aem-content-fragment",
+        "name": "picker",
+        "label": "Content Fragment Picker",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "aem-cf-component",
     "fields": [
       {
