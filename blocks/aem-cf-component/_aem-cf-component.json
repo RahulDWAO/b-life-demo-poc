@@ -1,7 +1,7 @@
 {
   "definitions": [
     {
-      "title": "AEM Content Fragments - 2",
+      "title": "AEM CF component",
       "id": "aem-cf-component",
       "plugins": {
         "xwalk": {
@@ -12,7 +12,7 @@
             "title": "Sample",
             "description": "sampledescription",
             "template": {
-              "name": "AEM Content Fragments - 2",
+              "name": "AEM CF Component",
               "model": "aem-cf-component"
             }
           }
