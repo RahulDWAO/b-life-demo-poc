@@ -15,26 +15,13 @@
             "title": "Sample",
             "description": "sampledescription",
             "template": {
-              "name": "AEM CF Component",
-              "model": "aem-cf-component"
+              "bannerFiled": "Demo"
             }
           }
         }
       }
     }
   ],
-  "models": [
-    {
-      "id": "aem-cf-component",
-      "fields": [
-        {
-          "component": "aem-content-fragment",
-          "name": "picker",
-          "label": "Content Fragment Picker",
-          "valueType": "string"
-        }
-      ]
-    }
-  ],
+  "models": [],
   "filters": []
 }

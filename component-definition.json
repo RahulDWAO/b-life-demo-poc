@@ -153,8 +153,7 @@
                 "title": "Sample",
                 "description": "sampledescription",
                 "template": {
-                  "name": "AEM CF Component",
-                  "model": "aem-cf-component"
+                  "bannerFiled": "Demo"
                 }
               }
             }
