@@ -22,7 +22,7 @@
       "fields": [
         {
           "component": "aem-content-fragment",
-          "name": "contentpicker",
+          "name": "contentpickeraem",
           "label": "Content Fragment Picker",
           "valueType": "string"
         }
