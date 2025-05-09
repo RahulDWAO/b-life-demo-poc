@@ -1,9 +1,9 @@
 export default function decorate(block) {
-  debugger
   console.log("block normal cf component it is by ID", block);
 
-  const divWrapper = document.createElement("div");
+  const link = block.querySelector('a');
+  const path = link ? link.getAttribute('href') : block.textContent.trim();
 
   block.textContent = "";
-  block.append(divWrapper);
+  block.append(path);
 }
