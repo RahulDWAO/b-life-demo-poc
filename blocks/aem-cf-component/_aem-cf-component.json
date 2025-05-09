@@ -4,7 +4,7 @@
       "title": "AEM CF component",
       "id": "aem-cf-component",
       "plugins": {
-        "xwalk": {
+        "aem": {
           "cf": {
             "name": "SampleCF",
             "cfModel": "/conf/bandhan-life-ue-demo/settings/dam/cfm/models/demo-ban",
