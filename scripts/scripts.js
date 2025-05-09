@@ -144,7 +144,7 @@ async function loadPage() {
   loadDelayed();
 }
 
-
+loadPage();
 
 export function isAuthorEnvironment(domainUrlparam) {
 
@@ -155,5 +155,3 @@ export function isAuthorEnvironment(domainUrlparam) {
 return 
 
 }
-
-loadPage();
