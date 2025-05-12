@@ -143,6 +143,9 @@
           "id": "aem-cf-component",
           "plugins": {
             "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block"
+              },
               "cf": {
                 "name": "AEM CF Block",
                 "cfModel": "/conf/bandhan-life-ue-demo/settings/dam/cfm/models/demo-ban",
